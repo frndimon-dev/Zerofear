@@ -23,7 +23,7 @@
     "alternateName": "Zero Fear Riding School Kolkata",
     "description": "Specialized two-wheeler driving school in Kolkata for Scooty, Bike, and EV training. Non-cyclist and women learner friendly.",
     "url": "https://zerofear.vercel.app/",
-    "telephone": "+919876543210",
+    "telephone": "+917980110273",
     "priceRange": "Starting from ₹2,500",
     "address": {
       "@type": "PostalAddress",
@@ -51,6 +51,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     :root {
@@ -96,6 +99,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
     }
     .utility-ribbon strong { color: var(--zf-yellow); }
 
@@ -113,10 +118,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.65rem 5%;
+      padding: 0.5rem 5%;
     }
     .brand-logo-img {
-      height: 48px;
+      height: 44px;
       width: auto;
       object-fit: contain;
       cursor: pointer;
@@ -205,7 +210,7 @@
     .slide-overlay-light {
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(11,78,162,0.48) 0%, rgba(11,78,162,0.18) 100%);
+      background: linear-gradient(90deg, rgba(11,78,162,0.55) 0%, rgba(7,50,105,0.25) 100%);
       z-index: 2;
     }
     .slide-inner {
@@ -217,7 +222,7 @@
     }
     .slide-academy-tag {
       display: inline-block;
-      background: rgba(11, 78, 162, 0.85);
+      background: var(--zf-blue);
       border: 1px solid rgba(255, 255, 255, 0.3);
       color: #ffffff;
       padding: 4px 12px;
@@ -320,7 +325,7 @@
     /* Grids & Cards */
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
     .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.4ln; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.4rem; }
 
     .card-white {
       background: #ffffff;
@@ -376,7 +381,7 @@
     }
     .btn-outline-blue:hover { background: var(--zf-blue); color: #fff; }
 
-    /* Compact Course Carousel Cards */
+    /* Compact Course Carousel Cards (Blue & Yellow Harmonized) */
     .courses-slider-row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -387,15 +392,16 @@
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       border-top: 4px solid var(--zf-yellow);
+      border-left: 4px solid var(--zf-blue);
       border-radius: 8px;
       padding: 1.8rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      box-shadow: 0 4px 15px rgba(11,78,162,0.04);
       transition: transform 0.2s;
     }
-    .course-card-teaser:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(11,78,162,0.08); }
+    .course-card-teaser:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(11,78,162,0.1); }
 
     /* Timeline Row */
     .timeline-strip {
@@ -430,6 +436,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     /* Gallery Grid */
@@ -456,28 +463,6 @@
       color: #fff;
       padding: 8px 12px;
       font-size: 0.8rem;
-    }
-
-    /* Video Frame */
-    .video-card-item {
-      background: #ffffff;
-      border: 1px solid var(--border-subtle);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .video-iframe-slot {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      background: #000;
-    }
-    .video-iframe-slot iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
     }
 
     /* FAQ */
@@ -867,7 +852,7 @@
   <!-- Primary Navigation -->
   <header>
     <div class="nav-wrap">
-      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 80'><text x='10' y='55' font-family='Inter, sans-serif' font-weight='900' font-size='36' fill='%230b4ea2'>ZERO<tspan fill='%23f59e0b'>FEAR</tspan></text></svg>" alt="Zero Fear Logo" class="brand-logo-img" onclick="switchView('home')">
+      <img src="1000567764_2.png" alt="ZERO FEAR Logo" class="brand-logo-img" onclick="switchView('home')" title="Zero Fear Two-Wheeler Training School">
 
       <nav id="navBarMenu">
         <a class="nav-link" onclick="handleNavClick('home')">Home</a>
@@ -914,7 +899,7 @@
             Zero Fear is built around a simple idea: learning to ride should begin with understanding, not pressure.
           </p>
           <p style="color: var(--text-body); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.2rem;">
-            For almost 8 years, our practical training experience in Kolkata has been built around helping beginners understand their vehicle, build control, and gradually become more confident on the road. Zero Fear is a new identity. The experience behind the training has been built over years of working directly with learners at every stage of confidence.
+            For almost 8 years, our practical training experience in Kolkata has been built around helping beginners understand their vehicle, build control, and gradually become more confident on the road.
           </p>
         </div>
 
@@ -1041,10 +1026,7 @@
             <li><strong>01 Get Comfortable:</strong> Center of gravity, vehicle weight feel, balance points, and switch layout.</li>
             <li><strong>02 Basic Control:</strong> Gentle linear throttle rotation, smooth stop posture, and dual hand-braking touch.</li>
             <li><strong>03 Balance & Turning:</strong> Slalom turning arcs, U-turns, and Figure-8 control with feet firmly on footboard.</li>
-            <li><strong>04 Braking & Control:</strong> Emergency halt response, slope stops, and slow-speed crawl in traffic queues.</li>
-            <li><strong>05 Road Awareness:</strong> Mirror reading, blind-spot awareness, and safe overtaking margin judgment.</li>
-            <li><strong>06 Real Road Practice:</strong> Trainer-escorted progression on busy South Kolkata routes.</li>
-            <li><strong>07 Independence:</strong> Solo driving confidence across any traffic condition.</li>
+            <li><strong>04 Real Road Practice:</strong> Trainer-escorted progression on busy South Kolkata routes.</li>
           </ul>
         </div>
 
@@ -1098,7 +1080,7 @@
           </p>
           <div style="display: flex; gap: 12px; flex-wrap: wrap;">
             <a id="btn_full_map" href="https://maps.google.com/?cid=7060569192068913354" target="_blank" class="btn-solid-blue">Open in Google Maps</a>
-            <a id="btn_full_call" href="tel:+919876543210" class="btn-outline-blue">Call Instructor</a>
+            <a id="btn_full_call" href="tel:+917980110273" class="btn-outline-blue">Call Instructor</a>
           </div>
         </div>
       </div>
@@ -1225,8 +1207,8 @@
     <!-- Contact & Social Info Tab -->
     <div id="admin-tab-contact" class="admin-surface" style="display: none;">
       <form onsubmit="saveContactCMS(event)">
-        <div class="form-row"><label>Phone Number</label><input type="text" id="cfg_phone"></div>
-        <div class="form-row"><label>WhatsApp Number</label><input type="text" id="cfg_wa"></div>
+        <div class="form-row"><label>Primary Phone Number</label><input type="text" id="cfg_phone"></div>
+        <div class="form-row"><label>Secondary Phone / WhatsApp Number</label><input type="text" id="cfg_wa"></div>
         <div class="form-row"><label>Instagram URL</label><input type="text" id="cfg_insta"></div>
         <div class="form-row"><label>Facebook URL</label><input type="text" id="cfg_fb"></div>
         <div class="form-row"><label>Address</label><input type="text" id="cfg_address"></div>
@@ -1240,15 +1222,15 @@
   <!-- MOBILE STICKY BOTTOM ACTION BAR                   -->
   <!-- ================================================= -->
   <div class="mobile-sticky-action-bar">
-    <a id="mStickyCall" href="tel:+919876543210" class="mobile-action-btn" style="background: var(--zf-blue-dark); color: #fff;">📞 Call</a>
-    <a id="mStickyWa" href="https://wa.me/919876543210" target="_blank" class="mobile-action-btn" style="background: var(--zf-whatsapp); color: #fff;">💬 WhatsApp</a>
+    <a id="mStickyCall" href="tel:+917980110273" class="mobile-action-btn" style="background: var(--zf-blue-dark); color: #fff;">📞 Call: 7980110273</a>
+    <a id="mStickyWa" href="https://wa.me/917980110273" target="_blank" class="mobile-action-btn" style="background: var(--zf-whatsapp); color: #fff;">💬 WhatsApp</a>
     <button onclick="openQuickLead()" class="mobile-action-btn" style="background: var(--zf-yellow); color: var(--zf-blue-dark); border: none;">📝 Book Admission</button>
   </div>
 
   <!-- Floating CTAs (Desktop) -->
   <div class="quick-floating-tray">
-    <a id="floatCallAction" href="tel:+919876543210" class="btn-quick-float float-call" title="Call Us Directly">📞</a>
-    <a id="floatWaAction" href="https://wa.me/919876543210" target="_blank" class="btn-quick-float float-wa" title="WhatsApp Chat">💬</a>
+    <a id="floatCallAction" href="tel:+917980110273" class="btn-quick-float float-call" title="Call Us Directly">📞</a>
+    <a id="floatWaAction" href="https://wa.me/917980110273" target="_blank" class="btn-quick-float float-wa" title="WhatsApp Chat">💬</a>
   </div>
 
   <button class="floating-ai-launcher" onclick="toggleAiChat()">
@@ -1280,7 +1262,9 @@
   <footer>
     <div class="footer-3-col">
       <div>
-        <div class="footer-brand-title">ZERO<span>FEAR</span></div>
+        <div style="margin-bottom: 0.8rem;">
+          <img src="1000567764_2.png" alt="ZERO FEAR Logo" style="height: 40px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+        </div>
         <p style="color: #cbd5e1; margin-bottom: 0.8rem;"><strong>FEAR OUT. FREEDOM IN.</strong></p>
         <p style="color: #94a3b8; font-size: 0.85rem;">
           Specialized two-wheeler training school in Kolkata. Operating daily from 8:00 AM to 8:00 PM.
@@ -1289,15 +1273,27 @@
 
       <div>
         <strong style="color: #fff; display: block; margin-bottom: 1rem;">SOCIAL CHANNELS</strong>
-        <p style="margin-bottom: 8px;"><a id="footerInstaLink" href="https://www.instagram.com/kolkata_scooty_bike_training?stkn=NHFjZjljb2hneTJu" target="_blank" style="color: var(--zf-yellow);">📷 Instagram Page</a></p>
-        <p style="margin-bottom: 8px;"><a id="footerFbLink" href="https://www.facebook.com/freelancetwowheelertraining.co.in" target="_blank" style="color: var(--zf-yellow);">📘 Facebook Page</a></p>
-        <p><a href="#" onclick="alert('YouTube channel launching soon!')" style="color: #94a3b8;">▶ YouTube (Coming Soon)</a></p>
+        <p style="margin-bottom: 10px;">
+          <a id="footerInstaLink" href="https://www.instagram.com/kolkata_scooty_bike_training?stkn=NHFjZjljb2hneTJu" target="_blank" style="color: var(--zf-yellow); display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-brands fa-instagram" style="font-size: 1.2rem; color: #E4405F;"></i> Instagram Page
+          </a>
+        </p>
+        <p style="margin-bottom: 10px;">
+          <a id="footerFbLink" href="https://www.facebook.com/freelancetwowheelertraining.co.in" target="_blank" style="color: var(--zf-yellow); display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-brands fa-facebook" style="font-size: 1.2rem; color: #1877F2;"></i> Facebook Page
+          </a>
+        </p>
+        <p>
+          <a href="#" onclick="alert('YouTube channel launching soon!')" style="color: #94a3b8; display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-brands fa-youtube" style="font-size: 1.2rem; color: #FF0000;"></i> YouTube (Coming Soon)
+          </a>
+        </p>
       </div>
 
       <div>
         <strong style="color: #fff; display: block; margin-bottom: 1rem;">CONTACT & LOCATION</strong>
         <p id="ft_address_txt" style="color: #94a3b8; margin-bottom: 6px;">Tollygunge (Near Netaji Metro), Kolkata</p>
-        <p id="ft_phone_txt" style="color: #94a3b8; margin-bottom: 6px;">Phone: +91 98765 43210</p>
+        <p id="ft_phone_txt" style="color: #94a3b8; margin-bottom: 6px;">Phones: 7980110273, 7980108587</p>
         <p id="ft_hours_txt" style="color: #94a3b8; margin-bottom: 1.2rem;">Hours: 8:00 AM – 8:00 PM (All 7 Days)</p>
         <button onclick="triggerAdminLogin()" style="background: none; border: 1px solid #334155; color: #64748b; font-size: 0.75rem; padding: 4px 8px; border-radius: 4px;">⚙️ Admin Login</button>
       </div>
@@ -1314,8 +1310,8 @@
     const DEFAULT_CMS = {
       heroSpeed: 5000,
       config: {
-        phone: "+919876543210",
-        wa: "919876543210",
+        phone: "7980110273",
+        wa: "917980110273",
         insta: "https://www.instagram.com/kolkata_scooty_bike_training?stkn=NHFjZjljb2hneTJu",
         fb: "https://www.facebook.com/freelancetwowheelertraining.co.in",
         address: "Near Netaji Metro Station, Tollygunge, Kolkata - 700040",
@@ -1388,6 +1384,22 @@
           img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1600&q=80",
           btnText: "SEE REAL STORIES",
           action: "stories"
+        },
+        {
+          kicker: "PRACTICAL PROGRESSION",
+          heading: "FROM QUIET LANES TO BUSY ROADS.",
+          desc: "Build practical control for the roads you actually ride on in South Kolkata.",
+          img: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=1600&q=80",
+          btnText: "SEE HOW WE TRAIN",
+          action: "journey"
+        },
+        {
+          kicker: "CREDIBILITY BUILT OVER TIME",
+          heading: "8+ YEARS.<br>5000+ LEARNERS.",
+          desc: "Zero Fear is a new name. The practical training experience behind it is proven.",
+          img: "https://images.unsplash.com/photo-1471466054146-e71bcc0d2bb2?auto=format&fit=crop&w=1600&q=80",
+          btnText: "ABOUT ZERO FEAR",
+          action: "about"
         }
       ],
       about: {
@@ -1401,7 +1413,7 @@
       },
       women: {
         headline: "SHE DECIDES WHERE SHE GOES.",
-        shortText: "Learning to ride can mean more than learning a scooter. It can mean going to work, college, the market, or simply somewhere she wants to go without having to depend on someone else.",
+        shortText: "Learning to ride can mean more than learning a scooter. It can mean going to work, college, the market, an appointment, or simply somewhere she wants to go without having to depend on someone else.",
         bn: "নিজের প্রয়োজনে, নিজের মতো করে চলার স্বাধীনতা।"
       },
       courses: [
@@ -1500,7 +1512,7 @@
 
     function getStoredCMS() {
       try {
-        const raw = localStorage.getItem("zerofear_master_cms_v10");
+        const raw = localStorage.getItem("zerofear_master_cms_v12");
         if (!raw) return DEFAULT_CMS;
         return JSON.parse(raw);
       } catch (e) {
@@ -1510,7 +1522,7 @@
 
     function saveStoredCMS(cms) {
       try {
-        localStorage.setItem("zerofear_master_cms_v10", JSON.stringify(cms));
+        localStorage.setItem("zerofear_master_cms_v12", JSON.stringify(cms));
         applyAllCMS();
         return true;
       } catch (err) {
@@ -1560,7 +1572,7 @@
         if (!sec.visible) return;
         const bgInline = getBgStyleCss(sec.bgStyle);
 
-        // 01 HERO SLIDER
+        // 01 HERO SLIDER (5 Slides)
         if (sec.id === "hero") {
           const slides = (cms && cms.heroSlides) ? cms.heroSlides : DEFAULT_CMS.heroSlides;
           const slidesHtml = slides.map((s, idx) => `
@@ -1600,7 +1612,7 @@
           container.insertAdjacentHTML('beforeend', `
             <div style="background: #f8fafc; padding: 1.2rem 8%; border-bottom: 1px solid var(--border-subtle);">
               <div class="training-updates-box" style="margin-bottom:0;">
-                <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="display: flex; align-items: center; gap: 12px; flex: 1;">
                   <span style="background: var(--zf-yellow); color: var(--zf-blue-dark); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 900;">${cms.noticeBoard.badge || 'WEEKLY UPDATE'}</span>
                   <span style="font-size: 0.92rem; color: var(--text-main); font-weight: 600;">${cms.noticeBoard.text}</span>
                 </div>
@@ -1751,7 +1763,7 @@
           `);
         }
 
-        // 10 COURSES (COMPACT TEASER CARDS)
+        // 10 COURSES (COMPACT TEASER CARDS - BLUE & YELLOW HARMONIZED)
         else if (sec.id === "courses") {
           const coursesCards = (cms.courses || DEFAULT_CMS.courses).map(c => `
             <div class="course-card-teaser">
@@ -1917,7 +1929,7 @@
                   Training daily from 8:00 AM to 8:00 PM. Start where you are.
                 </p>
                 <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-                  <a href="tel:${cms.config.phone}" class="btn-solid-blue" style="background: #ffffff; color: var(--zf-blue-dark); font-weight: 800;">CALL US</a>
+                  <a href="tel:${cms.config.phone}" class="btn-solid-blue" style="background: #ffffff; color: var(--zf-blue-dark); font-weight: 800;">CALL US: 7980110273</a>
                   <button onclick="openQuickLead()" class="btn-solid-blue" style="background: var(--zf-whatsapp); font-weight: 800;">WHATSAPP US</button>
                 </div>
               </div>
@@ -2121,7 +2133,7 @@
         "আমি সাইকেল জানি না",
         "Scooty Training কেমন হয়?",
         "ক্লাস টাইমিং ৮টা থেকে ৮টা?",
-        "టraining cost কত?"
+        "Training cost কত?"
       ] : [
         "🎮 Start Riding Quiz",
         "I don't know cycling",
@@ -2181,14 +2193,14 @@
           : "Training packages start from just ₹2,500.";
       } else {
         reply = aiCurrentLang === 'bn'
-          ? "সঠিক গাইডেন্স ও স্লট বুকিংয়ের জন্য সরাসরি WhatsApp বা Call করুন।"
-          : "For exact slot booking and personal guidance, please call or chat with our team on WhatsApp.";
+          ? "সঠিক গাইডেন্স ও স্লট বুকিংয়ের জন্য সরাসরি WhatsApp বা Call করুন (7980110273 / 7980108587)।"
+          : "For exact slot booking and personal guidance, please call or chat with our team on WhatsApp (7980110273).";
       }
 
       setTimeout(() => {
         appendAiMessage('bot', reply + `
           <div style="margin-top: 8px;">
-            <a href="tel:${cms.config.phone}" class="btn-solid-blue" style="padding: 4px 8px; font-size: 0.72rem; margin-right: 4px;">CALL</a>
+            <a href="tel:${cms.config.phone}" class="btn-solid-blue" style="padding: 4px 8px; font-size: 0.72rem; margin-right: 4px;">CALL: 7980110273</a>
             <button onclick="openQuickLead()" class="btn-solid-blue" style="padding: 4px 8px; font-size: 0.72rem; background: var(--zf-whatsapp);">WHATSAPP</button>
           </div>
         `);
@@ -2355,7 +2367,7 @@
       const str = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(getStoredCMS(), null, 2));
       const a = document.createElement('a');
       a.setAttribute("href", str);
-      a.setAttribute("download", "zerofear_v10_backup_" + new Date().toISOString().slice(0,10) + ".json");
+      a.setAttribute("download", "zerofear_v12_backup_" + new Date().toISOString().slice(0,10) + ".json");
       a.click();
     }
 
@@ -2380,7 +2392,7 @@
 
     function resetDefaultData() {
       if (confirm("Reset all website content back to factory default?")) {
-        localStorage.removeItem("zerofear_master_cms_v10");
+        localStorage.removeItem("zerofear_master_cms_v12");
         applyAllCMS();
         alert("Reset complete.");
       }
@@ -2398,8 +2410,9 @@
       document.getElementById('floatWaAction').href = `https://wa.me/${cms.config.wa}`;
       document.getElementById('mStickyCall').href = `tel:${cms.config.phone}`;
       document.getElementById('mStickyWa').href = `https://wa.me/${cms.config.wa}`;
+      document.getElementById('mStickyCall').textContent = `📞 Call: ${cms.config.phone}`;
 
-      document.getElementById('ft_phone_txt').textContent = "Phone: " + cms.config.phone;
+      document.getElementById('ft_phone_txt').textContent = "Phones: 7980110273, 7980108587";
       document.getElementById('ft_address_txt').textContent = cms.config.address;
       document.getElementById('topAddressSync').textContent = `Tollygunge Hub (Near Netaji Metro) • 10 KM Doorstep Training Available (8 AM - 8 PM)`;
 
