@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="meta_page_title">ZERO FEAR — Kolkata Two-Wheeler Training School | Scooty & Bike Lessons</title>
-  <meta name="description" id="meta_page_desc" content="Kolkata's dedicated two-wheeler driving school. Dual-control training scooty, geared bikes & EV lessons for beginners, non-cyclists, and women in Tollygunge & 10 KM Doorstep. 8+ years experience.">
+  <meta name="description" id="meta_page_desc" content="Professional two-wheeler training school in Kolkata. Scooty, Bike, and Electric Scooter lessons for beginners, non-cyclists, and women. Tollygunge hub near Netaji Metro & 10 KM Doorstep service. Built on 8 years of proven training experience.">
   <link rel="canonical" href="https://zerofear.vercel.app/">
 
   <!-- Open Graph -->
@@ -13,6 +13,39 @@
   <meta property="og:title" id="meta_og_title" content="ZERO FEAR — Kolkata Two-Wheeler Training School">
   <meta property="og:description" id="meta_og_desc" content="Fear Out. Freedom In. Kolkata's professional two-wheeler training school built on 8 years of proven experience.">
   <meta property="og:image" id="meta_og_img" content="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Structured Data (LocalBusiness & EducationalOrganization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["EducationalOrganization", "LocalBusiness"],
+    "name": "ZERO FEAR Two-Wheeler Training School",
+    "alternateName": "Zero Fear Riding School Kolkata",
+    "description": "Specialized two-wheeler driving school in Kolkata for Scooty, Bike, and EV training. Non-cyclist and women learner friendly.",
+    "url": "https://zerofear.vercel.app/",
+    "telephone": "+919876543210",
+    "priceRange": "Starting from ₹2,500",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Netaji Metro Station, Tollygunge",
+      "addressLocality": "Kolkata",
+      "addressRegion": "West Bengal",
+      "postalCode": "700040",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "22.4837",
+      "longitude": "88.3448"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "18:30"
+    }
+  }
+  </script>
 
   <!-- Google Fonts: Inter & Noto Sans Bengali -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +68,6 @@
       --text-muted: #64748b;
       --border-subtle: #e2e8f0;
       
-      /* Font System */
       --font-family-primary: "Inter", "Noto Sans Bengali", sans-serif;
       --font-scale: 1rem;
     }
@@ -48,7 +80,7 @@
       font-family: var(--font-family-primary);
       line-height: 1.7;
       overflow-x: hidden;
-      padding-bottom: 75px; /* space for mobile sticky bar */
+      padding-bottom: 75px;
     }
 
     .bn-font { font-family: var(--font-family-primary); }
@@ -1101,7 +1133,7 @@
   <div id="view-admin" class="view-container">
     <div class="admin-bar-head">
       <div>
-        <h2 style="font-family: var(--font-heading); letter-spacing: 1px;">ZERO FEAR BUILT-IN CMS</h2>
+        <h2 style="font-family: var(--font-family-primary); letter-spacing: 1px;">ZERO FEAR BUILT-IN CMS</h2>
         <p style="font-size: 0.85rem; color: #cbd5e1;">Control content, appearance, backgrounds, slider speeds, and GMB settings.</p>
       </div>
       <div>
@@ -1172,8 +1204,10 @@
           <label><input type="checkbox" id="gmb_enable"> Enable Google Reviews Section on Homepage</label>
         </div>
         <div class="form-row"><label>Google Place ID</label><input type="text" id="gmb_place_id" placeholder="e.g. ChIJ..."></div>
-        <div class="form-row"><label>Reviews API Endpoint / Proxy URL (Optional)</label><input type="text" id="gmb_api_endpoint" placeholder="e.g. /api/reviews"></div>
-        <div class="form-row"><label>Review Display Limit</label><input type="number" id="gmb_limit" value="4"></div>
+        <div class="form-row"><label>Google Business Profile / Place URL</label><input type="text" id="gmb_place_url" placeholder="https://maps.google.com/?cid=..."></div>
+        <div class="form-row"><label>Google Reviews URL</label><input type="text" id="gmb_reviews_url" placeholder="https://search.google.com/local/reviews?placeid=..."></div>
+        <div class="form-row"><label>Google Write Review URL</label><input type="text" id="gmb_write_url" placeholder="https://search.google.com/local/writereview?placeid=..."></div>
+        <div class="form-row"><label>Google Directions URL</label><input type="text" id="gmb_dir_url" placeholder="https://www.google.com/maps/dir/..."></div>
         <button type="submit" class="btn-solid-blue">Save GMB Settings</button>
       </form>
     </div>
@@ -1294,9 +1328,10 @@
       gmb: {
         enabled: true,
         placeId: "ChIJKw-pMI1xAjoR2InlnVTKHeI",
-        cid: "7060569192068913354",
-        apiEndpoint: "",
-        limit: 4,
+        placeUrl: "https://maps.google.com/?cid=7060569192068913354",
+        reviewsUrl: "https://search.google.com/local/reviews?placeid=ChIJKw-pMI1xAjoR2InlnVTKHeI",
+        writeReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJKw-pMI1xAjoR2InlnVTKHeI",
+        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Netaji+Metro+Station+Tollygunge+Kolkata&destination_place_id=ChIJKw-pMI1xAjoR2InlnVTKHeI",
         placeReviews: [
           { author: "Ananya Sen", rating: 5, text: "Best scooty training in South Kolkata. Never cycled before, but their balance technique worked effortlessly.", time: "Verified Google Review" },
           { author: "Rohit Karmakar", rating: 5, text: "Excellent geared motorcycle clutch guidance. Passed RTO test in first attempt without any stalling.", time: "Verified Google Review" },
@@ -1395,9 +1430,13 @@
           bullets: ["Basic controls & throttle modulation", "Feet-up balance techniques", "Dual progressive braking", "U-turns & steering balance", "Quiet-lane road practice"],
           priceLabel: "Packages starting from ₹2,500",
           who: "Absolute beginners who have never touched a two-wheeler, and those who do not know cycling.",
-          learn: "Understanding centre of gravity, dual-foot paddle balancing, gradual feet-up posture, progressive hand-braking without skids, low-speed parking.",
-          schedule: "7 to 10 practical sessions customized to learner pace.",
-          video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          learn: `
+            <p><strong>PHASE 1 — VEHICLE CONTROL (Classes 1–3 approximately):</strong><br>Scooter familiarisation, accelerator, front/rear brake, handlebar control, stand practice, starting and stopping, basic safety checks, and correct body posture.</p><br>
+            <p><strong>PHASE 2 — BALANCE & BASIC SURVIVAL SKILLS (Classes 3–8 approximately):</strong><br>Focus on balance, slow-speed control, braking confidence, safe stopping, acceleration control, maintaining direction, and obstacle awareness.</p><br>
+            <p><strong>PHASE 3 — RIDING WITH FEET UP (Classes 8–12 approximately):</strong><br>Continuous riding, controlled acceleration, maintaining balance, starting/stopping, basic turning, and road awareness.</p><br>
+            <p><strong>PHASE 4 — TURNING & ROAD SKILLS (Classes 12–15 approximately):</strong><br>Turning, road crossing, controlled U-turn style manoeuvres, mirror awareness, checking before changing direction, and practical riding awareness.</p>
+          `,
+          schedule: "15 sessions of approximately 30-45 minutes each. Customized to individual learner pace."
         },
         {
           id: "scooty-adv",
@@ -1406,9 +1445,8 @@
           bullets: ["South Kolkata traffic practice", "Mirror checks & blind spots", "Flyover slope restarts", "Emergency stopping drills", "Navigating narrow bypass lanes"],
           priceLabel: "Packages starting from ₹2,500",
           who: "Riders who can balance in quiet lanes but get nervous in heavy Kolkata traffic and bridge slopes.",
-          learn: "Tight U-turns, mirror blind-spot reading, incline restarts without sliding back, escorted traffic progression.",
-          schedule: "5 to 7 on-road practical sessions.",
-          video: ""
+          learn: "Real-road riding, traffic awareness, busy-road practice, speed-breaker handling, mirror use, road positioning, overtaking awareness, and RTO practical preparation.",
+          schedule: "5 to 7 on-road practical sessions."
         },
         {
           id: "bike",
@@ -1417,9 +1455,8 @@
           bullets: ["Clutch biting point mastery", "Synchronized gear shifts", "Uphill slope starts without stalling", "Rear foot-brake coordination", "Traffic queue crawl"],
           priceLabel: "Packages starting from ₹2,500",
           who: "Beginners wanting to master manual geared motorcycles without stalling.",
-          learn: "Friction zone clutch biting point, heel-and-toe gear progression, slope restarts, synchronized braking.",
-          schedule: "Dedicated practical modules.",
-          video: ""
+          learn: "Phase 1: Foundation & throttle control. Phase 2: Clutch + gear + acceleration. Phase 3: Controlled riding. Phase 4: Real road practice & RTO preparation.",
+          schedule: "Dedicated practical modules."
         },
         {
           id: "ev",
@@ -1428,9 +1465,8 @@
           bullets: ["Instant zero-RPM torque control", "Regenerative braking habits", "Digital throttle modulation", "Smooth acceleration at traffic signals", "Battery & speed mode management"],
           priceLabel: "Custom Package Options",
           who: "Ather, Ola, Chetak, and iQube riders needing to handle instant torque.",
-          learn: "Zero-RPM instant torque management, regenerative braking feel, digital dashboard navigation.",
-          schedule: "Specialized EV sessions.",
-          video: ""
+          learn: "EV familiarisation, throttle response, braking, balance, acceleration, regenerative braking, turning, slow-speed control, and road awareness.",
+          schedule: "Specialized EV sessions."
         },
         {
           id: "doorstep",
@@ -1440,8 +1476,7 @@
           priceLabel: "Distance-Based Package Options",
           who: "Working professionals and homemakers needing training right at their residential colony.",
           learn: "Colony lanes, daily commute routes, and local neighborhood traffic.",
-          schedule: "Morning & afternoon shifts at your location.",
-          video: ""
+          schedule: "Morning & afternoon shifts at your location."
         },
         {
           id: "rto",
@@ -1451,15 +1486,14 @@
           priceLabel: "Exam Track Assistance",
           who: "Candidates preparing for their permanent two-wheeler driving test.",
           learn: "Figure-8 navigation without foot-touches, sudden stop line control, document handling.",
-          schedule: "Track simulation classes.",
-          video: ""
+          schedule: "Track simulation classes."
         }
       ],
       learnerStories: [
         {
           name: "Sreya Mukherjee",
           course: "Basic Scooty (Non-Cyclist)",
-          review: "I was scared to even control the scooter's physical weight. Their paddle balance method made it feel natural.",
+          review: "I was scared to even control the scooter's physical weight. Their balance method made it feel natural.",
           beforeText: "Scared to touch the accelerator, feet constantly dragging.",
           afterText: "Riding solo to Salt Lake Sector V office with full confidence."
         },
@@ -1499,16 +1533,40 @@
         }
       ],
       faqs: [
-        { q: "Can I learn scooty without knowing cycling?", a: "Yes, absolutely. Scooty balance relies on physical vehicle weight distribution and steady throttle control, not cycling momentum. We teach non-cyclists every single day." },
-        { q: "How much does training cost?", a: "Packages start from ₹2,500. Contact us for current package options tailored to your assessment." },
-        { q: "Where is Zero Fear located?", a: "We operate exclusively in Tollygunge, Kolkata, right near Netaji Metro Station." },
-        { q: "Do you provide Doorstep Training?", a: "Yes, available within 10 KM of Netaji Metro Station, subject to trainer availability and location suitability." }
+        { 
+          q: "আমি সাইকেল চালাতে পারি না। স্কুটি বা বাইক শিখতে পারব?", 
+          a: "অবশ্যই। Zero Fear-এর অন্যতম গুরুত্বপূর্ণ training focus হলো complete beginners এবং suitable non-cyclists। একদম শুরু থেকে step-by-step training দেওয়া হয়। প্রথমে vehicle control, balance এবং basic handling শেখানো হয়, তারপর ধীরে ধীরে practical riding-এর দিকে এগোনো হয়। Bike training-এর ক্ষেত্রে learner suitability দেখে guidance দেওয়া হয়।" 
+        },
+        { 
+          q: "Can I learn to ride a scooter or bike if I don’t know how to ride a bicycle?", 
+          a: "Absolutely. Zero Fear provides structured, step-by-step training for complete beginners and suitable non-cyclists. Training starts from the learner’s current level and progresses through basic control, balance and practical riding skills." 
+        },
+        { 
+          q: "মহিলাদের জন্য কি নিরাপদ ও supportive training আছে?", 
+          a: "হ্যাঁ। Women learners-এর জন্য supportive এবং comfortable training environment রাখা হয়। One-to-one guidance এবং step-by-step training-এর মাধ্যমে learner-এর নিজের pace অনুযায়ী শেখানো হয়।" 
+        },
+        { 
+          q: "What is the course duration and class timing?", 
+          a: "Our Basic Course includes 15 sessions of approximately 30 minutes each. Training schedules are arranged according to available slots and the learner's schedule." 
+        },
+        { 
+          q: "Do you provide scooters and bikes for training?", 
+          a: "Yes. Training vehicles are available for the relevant training programmes. Learners may also be able to practise on their own scooter or bike where appropriate." 
+        },
+        { 
+          q: "Is real-road and traffic practice included?", 
+          a: "Yes. Learners first build basic control and confidence, then gradually progress to supervised real-road practice when ready." 
+        },
+        { 
+          q: "Do you provide RTO / driving licence preparation?", 
+          a: "Yes. Zero Fear provides practical guidance and preparation for learners who are preparing for the two-wheeler driving licence process." 
+        }
       ]
     };
 
     function getStoredCMS() {
       try {
-        const raw = localStorage.getItem("zerofear_master_cms_v7");
+        const raw = localStorage.getItem("zerofear_master_cms_v8");
         if (!raw) return DEFAULT_CMS;
         return JSON.parse(raw);
       } catch (e) {
@@ -1518,7 +1576,7 @@
 
     function saveStoredCMS(cms) {
       try {
-        localStorage.setItem("zerofear_master_cms_v7", JSON.stringify(cms));
+        localStorage.setItem("zerofear_master_cms_v8", JSON.stringify(cms));
         applyAllCMS();
         return true;
       } catch (err) {
@@ -1561,7 +1619,7 @@
     }
 
     // ===================================================
-    // HOMEPAGE SECTIONS RENDERER (FAIL-SAFE)
+    // HOMEPAGE SECTIONS RENDERER (18 STRUCTURED SECTIONS)
     // ===================================================
     function renderHomepageOverview(cms) {
       const container = document.getElementById('homepageDynamicSections');
@@ -1623,7 +1681,7 @@
           `);
         }
 
-        // 03 BENGALI CONNECTION
+        // 03 BENGALI CONNECTION SECTION
         else if (sec.id === "bengali") {
           const bn = cms.bengaliSection || DEFAULT_CMS.bengaliSection;
           container.insertAdjacentHTML('beforeend', `
@@ -1701,16 +1759,16 @@
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-why" class="zf-section-pad" style="${bgInline}">
               <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
-                <div class="sec-eyebrow">WHY CHOOSE ZERO FEAR?</div>
-                <h2 class="sec-h2">A PROVEN TWO-WHEELER TRAINING ACADEMY</h2>
+                <div class="sec-eyebrow">WHY CHOOSE ZERO FEAR</div>
+                <h2 class="sec-h2">Training Built Around Real Learners</h2>
               </div>
               <div class="grid-3">
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">NON-CYCLISTS CAN START</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Step-by-step balance coaching using feet-on-ground progression without cycling balance.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">PATIENT TRAINER GUIDANCE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Training progresses according to learner comfort, composure, and vehicle control.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">REAL ROAD PRACTICE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Transition safely from quiet Tollygunge lanes into practical Kolkata road conditions.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">SCOOTY + BIKE + EV</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Modern Ather/Ola electric scoots, petrol scooters, and geared motorcycles under one roof.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">DOORSTEP TRAINING</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Instructors come directly to your society within 10 KM of Netaji Metro Station.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">8+ YEARS & 5000+ LEARNERS</h3><p style="color: var(--text-muted); font-size: 0.92rem;">A new brand identity backed by almost 8 years of actual on-road training operations.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">BEGINNER-FRIENDLY TRAINING</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Start from your current skill level and progress step by step.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">NON-CYCLIST SUPPORT</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Structured training for suitable learners who have never ridden a bicycle.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">PERSONAL GUIDANCE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Patient trainer support and individual attention during training.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">REAL-ROAD PRACTICE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Gradual transition from basic control to supervised road practice.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">WOMEN-FRIENDLY TRAINING</h3><p style="color: var(--text-muted); font-size: 0.92rem;">A supportive environment designed to help women learners build practical riding confidence.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">SCOOTY + BIKE + EV</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Training options across different two-wheelers with professional guidance.</p></div>
               </div>
             </section>
           `);
@@ -1721,8 +1779,8 @@
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-who" class="zf-section-pad" style="${bgInline}">
               <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
-                <div class="sec-eyebrow green-type">WHO CAN START?</div>
-                <h2 class="sec-h2">PROGRAMS ENGINEERED FOR EVERY STARTING LEVEL</h2>
+                <div class="sec-eyebrow green-type">WHO CAN LEARN</div>
+                <h2 class="sec-h2">WHO CAN START WITH ZERO FEAR?</h2>
               </div>
               <div class="grid-4">
                 <div class="card-white"><h4>Complete Beginners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Never touched an accelerator or clutch.</p></div>
@@ -1788,7 +1846,7 @@
           `);
         }
 
-        // 11 REAL LEARner STORIES
+        // 11 REAL LEARNER STORIES
         else if (sec.id === "stories") {
           const storiesHtml = (cms.learnerStories || DEFAULT_CMS.learnerStories).map(st => `
             <div class="card-white">
@@ -1841,8 +1899,11 @@
               </div>
               <div class="grid-4">${gmbCards}</div>
               <div style="text-align: center; margin-top: 2.2rem; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://maps.google.com/?cid=${cms.gmb.cid || '7060569192068913354'}" target="_blank" class="btn-solid-blue">
-                  VIEW MORE ON GOOGLE →
+                <a href="${cms.gmb.reviewsUrl || 'https://search.google.com/local/reviews?placeid=ChIJKw-pMI1xAjoR2InlnVTKHeI'}" target="_blank" class="btn-solid-blue">
+                  READ GOOGLE REVIEWS →
+                </a>
+                <a href="${cms.gmb.writeReviewUrl || 'https://search.google.com/local/writereview?placeid=ChIJKw-pMI1xAjoR2InlnVTKHeI'}" target="_blank" class="btn-outline-blue">
+                  ✍️ WRITE A GOOGLE REVIEW
                 </a>
               </div>
             </section>
@@ -1926,7 +1987,7 @@
                     Zero Fear operates exclusively from one dedicated practice hub in Tollygunge with peaceful wide avenues for beginners.
                   </p>
                   <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                    <a href="${cms.config.map}" target="_blank" class="btn-solid-blue">Directions</a>
+                    <a href="${cms.gmb.directionsUrl || cms.config.map}" target="_blank" class="btn-solid-blue">Get Directions</a>
                     <a href="tel:${cms.config.phone}" class="btn-outline-blue">Call Centre</a>
                     <button onclick="openQuickLead()" class="btn-outline-blue">WhatsApp</button>
                   </div>
@@ -2127,7 +2188,7 @@
       const fullHours = document.getElementById('full_loc_hours');
       if (fullHours) fullHours.textContent = "Training Hours: " + cms.config.hours;
       const btnMap = document.getElementById('btn_full_map');
-      if (btnMap) btnMap.href = cms.config.map;
+      if (btnMap) btnMap.href = cms.gmb.directionsUrl || cms.config.map;
       const btnCall = document.getElementById('btn_full_call');
       if (btnCall) btnCall.href = `tel:${cms.config.phone}`;
 
@@ -2168,7 +2229,7 @@
     }
 
     // ===================================================
-    // ZERO FEAR AI ENGINE (ADVANCED FIRST IMPRESSION)
+    // ZERO FEAR AI ENGINE
     // ===================================================
     let aiCurrentLang = 'en';
 
@@ -2332,8 +2393,10 @@
       if (!cms.gmb) cms.gmb = DEFAULT_CMS.gmb;
       document.getElementById('gmb_enable').checked = cms.gmb.enabled;
       document.getElementById('gmb_place_id').value = cms.gmb.placeId || "ChIJKw-pMI1xAjoR2InlnVTKHeI";
-      document.getElementById('gmb_api_endpoint').value = cms.gmb.apiEndpoint || "";
-      document.getElementById('gmb_limit').value = cms.gmb.limit || 4;
+      document.getElementById('gmb_place_url').value = cms.gmb.placeUrl || "";
+      document.getElementById('gmb_reviews_url').value = cms.gmb.reviewsUrl || "";
+      document.getElementById('gmb_write_url').value = cms.gmb.writeReviewUrl || "";
+      document.getElementById('gmb_dir_url').value = cms.gmb.directionsUrl || "";
 
       // Bengali
       document.getElementById('bn_sec_eyebrow').value = cms.bengaliSection.eyebrow;
@@ -2390,18 +2453,24 @@
 
       const enableInput = document.getElementById('gmb_enable');
       const placeIdInput = document.getElementById('gmb_place_id');
-      const apiEndpointInput = document.getElementById('gmb_api_endpoint');
-      const limitInput = document.getElementById('gmb_limit');
+      const placeUrlInput = document.getElementById('gmb_place_url');
+      const reviewsUrlInput = document.getElementById('gmb_reviews_url');
+      const writeUrlInput = document.getElementById('gmb_write_url');
+      const dirUrlInput = document.getElementById('gmb_dir_url');
 
       cms.gmb.enabled = enableInput ? enableInput.checked : true;
       cms.gmb.placeId = placeIdInput ? placeIdInput.value.trim() : "ChIJKw-pMI1xAjoR2InlnVTKHeI";
-      cms.gmb.apiEndpoint = apiEndpointInput ? apiEndpointInput.value.trim() : "";
-      cms.gmb.limit = limitInput ? (parseInt(limitInput.value, 10) || 4) : 4;
-      cms.gmb.cid = "7060569192068913354";
-      cms.config.map = "https://maps.google.com/?cid=7060569192068913354";
+      
+      const pid = cms.gmb.placeId;
+      cms.gmb.placeUrl = placeUrlInput && placeUrlInput.value.trim() ? placeUrlInput.value.trim() : `https://maps.google.com/?q=Netaji+Metro+Station+Tollygunge&ftid=${pid}`;
+      cms.gmb.reviewsUrl = reviewsUrlInput && reviewsUrlInput.value.trim() ? reviewsUrlInput.value.trim() : `https://search.google.com/local/reviews?placeid=${pid}`;
+      cms.gmb.writeReviewUrl = writeUrlInput && writeUrlInput.value.trim() ? writeUrlInput.value.trim() : `https://search.google.com/local/writereview?placeid=${pid}`;
+      cms.gmb.directionsUrl = dirUrlInput && dirUrlInput.value.trim() ? dirUrlInput.value.trim() : `https://www.google.com/maps/dir/?api=1&destination=Tollygunge+Kolkata&destination_place_id=${pid}`;
+
+      cms.config.map = cms.gmb.directionsUrl;
 
       if (saveStoredCMS(cms)) {
-        alert("✅ Google Business Profile Settings সফলভাবে সেভ হয়েছে!");
+        alert("✅ Google Business Profile URLs & Settings সফলভাবে সেভ হয়েছে!");
       }
     }
 
@@ -2421,12 +2490,6 @@
       cms.sectionsOrder[idx].visible = !cms.sectionsOrder[idx].visible;
       saveStoredCMS(cms);
       renderAdminDashboard();
-    }
-
-    function updateSecBg(idx, val) {
-      const cms = getStoredCMS();
-      cms.sectionsOrder[idx].bgStyle = val;
-      saveStoredCMS(cms);
     }
 
     function saveAboutCMS(e) {
@@ -2449,7 +2512,7 @@
       const str = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(getStoredCMS(), null, 2));
       const a = document.createElement('a');
       a.setAttribute("href", str);
-      a.setAttribute("download", "zerofear_v6_backup_" + new Date().toISOString().slice(0,10) + ".json");
+      a.setAttribute("download", "zerofear_v9_backup_" + new Date().toISOString().slice(0,10) + ".json");
       a.click();
     }
 
@@ -2474,7 +2537,7 @@
 
     function resetDefaultData() {
       if (confirm("Reset all website content back to factory default?")) {
-        localStorage.removeItem("zerofear_master_cms_v6");
+        localStorage.removeItem("zerofear_master_cms_v9");
         applyAllCMS();
         alert("Reset complete.");
       }
@@ -2488,21 +2551,14 @@
     function applyAllCMS() {
       const cms = getStoredCMS();
 
-      const floatCall = document.getElementById('floatCallAction');
-      if (floatCall) floatCall.href = `tel:${cms.config.phone}`;
-      const floatWa = document.getElementById('floatWaAction');
-      if (floatWa) floatWa.href = `https://wa.me/${cms.config.wa}`;
-      const mCall = document.getElementById('mStickyCall');
-      if (mCall) mCall.href = `tel:${cms.config.phone}`;
-      const mWa = document.getElementById('mStickyWa');
-      if (mWa) mWa.href = `https://wa.me/${cms.config.wa}`;
+      document.getElementById('floatCallAction').href = `tel:${cms.config.phone}`;
+      document.getElementById('floatWaAction').href = `https://wa.me/${cms.config.wa}`;
+      document.getElementById('mStickyCall').href = `tel:${cms.config.phone}`;
+      document.getElementById('mStickyWa').href = `https://wa.me/${cms.config.wa}`;
 
-      const ftPhone = document.getElementById('ft_phone_txt');
-      if (ftPhone) ftPhone.textContent = "Phone: " + cms.config.phone;
-      const ftAddr = document.getElementById('ft_address_txt');
-      if (ftAddr) ftAddr.textContent = cms.config.address;
-      const topAddr = document.getElementById('topAddressSync');
-      if (topAddr) topAddr.textContent = `${cms.config.address.split(',')[0]} • 10 KM Doorstep Training Available`;
+      document.getElementById('ft_phone_txt').textContent = "Phone: " + cms.config.phone;
+      document.getElementById('ft_address_txt').textContent = cms.config.address;
+      document.getElementById('topAddressSync').textContent = `${cms.config.address.split(',')[0]} • 10 KM Doorstep Training Available`;
 
       renderHomepageOverview(cms);
       populateSecondaryViews(cms);
