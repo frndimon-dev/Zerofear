@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="meta_page_title">ZERO FEAR — Two-Wheeler Riding School Kolkata | Fear Out. Freedom In.</title>
-  <meta name="description" id="meta_page_desc" content="Kolkata's specialized scooty, bike, and electric scooter training school. Beginner-focused, non-cyclist friendly, women-first riding lessons in Tollygunge & Doorstep.">
+  <meta name="description" id="meta_page_desc" content="Kolkata's specialized scooty, bike, and electric scooter training school. Beginner-focused, non-cyclist friendly, women-first riding lessons in Tollygunge & Doorstep. Built on 8 years of proven training experience.">
   <link rel="canonical" href="https://zerofear.vercel.app/">
 
   <!-- Open Graph -->
@@ -53,7 +53,7 @@
     a { text-decoration: none; color: inherit; }
     button { cursor: pointer; font-family: inherit; }
 
-    /* Top Utility Ribbon */
+    /* Top Ribbon */
     .utility-ribbon {
       background: var(--zf-blue-dark);
       color: #cbd5e1;
@@ -141,18 +141,6 @@
     .btn-nav-cta:hover { background: #fbbf24; }
     .menu-toggle-btn { display: none; background: none; border: none; font-size: 1.6rem; color: var(--zf-blue); }
 
-    /* Language Switcher Button in Header */
-    .lang-toggle-btn {
-      background: #f1f5f9;
-      border: 1px solid var(--border-subtle);
-      border-radius: 4px;
-      padding: 4px 10px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--zf-blue-dark);
-      cursor: pointer;
-    }
-
     /* Views Layout */
     .view-container { display: none; }
     .view-container.active { display: block; }
@@ -221,17 +209,6 @@
       font-weight: 500;
       text-shadow: 0 2px 6px rgba(0,0,0,0.6);
     }
-    .slide-bn-callout {
-      font-family: var(--font-bn);
-      background: rgba(255, 255, 255, 0.2);
-      border-left: 4px solid var(--zf-yellow);
-      color: #ffffff;
-      padding: 10px 16px;
-      border-radius: 0 6px 6px 0;
-      font-size: 1.05rem;
-      margin-bottom: 1.5rem;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-    }
     .hero-dots-tray {
       position: absolute;
       bottom: 25px;
@@ -250,7 +227,7 @@
     }
     .h-dot.active { background: var(--zf-yellow); width: 30px; border-radius: 6px; }
 
-    /* SECTION LABELS & VISUAL SEPARATION RHYTHM */
+    /* SECTION LABELS */
     .sec-eyebrow {
       display: inline-block;
       font-size: 0.8rem;
@@ -314,6 +291,33 @@
       line-height: 1.8;
     }
 
+    /* Buttons */
+    .btn-solid-blue {
+      background: var(--zf-blue);
+      color: #ffffff;
+      border: none;
+      padding: 10px 22px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border-radius: 5px;
+      display: inline-block;
+      transition: 0.2s;
+    }
+    .btn-solid-blue:hover { background: var(--zf-blue-dark); }
+
+    .btn-outline-blue {
+      background: transparent;
+      color: var(--zf-blue);
+      border: 2px solid var(--zf-blue);
+      padding: 8px 18px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      border-radius: 5px;
+      display: inline-block;
+      transition: 0.2s;
+    }
+    .btn-outline-blue:hover { background: var(--zf-blue); color: #fff; }
+
     /* Timeline Row */
     .timeline-strip {
       display: grid;
@@ -335,21 +339,6 @@
       color: var(--zf-blue);
       margin-bottom: 0.3rem;
     }
-
-    /* Transformations Comparative Card */
-    .dual-transform-box {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      background: #ffffff;
-      border: 1px solid var(--border-subtle);
-      border-radius: 8px;
-      padding: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-    .trans-side-box { padding: 1.2rem; border-radius: 6px; }
-    .trans-side-box.before { background: #fff5f5; border-left: 4px solid #ef4444; }
-    .trans-side-box.after { background: #f0fdf4; border-left: 4px solid #10b981; }
 
     /* Gallery Grid */
     .gallery-masonry-view {
@@ -399,7 +388,7 @@
       border: 0;
     }
 
-    /* FAQ Accordion */
+    /* FAQ */
     .faq-tray-box { max-width: 840px; margin: 0 auto; }
     .faq-row { border-bottom: 1px solid var(--border-subtle); padding: 1.3rem 0; }
     .faq-q-bar {
@@ -434,124 +423,78 @@
       margin-bottom: 1rem;
     }
 
-    /* Action Buttons */
-    .btn-solid-blue {
-      background: var(--zf-blue);
-      color: #ffffff;
-      border: none;
-      padding: 10px 22px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      border-radius: 5px;
-      display: inline-block;
-      transition: 0.2s;
-    }
-    .btn-solid-blue:hover { background: var(--zf-blue-dark); }
-
-    .btn-outline-blue {
-      background: transparent;
-      color: var(--zf-blue);
-      border: 2px solid var(--zf-blue);
+    /* Google Reviews Section Styling */
+    .gmb-badge-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
       padding: 8px 18px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      border-radius: 5px;
-      display: inline-block;
-      transition: 0.2s;
-    }
-    .btn-outline-blue:hover { background: var(--zf-blue); color: #fff; }
-
-    /* ================================================= */
-    /* INTERACTIVE EXPERIENCES: CHALLENGE, STOPPING, FINDER */
-    /* ================================================= */
-    .quiz-scenario-box {
-      background: #ffffff;
-      border: 2px solid var(--zf-blue-soft);
-      border-radius: 12px;
-      padding: 2.5rem;
-      max-width: 780px;
-      margin: 2rem auto 0;
-      box-shadow: 0 10px 30px rgba(11, 78, 162, 0.06);
-    }
-    .quiz-progress-bar {
-      height: 8px;
-      background: #e2e8f0;
-      border-radius: 4px;
-      overflow: hidden;
+      border-radius: 30px;
       margin-bottom: 1.5rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
     }
-    .quiz-progress-fill {
-      height: 100%;
-      background: var(--zf-blue);
-      width: 0%;
-      transition: width 0.3s;
-    }
-    .quiz-option-btn {
-      display: block;
-      width: 100%;
-      text-align: left;
-      padding: 14px 18px;
-      margin-bottom: 10px;
-      border: 1px solid var(--border-subtle);
-      border-radius: 8px;
-      background: #f8fafc;
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text-main);
-      transition: all 0.2s;
-    }
-    .quiz-option-btn:hover {
-      background: var(--zf-blue-light);
-      border-color: var(--zf-blue);
-      color: var(--zf-blue-dark);
-    }
+    .gmb-stars { color: #f59e0b; letter-spacing: 2px; }
 
-    .stopping-choice-card {
-      background: #ffffff;
-      border: 1px solid var(--border-subtle);
-      padding: 1.4rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.2s;
-      font-weight: 600;
-    }
-    .stopping-choice-card:hover, .stopping-choice-card.active {
-      border-color: var(--zf-blue);
-      background: var(--zf-blue-light);
-      color: var(--zf-blue-dark);
-      transform: translateY(-2px);
-    }
-
-    /* ================================================= */
-    /* CONVERSATIONAL AI FLOATING WIDGET & PANEL         */
-    /* ================================================= */
-    .floating-ai-launcher {
+    /* Floating CTAs */
+    .quick-floating-tray {
       position: fixed;
       bottom: 25px;
       right: 25px;
-      z-index: 1200;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
+    }
+    .btn-quick-float {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+    }
+    .btn-quick-float:hover { transform: scale(1.1); }
+    .float-wa { background: var(--zf-whatsapp); }
+    .float-call { background: var(--zf-blue); }
+
+    /* AI Launcher Button */
+    .floating-ai-launcher {
+      position: fixed;
+      bottom: 95px;
+      right: 25px;
+      z-index: 999;
       background: linear-gradient(135deg, #0b4ea2 0%, #20a36a 100%);
       color: #ffffff;
       border: none;
       padding: 12px 20px;
       border-radius: 30px;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 800;
       display: flex;
       align-items: center;
       gap: 8px;
       box-shadow: 0 8px 25px rgba(11, 78, 162, 0.3);
+      cursor: pointer;
       transition: transform 0.2s;
     }
     .floating-ai-launcher:hover { transform: scale(1.05); }
 
+    /* AI Chat Window */
     .ai-chat-window {
       display: none;
       position: fixed;
-      bottom: 90px;
+      bottom: 160px;
       right: 25px;
-      width: min(420px, calc(100vw - 30px));
-      height: 580px;
+      width: min(430px, calc(100vw - 30px));
+      height: 600px;
       background: #ffffff;
       border-radius: 12px;
       border: 1px solid var(--border-subtle);
@@ -564,7 +507,7 @@
     .ai-chat-header {
       background: var(--zf-blue-dark);
       color: #ffffff;
-      padding: 12px 16px;
+      padding: 14px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -619,17 +562,19 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      padding: 8px 14px;
+      padding: 10px 14px;
       background: #ffffff;
       border-top: 1px solid var(--border-subtle);
+      max-height: 140px;
+      overflow-y: auto;
     }
     .ai-tag {
       background: var(--zf-blue-light);
       border: 1px solid var(--zf-blue-soft);
       color: var(--zf-blue);
-      font-size: 0.74rem;
+      font-size: 0.76rem;
       font-weight: 700;
-      padding: 4px 8px;
+      padding: 5px 10px;
       border-radius: 12px;
       cursor: pointer;
     }
@@ -656,7 +601,31 @@
       font-weight: 700;
     }
 
-    /* Admin Styling */
+    /* Footer */
+    footer {
+      background: var(--zf-blue-dark);
+      color: #cbd5e1;
+      padding: 4.5rem 5% 2rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.88rem;
+    }
+    .footer-3-col {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand-title {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 0.6rem;
+    }
+    .footer-brand-title span { color: var(--zf-yellow); }
+
+    /* Admin Panel */
     #view-admin { background: #f1f5f9; min-height: 100vh; padding: 2.5rem 5%; }
     .admin-bar-head {
       display: flex;
@@ -685,9 +654,46 @@
       padding: 2.5rem;
       margin-bottom: 2rem;
     }
+    .ctrl-row-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+      padding: 12px 18px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .adm-btn-tiny {
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 4px;
+      border: 1px solid var(--border-subtle);
+      background: #ffffff;
+      margin-left: 4px;
+    }
+    .form-row { margin-bottom: 1.2rem; }
+    .form-row label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-main);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .form-row input, .form-row select, .form-row textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      background: #f8fafc;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
 
     @media(max-width: 900px) {
-      .grid-2, .dual-transform-box { grid-template-columns: 1fr; }
+      .grid-2, .footer-3-col { grid-template-columns: 1fr; }
       nav { display: none; }
       .menu-toggle-btn { display: block; }
     }
@@ -695,7 +701,7 @@
 </head>
 <body>
 
-  <!-- Top Utility Ribbon -->
+  <!-- Top Ribbon -->
   <div class="utility-ribbon">
     <div><strong>ZERO FEAR</strong> — Kolkata's 1st Non-Cyclist & Beginner Friendly Riding School</div>
     <div id="topAddressSync">Tollygunge Hub (Near Netaji Metro) • Doorstep Facility Available</div>
@@ -721,10 +727,6 @@
         <a class="nav-link" onclick="openPage('location')">Location</a>
         <a class="nav-link" onclick="openPage('blog')">Rider's Guide</a>
         <a class="nav-link" onclick="openPage('faq')">FAQ</a>
-
-        <!-- Global Language Switcher -->
-        <button class="lang-toggle-btn" onclick="toggleGlobalLang()" id="globalLangBtn">বাংলা | EN</button>
-
         <a class="nav-link btn-nav-cta" onclick="openQuickLead()">Book Admission</a>
       </nav>
 
@@ -733,7 +735,7 @@
   </header>
 
   <!-- ================================================= -->
-  <!-- VIEW 1: HOMEPAGE (OVERVIEW ONLY)                  -->
+  <!-- VIEW 1: HOMEPAGE (18 STRUCTURED SECTIONS OVERVIEW)-->
   <!-- ================================================= -->
   <div id="view-home" class="view-container active">
     <main id="homepageDynamicSections"></main>
@@ -755,7 +757,7 @@
             Zero Fear is built around a simple idea: learning to ride should begin with understanding, not pressure.
           </p>
           <p style="color: var(--text-body); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.2rem;">
-            For almost 8 years, our training experience in Kolkata has been built around helping beginners understand their vehicle, build control and gradually become more confident on the road. Zero Fear is a new identity. The experience behind the training has been built over years of working directly with learners at every stage of confidence.
+            For almost 8 years, our practical training experience in Kolkata has been built around helping beginners understand their vehicle, build control and gradually become more confident on the road. Zero Fear is a new identity. The experience behind the training has been built over years of working directly with learners at every stage of confidence.
           </p>
           <p style="color: var(--text-body); font-size: 1.05rem; line-height: 1.8;">
             We start where the learner is—whether they cannot balance, have never cycled, or fear oncoming traffic. Our step-by-step methodologies transform hesitation into lasting independence.
@@ -880,7 +882,38 @@
   </div>
 
   <!-- ================================================= -->
-  <!-- VIEW 6: FULL DOORSTEP TRAINING DETAILS            -->
+  <!-- VIEW 6: FULL TRAINING JOURNEY PAGE                -->
+  <!-- ================================================= -->
+  <div id="view-journey" class="view-container">
+    <section class="zf-section-pad" style="background-color: var(--zf-blue-light);">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <button onclick="switchView('home')" class="btn-outline-blue" style="margin-bottom: 1.5rem;">← Back to Home</button>
+        <div class="sec-eyebrow green-type">STEP-BY-STEP PROGRESSION</div>
+        <h1 class="sec-h2">COMPLETE TRAINING JOURNEY</h1>
+
+        <div class="card-white" style="margin: 2rem 0;">
+          <h3 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">From Complete Beginner to Independent Rider</h3>
+          <p style="color: var(--text-body); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.2rem;">
+            Learning does not happen through hurried practice. Our method ensures each skill is grounded in muscle memory before taking the next step:
+          </p>
+          <ul style="padding-left: 20px; line-height: 1.9; color: var(--text-body);">
+            <li><strong>01 Get Comfortable:</strong> Center of gravity, vehicle weight feel, balance points, and switch layout.</li>
+            <li><strong>02 Basic Control:</strong> Gentle linear throttle rotation, smooth stop posture, and dual hand-braking touch.</li>
+            <li><strong>03 Balance & Turning:</strong> Slalom turning arcs, U-turns, and Figure-8 control with feet firmly on footboard.</li>
+            <li><strong>04 Braking & Control:</strong> Emergency halt response, slope stops, and slow-speed crawl in traffic queues.</li>
+            <li><strong>05 Road Awareness:</strong> Mirror reading, blind-spot awareness, and safe overtaking margin judgment.</li>
+            <li><strong>06 Real Road Practice:</strong> Trainer-escorted progression on busy South Kolkata routes.</li>
+            <li><strong>07 Independence:</strong> Solo driving confidence across any traffic condition.</li>
+          </ul>
+        </div>
+
+        <button onclick="openQuickLead()" class="btn-solid-blue" style="width: 100%; padding: 14px;">Begin Step 01 With Us</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================= -->
+  <!-- VIEW 7: FULL DOORSTEP TRAINING DETAILS            -->
   <!-- ================================================= -->
   <div id="view-doorstep" class="view-container">
     <section class="zf-section-pad" style="background-color: var(--zf-blue-light);">
@@ -908,7 +941,7 @@
   </div>
 
   <!-- ================================================= -->
-  <!-- VIEW 7: FULL LOCATION & DIRECTIONS                -->
+  <!-- VIEW 8: FULL LOCATION & DIRECTIONS                -->
   <!-- ================================================= -->
   <div id="view-location" class="view-container">
     <section class="zf-section-pad" style="background-color: var(--zf-blue-light);">
@@ -926,7 +959,7 @@
             Training Hours: 7:00 AM – 11:30 AM & 3:30 PM – 6:30 PM (All 7 Days).
           </p>
           <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <a id="btn_full_map" href="https://maps.google.com/?q=Netaji+Metro+Station+Kolkata" target="_blank" class="btn-solid-blue">Open in Google Maps</a>
+            <a id="btn_full_map" href="https://maps.google.com/?cid=7060569192068913354" target="_blank" class="btn-solid-blue">Open in Google Maps</a>
             <a id="btn_full_call" href="tel:+919876543210" class="btn-outline-blue">Call Instructor</a>
           </div>
         </div>
@@ -935,7 +968,7 @@
   </div>
 
   <!-- ================================================= -->
-  <!-- VIEW 8: FULL RIDER'S GUIDE (BLOG)                 -->
+  <!-- VIEW 9: FULL RIDER'S GUIDE (BLOG)                 -->
   <!-- ================================================= -->
   <div id="view-blog" class="view-container">
     <section class="zf-section-pad" style="background-color: var(--zf-blue-light);">
@@ -950,7 +983,7 @@
   </div>
 
   <!-- ================================================= -->
-  <!-- VIEW 9: FULL FAQ PAGE                             -->
+  <!-- VIEW 10: FULL FAQ PAGE                            -->
   <!-- ================================================= -->
   <div id="view-faq" class="view-container">
     <section class="zf-section-pad" style="background-color: var(--zf-blue-light);">
@@ -966,7 +999,7 @@
   </div>
 
   <!-- ================================================= -->
-  <!-- VIEW 10: FULL GALLERY VIEW                        -->
+  <!-- VIEW 11: FULL GALLERY VIEW                        -->
   <!-- ================================================= -->
   <div id="view-gallery" class="view-container">
     <section class="zf-section-pad" style="background-color: var(--zf-blue-light);">
@@ -980,27 +1013,13 @@
   </div>
 
   <!-- ================================================= -->
-  <!-- VIEW 11: FULL VIDEO VIEW                          -->
-  <!-- ================================================= -->
-  <div id="view-videos" class="view-container">
-    <section class="zf-section-pad" style="background-color: var(--zf-blue-light);">
-      <div style="max-width: 1000px; margin: 0 auto;">
-        <button onclick="switchView('home')" class="btn-outline-blue" style="margin-bottom: 1.5rem;">← Back to Home</button>
-        <div class="sec-eyebrow">WATCH THE TRAINING</div>
-        <h1 class="sec-h2">ALL TRAINING VIDEO SESSIONS</h1>
-        <div id="fullVideosGrid" class="grid-2" style="margin-top: 2.5rem;"></div>
-      </div>
-    </section>
-  </div>
-
-  <!-- ================================================= -->
   <!-- VIEW 12: BUILT-IN CMS / ADMIN PANEL               -->
   <!-- ================================================= -->
   <div id="view-admin" class="view-container">
     <div class="admin-bar-head">
       <div>
         <h2 style="font-family: var(--font-heading); letter-spacing: 1px;">ZERO FEAR BUILT-IN CMS</h2>
-        <p style="font-size: 0.85rem; color: #cbd5e1;">Control content, appearance, backgrounds, AI settings & knowledge.</p>
+        <p style="font-size: 0.85rem; color: #cbd5e1;">Control content, appearance, backgrounds, slider speeds, and GMB settings.</p>
       </div>
       <div>
         <button onclick="exportData()" class="adm-btn-tiny" style="background: #10b981; color: #fff; padding: 8px 14px;">💾 Export JSON</button>
@@ -1014,9 +1033,9 @@
     <!-- Admin Sub Tabs -->
     <div class="admin-tab-nav">
       <button class="btn-adm-nav active" onclick="switchAdminTab('reorder')">☰ Section Manager</button>
-      <button class="btn-adm-nav" onclick="switchAdminTab('hero')">Hero Slides</button>
-      <button class="btn-adm-nav" onclick="switchAdminTab('ai_settings')">🤖 AI Experience & Quiz</button>
-      <button class="btn-adm-nav" onclick="switchAdminTab('ai_kb')">🧠 AI Knowledge Base</button>
+      <button class="btn-adm-nav" onclick="switchAdminTab('hero')">Hero Slider & Speed</button>
+      <button class="btn-adm-nav" onclick="switchAdminTab('bengali')">Bengali Connection</button>
+      <button class="btn-adm-nav" onclick="switchAdminTab('gmb')">Google Reviews (GMB)</button>
       <button class="btn-adm-nav" onclick="switchAdminTab('about')">About Us</button>
       <button class="btn-adm-nav" onclick="switchAdminTab('courses')">Courses</button>
       <button class="btn-adm-nav" onclick="switchAdminTab('contact')">Business Info</button>
@@ -1024,39 +1043,59 @@
 
     <!-- Section Manager Tab -->
     <div id="admin-tab-reorder" class="admin-surface">
-      <h3 style="color: var(--zf-blue-dark); margin-bottom: 0.5rem;">Section Reordering & Visual Background Rhythm</h3>
+      <h3 style="color: var(--zf-blue-dark); margin-bottom: 0.5rem;">Section Reordering & Visual Rhythm</h3>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Move sections up/down, toggle visibility, and adjust background styles.</p>
       <div id="sectionReorderList"></div>
     </div>
 
-    <!-- AI Settings Tab -->
-    <div id="admin-tab-ai_settings" class="admin-surface" style="display: none;">
-      <h3 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">ZERO FEAR AI Assistant Settings</h3>
-      <form onsubmit="saveAiSettings(event)">
-        <div style="margin-bottom: 1rem;">
-          <label><input type="checkbox" id="ai_cfg_enabled"> Enable Floating AI Widget on Website</label>
-        </div>
-        <div class="form-row"><label>AI Welcome Message (English)</label><textarea id="ai_cfg_welcome_en" rows="3"></textarea></div>
-        <div class="form-row"><label>AI Welcome Message (বাংলা)</label><textarea id="ai_cfg_welcome_bn" rows="3"></textarea></div>
-        <div class="form-row"><label>AI Fallback Message</label><textarea id="ai_cfg_fallback" rows="2"></textarea></div>
-        <button type="submit" class="btn-solid-blue">Save AI Settings</button>
+    <!-- Hero & Speed Tab -->
+    <div id="admin-tab-hero" class="admin-surface" style="display: none;">
+      <h3 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">Hero Slider Configuration & Speed</h3>
+      <div class="form-row" style="background: #f8fafc; padding: 1.2rem; border-radius: 6px; margin-bottom: 1.5rem;">
+        <label>Slide Duration Speed</label>
+        <select id="hero_speed_select" onchange="updateHeroSpeed(this.value)">
+          <option value="1000">1 Second (Fast)</option>
+          <option value="2000">2 Seconds</option>
+          <option value="3000">3 Seconds</option>
+          <option value="4000">4 Seconds</option>
+          <option value="5000" selected>5 Seconds (Default)</option>
+          <option value="6000">6 Seconds</option>
+          <option value="7000">7 Seconds</option>
+          <option value="8000">8 Seconds</option>
+          <option value="10000">10 Seconds</option>
+          <option value="manual">Manual (No Auto-slide)</option>
+        </select>
+      </div>
+      <div id="adminHeroSlidesList"></div>
+    </div>
+
+    <!-- Bengali Section Tab -->
+    <div id="admin-tab-bengali" class="admin-surface" style="display: none;">
+      <h3 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">Bengali Connection Section (Early on Homepage)</h3>
+      <form onsubmit="saveBengaliCMS(event)">
+        <div class="form-row"><label>Section Eyebrow</label><input type="text" id="bn_sec_eyebrow"></div>
+        <div class="form-row"><label>Main Headline</label><input type="text" id="bn_sec_heading"></div>
+        <div class="form-row"><label>Emotional Lead Paragraph</label><textarea id="bn_sec_text" rows="4"></textarea></div>
+        <div class="form-row"><label>CTA Button Text</label><input type="text" id="bn_sec_cta"></div>
+        <button type="submit" class="btn-solid-blue">Save Bengali Section</button>
       </form>
     </div>
 
-    <!-- AI Knowledge Base Tab -->
-    <div id="admin-tab-ai_kb" class="admin-surface" style="display: none;">
-      <h3 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">AI Grounded Knowledge Base</h3>
-      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">The AI assistant will strictly answer only from these verified facts.</p>
-      <form onsubmit="addKbItem(event)" style="background: #f8fafc; padding: 1.5rem; border-radius: 6px; margin-bottom: 2rem;">
-        <h4>Add Verified Fact</h4>
-        <div class="form-row"><label>Question / Trigger Keyphrase</label><input type="text" id="kb_q" required placeholder="e.g. Can I learn scooty without cycling?"></div>
-        <div class="form-row"><label>Official Verified Answer (English / বাংলা)</label><textarea id="kb_a" rows="3" required></textarea></div>
-        <button type="submit" class="btn-solid-blue">Add to Knowledge Base</button>
+    <!-- GMB Tab -->
+    <div id="admin-tab-gmb" class="admin-surface" style="display: none;">
+      <h3 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">Google Business Profile (GMB) Integration</h3>
+      <form onsubmit="saveGmbSettings(event)">
+        <div style="margin-bottom: 1rem;">
+          <label><input type="checkbox" id="gmb_enable"> Enable Google Reviews Section on Homepage</label>
+        </div>
+        <div class="form-row"><label>Google Place ID</label><input type="text" id="gmb_place_id" placeholder="e.g. ChIJ..."></div>
+        <div class="form-row"><label>Reviews API Endpoint / Proxy URL (Optional)</label><input type="text" id="gmb_api_endpoint" placeholder="e.g. /api/reviews"></div>
+        <div class="form-row"><label>Review Display Limit</label><input type="number" id="gmb_limit" value="4"></div>
+        <button type="submit" class="btn-solid-blue">Save GMB Settings</button>
       </form>
-      <div id="adminKbList"></div>
     </div>
 
     <!-- Other Admin Tabs -->
-    <div id="admin-tab-hero" class="admin-surface" style="display: none;"><div id="adminHeroSlidesList"></div></div>
     <div id="admin-tab-about" class="admin-surface" style="display: none;">
       <form onsubmit="saveAboutCMS(event)">
         <div class="form-row"><label>Headline</label><input type="text" id="ab_headline"></div>
@@ -1077,16 +1116,22 @@
   </div>
 
   <!-- ================================================= -->
-  <!-- FLOATING CONVERSATIONAL AI WIDGET                 -->
+  <!-- FLOATING ACTION BUTTONS                           -->
   <!-- ================================================= -->
-  <button class="floating-ai-launcher" id="aiLauncherBtn" onclick="toggleAiChat()">
-    <span>🤖</span> <span id="aiLauncherText">ASK ZERO FEAR</span>
+  <div class="quick-floating-tray">
+    <a id="floatCallAction" href="tel:+919876543210" class="btn-quick-float float-call" title="Call Us Directly">📞</a>
+    <a id="floatWaAction" href="https://wa.me/919876543210" target="_blank" class="btn-quick-float float-wa" title="WhatsApp Chat">💬</a>
+  </div>
+
+  <button class="floating-ai-launcher" onclick="toggleAiChat()">
+    <span>🤖</span> <span>ASK ZERO FEAR</span>
   </button>
 
+  <!-- AI Chat Window -->
   <div class="ai-chat-window" id="aiChatWindow">
     <div class="ai-chat-header">
       <div style="display: flex; align-items: center; gap: 8px;">
-        <span style="font-size: 1.2rem;">🤖</span>
+        <span>🤖</span>
         <strong>ZERO FEAR AI</strong>
       </div>
       <div class="ai-lang-bar">
@@ -1096,14 +1141,10 @@
         <button onclick="toggleAiChat()" style="background: none; border: none; color: #fff; margin-left: 6px; cursor: pointer;">✕</button>
       </div>
     </div>
-    <div class="ai-chat-body" id="aiChatBody">
-      <!-- Chat Messages injected dynamically -->
-    </div>
-    <div class="ai-quick-tags" id="aiQuickTags">
-      <!-- Quick Chips -->
-    </div>
+    <div class="ai-chat-body" id="aiChatBody"></div>
+    <div class="ai-quick-tags" id="aiQuickTags"></div>
     <form class="ai-input-strip" onsubmit="handleAiUserSubmit(event)">
-      <input type="text" id="aiUserInput" placeholder="Type your question..." autocomplete="off">
+      <input type="text" id="aiUserInput" placeholder="Type a question..." autocomplete="off">
       <button type="submit">Ask</button>
     </form>
   </div>
@@ -1115,7 +1156,7 @@
         <div class="footer-brand-title">ZERO<span>FEAR</span></div>
         <p style="color: #cbd5e1; margin-bottom: 0.8rem;"><strong>FEAR OUT. FREEDOM IN.</strong></p>
         <p style="color: #94a3b8; font-size: 0.85rem;">
-          Specialized two-wheeler training school in Kolkata. Helping beginners, non-cyclists, and women gain riding independence on scooty and bike.
+          Specialized two-wheeler training school in Kolkata. A new brand identity built upon almost 8 years of established on-road training experience.
         </p>
       </div>
 
@@ -1142,162 +1183,87 @@
   </footer>
 
   <!-- ================================================= -->
-  <!-- JAVASCRIPT LOGIC & CMS ENGINE                     -->
+  <!-- JAVASCRIPT LOGIC & ENGINE                         -->
   <!-- ================================================= -->
   <script>
     const DEFAULT_CMS = {
-      globalLang: 'en',
-      aiConfig: {
-        enabled: true,
-        welcome_en: "Hi! 👋 I'm Zero Fear AI.\n\nNot sure which training is right for you? Not sure whether you can learn without knowing cycling? Ask me anything.",
-        welcome_bn: "হাই! 👋 আমি Zero Fear AI।\n\nকোন Training আপনার জন্য ঠিক হবে বুঝতে পারছেন না? সাইকেল না জানলে স্কুটি শিখতে পারবেন কিনা ভাবছেন? আমাকে জিজ্ঞেস করুন।",
-        fallback_en: "I want to make sure I give you accurate details. Please contact the Zero Fear training team directly via WhatsApp or Call.",
-        fallback_bn: "ভুল information দিতে চাই না। Zero Fear team-এর সঙ্গে সরাসরি কথা বলুন বা WhatsApp করুন।"
-      },
+      heroSpeed: 5000,
       config: {
         phone: "+919876543210",
         wa: "919876543210",
         address: "Near Netaji Metro Station, Tollygunge, Kolkata - 700040",
         hours: "7:00 AM – 11:30 AM & 3:30 PM – 6:30 PM (All 7 Days)",
-        map: "https://maps.google.com/?q=Netaji+Metro+Station+Kolkata"
+        map: "https://maps.google.com/?cid=7060569192068913354"
       },
-      knowledgeBase: [
-        { q: "cycling non-cyclist", a: "Yes, you can learn scooty without knowing cycling! Scooty balancing is governed by throttle propulsion and vehicle weight management, not pedal counter-steering." },
-        { q: "সাইকেল না জানলে", a: "হ্যাঁ, আপনি সাইকেল না জানলেও স্কুটি শিখতে পারবেন। স্কুটির ব্যালেন্স পেডালিংয়ের ওপর নয়, থ্রটল কন্ট্রোল ও বডি ব্যালেন্সের ওপর নির্ভর করে।" },
-        { q: "pricing cost fees", a: "Packages start from ₹2,500. Comprehensive individual programs and doorstep modules depend on skill assessment." },
-        { q: "location where", a: "We are located in Tollygunge, Kolkata, near Netaji Metro Station. We have one dedicated physical centre." },
-        { q: "doorstep", a: "Yes! Doorstep Scooty & Bike training is available within a 10 KM radius of Netaji Metro Station." },
-        { q: "ev electric", a: "Yes, we provide dedicated Electric Scooty training covering instant torque modulation and regenerative braking." },
-        { q: "bike geared", a: "Yes, we teach geared motorcycle riding focusing on clutch biting points, slope starts, and gear synchronization." }
-      ],
-      quizQuestions: [
-        {
-          q_en: "You are riding slowly and suddenly need to stop. What should you focus on first?",
-          q_bn: "আপনি ধীরে scooty চালাচ্ছেন। হঠাৎ সামনে থামতে হবে। প্রথমে কী করবেন?",
-          options_en: [
-            { text: "Release accelerator and brake progressively", points: "control" },
-            { text: "Turn the handle suddenly", points: "panic" },
-            { text: "Panic and drag both feet to ground", points: "nervous" }
-          ],
-          options_bn: [
-            { text: "Accelerator ছেড়ে দিয়ে smoothly brake ধরা", points: "control" },
-            { text: "হঠাৎ হ্যান্ডেল ঘুরিয়ে দেওয়া", points: "panic" },
-            { text: "ভয় পেয়ে দুটো পা মাটিতে নামিয়ে ঘঁষা", points: "nervous" }
-          ]
-        },
-        {
-          q_en: "A vehicle suddenly approaches from a side lane. What is your priority?",
-          q_bn: "হঠাৎ পাশ থেকে একটি vehicle চলে এলো। আপনার প্রথম priority কী হওয়া উচিত?",
-          options_en: [
-            { text: "Hold your steady line, ease speed, and check mirrors", points: "control" },
-            { text: "Accelerate quickly to cut across", points: "panic" },
-            { text: "Close eyes and freeze handle", points: "nervous" }
-          ],
-          options_bn: [
-            { text: "নিজের লেন ঠিক রেখে স্পিড কমিয়ে হ্যান্ডেল সোজা রাখা", points: "control" },
-            { text: "আগে বেরিয়ে যাওয়ার জন্য স্পিড বাড়িয়ে দেওয়া", points: "panic" },
-            { text: "ভয়ে হ্যান্ডেল শক্ত করে স্থির হয়ে যাওয়া", points: "nervous" }
-          ]
-        },
-        {
-          q_en: "You are approaching a tight turn on a narrow road and feel nervous. What should you focus on?",
-          q_bn: "Turn নেওয়ার সময় nervous লাগছে। কোন জিনিসে focus করবেন?",
-          options_en: [
-            { text: "Look toward where you want to go, slow down before the turn", points: "control" },
-            { text: "Look straight down at the front tyre", points: "nervous" },
-            { text: "Take the turn at high speed", points: "panic" }
-          ],
-          options_bn: [
-            { text: "টার্ন শুরুর আগেই স্পিড কমিয়ে যেদিকে যাব সেখানে দৃষ্টি রাখা", points: "control" },
-            { text: "ভয়ে সামনের চাকার দিকে তাকিয়ে থাকা", points: "nervous" },
-            { text: "দ্রুত টার্ন নেওয়ার চেষ্টা করা", points: "panic" }
-          ]
-        },
-        {
-          q_en: "You are entering a busier main road from a quiet colony lane. What is essential?",
-          q_bn: "একটি শান্ত গলি থেকে বড় মেন রোডে উঠছেন। কী খেয়াল রাখা দরকার?",
-          options_en: [
-            { text: "Complete stop, shoulder-check oncoming flow before merging", points: "control" },
-            { text: "Honk continuously and ride straight in", points: "panic" },
-            { text: "Wait indefinitely because of fear", points: "nervous" }
-          ],
-          options_bn: [
-            { text: "একবার সম্পূর্ণ দাঁড়িয়ে দুপাশের ট্রাফিক দেখে লেন ধরে ঢোকা", points: "control" },
-            { text: "একটানা হর্ন বাজিয়ে সোজা নেমে যাওয়া", points: "panic" },
-            { text: "ভয়ে অনেকক্ষণ দাঁড়িয়ে থাকা", points: "nervous" }
-          ]
-        },
-        {
-          q_en: "When coming to a smooth gradual stop, what should you avoid?",
-          q_bn: "মসৃণভাবে গাড়ি থামানোর সময় কোনটি বর্জন করা উচিত?",
-          options_en: [
-            { text: "Grabbing only the front brake harshly with the accelerator open", points: "control" },
-            { text: "Gradual dual hand-braking", points: "nervous" },
-            { text: "Keeping handle straight", points: "panic" }
-          ],
-          options_bn: [
-            { text: "এক্সিলারেটর অন রেখে হঠাৎ সামনের ব্রেক কষে ধরা", points: "control" },
-            { text: "ধীরে ধীরে দুই ব্রেক একসঙ্গে ব্যবহার করা", points: "nervous" },
-            { text: "হ্যান্ডেল সোজা রেখে ব্যালেন্স বজায় রাখা", points: "panic" }
-          ]
-        }
-      ],
+      gmb: {
+        enabled: true,
+        placeId: "ChIJKw-pMI1xAjoR2InlnVTKHeI",
+        cid: "7060569192068913354",
+        apiEndpoint: "",
+        limit: 4,
+        placeReviews: [
+          { author: "Ananya Sen", rating: 5, text: "Best scooty training in South Kolkata. Never cycled before, but their balance technique worked effortlessly.", time: "Verified Google Review" },
+          { author: "Rohit Karmakar", rating: 5, text: "Excellent geared motorcycle clutch guidance. Passed RTO test in first attempt without any stalling.", time: "Verified Google Review" },
+          { author: "Payel Das", rating: 5, text: "Patient instructors who never shout. Doorstep session in Jadavpur was very convenient.", time: "Verified Google Review" },
+          { author: "Sreya Mukherjee", rating: 5, text: "From dragging feet to riding solo to office within 8 days. Highly recommended for beginners.", time: "Verified Google Review" }
+        ]
+      },
+      bengaliSection: {
+        eyebrow: "বাংলায় শুরু করি",
+        heading: "আপনার ভয়টা বুঝি।",
+        text: "স্কুটি বা বাইক শেখার ইচ্ছা আছে, কিন্তু কোথা থেকে শুরু করবেন বুঝতে পারছেন না?\n\nসাইকেল জানেন না? Traffic নিয়ে ভয়? Balance নিয়ে hesitation?\n\nসমস্যা নেই। শুরুটা হবে আপনার বর্তমান অবস্থান থেকেই। কোনো তাড়া নেই, কোনো ধমক নেই—ধাপে ধাপে আত্মবিশ্বাস গড়ে তোলা হবে।",
+        cta: "কীভাবে শেখানো হয় দেখুন →"
+      },
       sectionsOrder: [
-        { id: "hero", name: "01 Hero Slider", visible: true, bgStyle: "white" },
-        { id: "trust", name: "02 Trust Numbers", visible: true, bgStyle: "light-blue" },
-        { id: "challenge", name: "03 60-Sec Riding Challenge", visible: true, bgStyle: "white" },
-        { id: "stopping", name: "04 What's Stopping You?", visible: true, bgStyle: "light-green" },
-        { id: "finder", name: "05 Course Finder", visible: true, bgStyle: "light-blue" },
-        { id: "about", name: "06 About Us (Overview)", visible: true, bgStyle: "white" },
-        { id: "mission", name: "07 Our Mission (Overview)", visible: true, bgStyle: "light-blue" },
-        { id: "women", name: "08 Women & Independence", visible: true, bgStyle: "white" },
-        { id: "why", name: "09 Why Zero Fear", visible: true, bgStyle: "light-blue" },
-        { id: "who", name: "10 Who Can Learn", visible: true, bgStyle: "white" },
-        { id: "journey", name: "11 Training Journey", visible: true, bgStyle: "light-green" },
-        { id: "courses", name: "12 Training Programs", visible: true, bgStyle: "white" },
-        { id: "transformations", name: "13 Real Transformations", visible: true, bgStyle: "light-blue" },
-        { id: "testimonials", name: "14 Learner Stories", visible: true, bgStyle: "white" },
-        { id: "gallery", name: "15 Training Gallery", visible: true, bgStyle: "light-green" },
-        { id: "videos", name: "16 Video Preview", visible: true, bgStyle: "white" },
-        { id: "doorstep", name: "17 Doorstep Training", visible: true, bgStyle: "light-blue" },
-        { id: "location", name: "18 Our Location", visible: true, bgStyle: "white" },
-        { id: "guide", name: "19 Rider's Guide", visible: true, bgStyle: "light-green" },
-        { id: "faq", name: "20 FAQ", visible: true, bgStyle: "white" },
-        { id: "cta", name: "21 Final CTA", visible: true, bgStyle: "custom-grad" }
+        { id: "hero", name: "01 — HERO SLIDER", visible: true, bgStyle: "white" },
+        { id: "trust", name: "02 — TRUST / EXPERIENCE STRIP", visible: true, bgStyle: "light-blue" },
+        { id: "bengali", name: "03 — BENGALI CONNECTION", visible: true, bgStyle: "white" },
+        { id: "about", name: "04 — ABOUT US (OVERVIEW)", visible: true, bgStyle: "white" },
+        { id: "mission", name: "05 — OUR MISSION (OVERVIEW)", visible: true, bgStyle: "light-blue" },
+        { id: "women", name: "06 — WOMEN & INDEPENDENCE", visible: true, bgStyle: "white" },
+        { id: "why", name: "07 — WHY ZERO FEAR", visible: true, bgStyle: "light-green" },
+        { id: "who", name: "08 — WHO CAN LEARN", visible: true, bgStyle: "white" },
+        { id: "journey", name: "09 — TRAINING JOURNEY (OVERVIEW)", visible: true, bgStyle: "light-blue" },
+        { id: "courses", name: "10 — OUR TRAINING PROGRAMS (OVERVIEW)", visible: true, bgStyle: "white" },
+        { id: "stories", name: "11 — REAL LEARNER STORIES (+ TRANSFORMATIONS)", visible: true, bgStyle: "light-green" },
+        { id: "gmb", name: "11B — GOOGLE BUSINESS REVIEWS", visible: true, bgStyle: "white" },
+        { id: "gallery", name: "12 — TRAINING IN REAL LIFE", visible: true, bgStyle: "white" },
+        { id: "videos", name: "13 — WATCH THE TRAINING", visible: true, bgStyle: "light-blue" },
+        { id: "doorstep", name: "14 — DOORSTEP TRAINING (OVERVIEW)", visible: true, bgStyle: "white" },
+        { id: "location", name: "15 — OUR LOCATION (OVERVIEW)", visible: true, bgStyle: "light-blue" },
+        { id: "guide", name: "16 — RIDER'S GUIDE (PREVIEW)", visible: true, bgStyle: "white" },
+        { id: "faq", name: "17 — FAQ (OVERVIEW)", visible: true, bgStyle: "light-blue" },
+        { id: "cta", name: "18 — FINAL CTA", visible: true, bgStyle: "custom-grad" }
       ],
       heroSlides: [
         {
           kicker: "NON-CYCLIST SPECIALIZATION",
           heading: "DON'T KNOW CYCLING?<br>YOU CAN STILL LEARN TO RIDE.",
           desc: "Start with the basics and build your confidence step by step.",
-          bn: "সাইকেল না জানলেও স্কুটি শেখা সম্ভব।",
           img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=80",
           btnText: "START YOUR JOURNEY",
-          action: "challenge"
+          action: "quicklead"
         },
         {
           kicker: "INDEPENDENCE ON TWO WHEELS",
           heading: "SHE DECIDES WHERE SHE GOES.",
           desc: "Your ride. Your confidence. Your freedom.",
-          bn: "নিজের প্রয়োজনে, নিজের মতো করে চলার স্বাধীনতা।",
           img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=1600&q=80",
           btnText: "DISCOVER ZERO FEAR",
           action: "women"
         },
         {
-          kicker: "VERIFIED PROGRESS",
+          kicker: "VERIFIED EXPERIENCES",
           heading: "REAL PEOPLE.<br>REAL FIRST DAYS.<br>REAL CONFIDENCE.",
           desc: "See how learners progress from hesitation to control.",
-          bn: "“আমি প্রথমে খুব ভয় পাচ্ছিলাম। এখন নিজেই চালাতে পারছি।”",
           img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1600&q=80",
           btnText: "SEE REAL STORIES",
-          action: "about"
+          action: "stories"
         },
         {
           kicker: "PRACTICAL PROGRESSION",
           heading: "FROM QUIET LANES TO BUSY ROADS.",
           desc: "Build practical control for the roads you actually ride on.",
-          bn: "শান্ত গলি থেকে ব্যস্ত রাস্তায় আত্মবিশ্বাস।",
           img: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=1600&q=80",
           btnText: "SEE HOW WE TRAIN",
           action: "journey"
@@ -1306,7 +1272,6 @@
           kicker: "CREDIBILITY BUILT OVER TIME",
           heading: "8+ YEARS.<br>5000+ LEARNERS.",
           desc: "A new name. Years of real training experience.",
-          bn: "ZERO FEAR IS A NEW NAME. THE EXPERIENCE BEHIND IT ISN'T.",
           img: "https://images.unsplash.com/photo-1471466054146-e71bcc0d2bb2?auto=format&fit=crop&w=1600&q=80",
           btnText: "ABOUT ZERO FEAR",
           action: "about"
@@ -1334,7 +1299,7 @@
           bullets: ["Basic controls", "Balance", "Braking", "Turning", "Road awareness"],
           priceLabel: "Packages starting from ₹2,500",
           who: "Absolute beginners who have never touched a two-wheeler, and those who do not know cycling.",
-          learn: "Centre of gravity balance, dual-foot paddle balancing, gradual feet-up posture, progressive hand-braking without skids, low-speed parking.",
+          learn: "Understanding centre of gravity, dual-foot paddle balancing, gradual feet-up posture, progressive hand-braking without skids, low-speed parking.",
           schedule: "7 to 10 practical sessions customized to learner pace.",
           video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         },
@@ -1394,26 +1359,31 @@
           video: ""
         }
       ],
-      transformations: [
+      learnerStories: [
         {
           name: "Sreya Mukherjee",
           course: "Basic Scooty (Non-Cyclist)",
-          before: "I was scared to even control the scooter.",
-          after: "Now I can ride with confidence.",
-          quote: "From dragging my feet on Day 1 to riding solo to my Salt Lake office."
+          review: "I was scared to even control the scooter's physical weight. Their paddle balance method made it feel natural.",
+          beforeText: "Scared to touch the accelerator, feet constantly dragging.",
+          afterText: "Riding solo to Salt Lake Sector V office with full confidence.",
+          video: ""
         },
         {
           name: "Ritu Banerjee",
           course: "Women Independence",
-          before: "Never cycled in my life. Feared vehicle weight.",
-          after: "Riding independently for all daily errands.",
-          quote: "Patient trainers who never shout. Freedom has completely changed my day."
+          review: "Never cycled in my life. The trainers were patient and never shouted.",
+          beforeText: "Nervous about balance and vehicle tilt.",
+          afterText: "Dropping my kids to school every morning independently.",
+          video: ""
+        },
+        {
+          name: "Rohit Karmakar",
+          course: "Geared Bike Training",
+          review: "Clutch friction zone control was explained with clear mechanical logic. Passed RTO test in first attempt.",
+          beforeText: "Frequent engine stalls on bridge slopes.",
+          afterText: "Smooth gear shifting without rollback.",
+          video: ""
         }
-      ],
-      testimonials: [
-        { name: "Ananya Sen", course: "Basic Scooty", text: "Being a non-cyclist, I was nervous, but their weight-balance drills made everything logical." },
-        { name: "Rohit Karmakar", course: "Geared Bike", text: "Clutch friction zone control was explained with clear mechanical logic. Passed RTO test in first attempt." },
-        { name: "Payel Das", course: "Doorstep Scooty", text: "Took lessons in Jadavpur right outside my society. Very professional and dependable." }
       ],
       gallery: [
         { caption: "Quiet lane balance practice in Tollygunge", url: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80" },
@@ -1438,18 +1408,25 @@
       faqs: [
         { q: "Can I learn scooty without knowing cycling?", a: "Yes, absolutely. Scooty balance relies on physical vehicle weight distribution and steady throttle control, not cycling momentum. We teach non-cyclists every single day." },
         { q: "How much does training cost?", a: "Packages start from ₹2,500. Contact us for current package options tailored to your assessment." },
-        { q: "Where is Zero Fear located?", a: "We operate exclusively in Tollygunge, Kolkata, right near Netaji Metro Station." }
+        { q: "Where is Zero Fear located?", a: "We operate exclusively in Tollygunge, Kolkata, right near Netaji Metro Station." },
+        { q: "Do you provide Doorstep Training?", a: "Yes, available within 10 KM of Netaji Metro Station, subject to trainer availability and location suitability." }
       ]
     };
 
     function getStoredCMS() {
-      const data = localStorage.getItem("zerofear_master_cms");
+      const data = localStorage.getItem("zerofear_master_cms_v4");
       return data ? JSON.parse(data) : DEFAULT_CMS;
     }
 
     function saveStoredCMS(cms) {
-      localStorage.setItem("zerofear_master_cms", JSON.stringify(cms));
-      applyAllCMS();
+      try {
+        localStorage.setItem("zerofear_master_cms_v4", JSON.stringify(cms));
+        applyAllCMS();
+        return true;
+      } catch (err) {
+        console.error("Storage Error:", err);
+        return false;
+      }
     }
 
     function extractYouTubeId(url) {
@@ -1480,25 +1457,18 @@
       return "background-color: #ffffff;";
     }
 
-    function toggleGlobalLang() {
-      const cms = getStoredCMS();
-      cms.globalLang = cms.globalLang === 'en' ? 'bn' : 'en';
-      saveStoredCMS(cms);
-    }
-
     // ===================================================
-    // HOMEPAGE SECTIONS RENDERER (OVERVIEW + AI HOOKS)
+    // HOMEPAGE SECTIONS RENDERER
     // ===================================================
     function renderHomepageOverview(cms) {
       const container = document.getElementById('homepageDynamicSections');
       container.innerHTML = "";
-      const isBn = cms.globalLang === 'bn';
 
       cms.sectionsOrder.forEach(sec => {
         if (!sec.visible) return;
         const bgInline = getBgStyleCss(sec.bgStyle);
 
-        // 01 HERO
+        // 01 HERO SLIDER
         if (sec.id === "hero") {
           const slidesHtml = cms.heroSlides.map((s, idx) => `
             <div class="slide-item ${idx === 0 ? 'active' : ''}" id="hsl-${idx}">
@@ -1507,10 +1477,9 @@
               <div class="slide-inner">
                 <div class="slide-kicker-txt">${s.kicker}</div>
                 <h1 class="slide-title-txt">${s.heading}</h1>
-                <p class="slide-sub-txt">${isBn && s.bn ? s.bn : s.desc}</p>
-                ${s.bn && !isBn ? `<div class="slide-bn-callout">${s.bn}</div>` : ''}
+                <p class="slide-sub-txt">${s.desc}</p>
                 <button onclick="handleHeroCTA('${s.action}')" class="btn-solid-blue" style="background: var(--zf-yellow); color: var(--zf-blue-dark); font-weight: 800; font-size: 0.95rem; border: none; padding: 12px 24px;">
-                  ${isBn ? 'শুরু করুন' : s.btnText} →
+                  ${s.btnText} →
                 </button>
               </div>
             </div>
@@ -1529,97 +1498,35 @@
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-trust" class="zf-section-pad" style="${bgInline}; padding: 2.8rem 8%;">
               <div class="grid-4" style="text-align: center;">
-                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-blue);">8+ YEARS</div><small style="font-weight: 700;">${isBn ? '২০১৮ থেকে অভিজ্ঞতা' : 'Experience Since 2018'}</small></div>
-                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-yellow-dark);">5000+</div><small style="font-weight: 700;">${isBn ? 'সফল শিক্ষার্থী' : 'Learners Trained'}</small></div>
-                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-green);">EV + PETROL</div><small style="font-weight: 700;">${isBn ? 'স্কুটি ও গিয়ার বাইক' : 'Scooty & Geared Bike'}</small></div>
-                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-blue-dark);">10 KM</div><small style="font-weight: 700;">${isBn ? 'ডোরস্টেপ ট্রেনিং পরিধি' : 'Doorstep Service Radius'}</small></div>
+                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-blue);">8+ YEARS</div><small style="font-weight: 700;">Experience Since 2018</small></div>
+                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-yellow-dark);">5000+</div><small style="font-weight: 700;">Learners Trained</small></div>
+                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-green);">EV + PETROL</div><small style="font-weight: 700;">Scooty & Geared Bike</small></div>
+                <div><div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--zf-blue-dark);">10 KM</div><small style="font-weight: 700;">Doorstep Service Radius</small></div>
               </div>
             </section>
           `);
         }
 
-        // 03 CAN YOU RIDE? 60-SEC CHALLENGE
-        else if (sec.id === "challenge") {
+        // 03 BENGALI CONNECTION SECTION
+        else if (sec.id === "bengali") {
+          const bn = cms.bengaliSection;
           container.insertAdjacentHTML('beforeend', `
-            <section id="sec-challenge" class="zf-section-pad" style="${bgInline}">
-              <div style="text-align: center; max-width: 740px; margin: 0 auto;">
-                <div class="sec-eyebrow green-type">${isBn ? 'ইন্টারেক্টিভ টেস্ট' : 'INTERACTIVE CHALLENGE'}</div>
-                <h2 class="sec-h2">${isBn ? 'আপনি কি রাইড করার জন্য Ready?' : 'CAN YOU RIDE?'}</h2>
-                <p class="sec-desc-lead" style="margin: 0 auto 1.5rem;">
-                  ${isBn ? 'মাত্র ৬০ সেকেন্ডের একটি ছোট Challenge। দেখুন কোন জায়গা থেকে আপনার শুরু করা উচিত।' : '60-second Riding Confidence Challenge. Discover your practical rider starting profile.'}
-                </p>
-                <button onclick="startInteractiveChallenge()" class="btn-solid-blue" style="padding: 12px 28px; font-size: 1rem;" id="challengeActionBtn">
-                  ${isBn ? 'CHALLENGE শুরু করুন →' : 'START THE CHALLENGE →'}
+            <section id="sec-bengali" class="zf-section-pad" style="${bgInline}">
+              <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div class="sec-eyebrow green-type">${bn.eyebrow}</div>
+                <h2 class="sec-h2 bn-font" style="font-size: 2.4rem;">${bn.heading}</h2>
+                <div class="bengali-highlight-card" style="margin: 1.5rem auto 2rem; max-width: 720px; text-align: left; font-size: 1.15rem;">
+                  ${bn.text.replace(/\n\n/g, '<br><br>')}
+                </div>
+                <button onclick="openPage('journey')" class="btn-solid-blue bn-font" style="font-size: 1rem; padding: 12px 26px;">
+                  ${bn.cta}
                 </button>
               </div>
-
-              <!-- Interactive Quiz Window Box -->
-              <div id="quizContainerArea" style="display: none;">
-                <div class="quiz-scenario-box">
-                  <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizBarFill"></div></div>
-                  <div id="quizCardInner"></div>
-                </div>
-              </div>
             </section>
           `);
         }
 
-        // 04 WHAT'S STOPPING YOU?
-        else if (sec.id === "stopping") {
-          container.insertAdjacentHTML('beforeend', `
-            <section id="sec-stopping" class="zf-section-pad" style="${bgInline}">
-              <div style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem;">
-                <div class="sec-eyebrow">${isBn ? 'ভয় দূর করুন' : 'OVERCOMING HESITATION'}</div>
-                <h2 class="sec-h2">${isBn ? 'আপনাকে কী থামিয়ে দিচ্ছে?' : "WHAT'S STOPPING YOU?"}</h2>
-                <p class="sec-desc-lead" style="margin: 0 auto;">${isBn ? 'নিচের অপশনগুলোর মধ্যে কোনটি আপনার ক্ষেত্রে সবচেয়ে সত্যি? সিলেক্ট করুন:' : 'Select what feels most true for you right now:'}</p>
-              </div>
-              <div class="grid-4" id="stoppingBlockGrid">
-                <div class="stopping-choice-card" onclick="selectStoppingReason('cycling')">
-                  ${isBn ? 'আমি cycling জানি না' : "I don't know cycling"}
-                </div>
-                <div class="stopping-choice-card" onclick="selectStoppingReason('traffic')">
-                  ${isBn ? 'Traffic নিয়ে ভয় লাগে' : "I'm scared of traffic"}
-                </div>
-                <div class="stopping-choice-card" onclick="selectStoppingReason('falling')">
-                  ${isBn ? 'পড়ে যাওয়ার ভয় লাগে' : "I'm scared of falling"}
-                </div>
-                <div class="stopping-choice-card" onclick="selectStoppingReason('controls')">
-                  ${isBn ? 'Vehicle control বুঝতে সমস্যা হয়' : "I don't understand controls"}
-                </div>
-                <div class="stopping-choice-card" onclick="selectStoppingReason('confidence')">
-                  ${isBn ? 'একটু পারি, কিন্তু confidence নেই' : 'Can ride a little, lack confidence'}
-                </div>
-                <div class="stopping-choice-card" onclick="selectStoppingReason('ev')">
-                  ${isBn ? 'EV শিখতে চাই' : 'I want to learn an EV'}
-                </div>
-                <div class="stopping-choice-card" onclick="selectStoppingReason('rto')">
-                  ${isBn ? 'RTO preparation দরকার' : 'Need practical RTO test preparation'}
-                </div>
-              </div>
-              <div id="stoppingFeedbackCard" class="card-white" style="display: none; margin-top: 2rem; max-width: 780px; margin-inline: auto;"></div>
-            </section>
-          `);
-        }
-
-        // 05 AI COURSE FINDER
-        else if (sec.id === "finder") {
-          container.insertAdjacentHTML('beforeend', `
-            <section id="sec-finder" class="zf-section-pad" style="${bgInline}">
-              <div style="max-width: 780px; margin: 0 auto;">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                  <div class="sec-eyebrow green-type">${isBn ? 'স্মার্ট গাইড' : 'AI COURSE MATCH'}</div>
-                  <h2 class="sec-h2">${isBn ? 'আপনার জন্য কোন Training?' : 'FIND YOUR TRAINING'}</h2>
-                  <p class="sec-desc-lead" style="margin: 0 auto;">${isBn ? '৪টি সাধারণ প্রশ্নের উত্তর দিন, সিস্টেম আপনাকে উপযুক্ত শুরু করার পথটি নির্দেশ করবে।' : 'Answer 4 simple questions to discover relevant training tracks.'}</p>
-                </div>
-                <div class="card-white" id="courseFinderWizardBox">
-                  <div id="cfQuestionSlot"></div>
-                </div>
-              </div>
-            </section>
-          `);
-        }
-
-        // 06 ABOUT US
+        // 04 ABOUT US — SHORT OVERVIEW
         else if (sec.id === "about") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-about" class="zf-section-pad" style="${bgInline}">
@@ -1638,7 +1545,7 @@
           `);
         }
 
-        // 07 OUR MISSION
+        // 05 OUR MISSION — SHORT OVERVIEW
         else if (sec.id === "mission") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-mission" class="zf-section-pad" style="${bgInline}; text-align: center;">
@@ -1653,7 +1560,7 @@
           `);
         }
 
-        // 08 WOMEN & INDEPENDENCE
+        // 06 WOMEN & INDEPENDENCE — SHORT OVERVIEW
         else if (sec.id === "women") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-women" class="zf-section-pad" style="${bgInline}">
@@ -1673,70 +1580,71 @@
           `);
         }
 
-        // 09 WHY ZERO FEAR
+        // 07 WHY ZERO FEAR
         else if (sec.id === "why") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-why" class="zf-section-pad" style="${bgInline}">
               <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
-                <div class="sec-eyebrow">STRUCTURED ADVANTAGE</div>
+                <div class="sec-eyebrow">PRACTICAL ADVANTAGE</div>
                 <h2 class="sec-h2">WHY ZERO FEAR?</h2>
               </div>
               <div class="grid-3">
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">START FROM ZERO</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Begin with foundational balance and zero prior expectations.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">PATIENT TRAINING</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Patient, steady guidance adapted strictly to your learning pace.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">REAL ROAD PRACTICE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Progressive entry from quiet lanes to actual Kolkata traffic roads.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">EV + PETROL + BIKE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Electric scooters, petrol scooters, and geared motorcycles under one roof.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">DOORSTEP TRAINING</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Convenient personal trainer sessions within 10 KM of Netaji Metro.</p></div>
-                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">REAL EXPERIENCE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">8+ years of dedicated on-road coaching experience in Kolkata.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">START FROM ZERO</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Non-cyclists welcome. Step-by-step physical weight balance.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">PATIENT TRAINERS</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Calm, supportive coaching adapted strictly to your speed.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">REAL ROAD PRACTICE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Quiet alleys progressing safely onto busy South Kolkata streets.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">MULTI-VEHICLE OPTIONS</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Electric Scooters (EV), Petrol Scooty, and Geared Motorcycles.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">DOORSTEP CONVENIENCE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">Training at your apartment complex within 10 KM of Netaji Metro.</p></div>
+                <div class="card-white"><h3 style="color: var(--zf-blue-dark); margin-bottom: 0.4rem;">PROVEN EXPERIENCE</h3><p style="color: var(--text-muted); font-size: 0.92rem;">8+ years and 5000+ candidates successfully trained in Kolkata.</p></div>
               </div>
             </section>
           `);
         }
 
-        // 10 WHO CAN LEARN
+        // 08 WHO CAN LEARN
         else if (sec.id === "who") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-who" class="zf-section-pad" style="${bgInline}">
               <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
-                <div class="sec-eyebrow green-type">AUDIENCE SPECIFIC</div>
+                <div class="sec-eyebrow green-type">LEARNER SPECTRUM</div>
                 <h2 class="sec-h2">WHO CAN START WITH ZERO FEAR?</h2>
               </div>
               <div class="grid-4">
                 <div class="card-white"><h4>Complete Beginners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Never touched an accelerator before.</p></div>
                 <div class="card-white"><h4>Non-Cyclists</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Learn scooty without bicycle balance.</p></div>
-                <div class="card-white"><h4>Women Learners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Overcoming traffic hesitation.</p></div>
-                <div class="card-white"><h4>Working Professionals</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Morning 7 AM & weekend shifts.</p></div>
-              </div>
-              <div style="text-align: center; margin-top: 2rem;">
-                <button onclick="openQuickLead()" class="btn-outline-blue">SEE WHO IT'S FOR →</button>
+                <div class="card-white"><h4>Women Learners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Daily commute independence & freedom.</p></div>
+                <div class="card-white"><h4>Working Professionals</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Early morning 7 AM & weekend shifts.</p></div>
+                <div class="card-white"><h4>Students</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Campus mobility with safety awareness.</p></div>
+                <div class="card-white"><h4>Returning Riders</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Rebuilding confidence after a break.</p></div>
+                <div class="card-white"><h4>EV Learners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Mastering instant electric motor torque.</p></div>
+                <div class="card-white"><h4>RTO Learners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Figure-8 track test practical guidance.</p></div>
               </div>
             </section>
           `);
         }
 
-        // 11 TRAINING JOURNEY
+        // 09 TRAINING JOURNEY (OVERVIEW)
         else if (sec.id === "journey") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-journey" class="zf-section-pad" style="${bgInline}">
-              <div class="sec-eyebrow green-type">STEP-BY-STEP PROGRESSION</div>
+              <div class="sec-eyebrow green-type">PROGRESSION OVERVIEW</div>
               <h2 class="sec-h2">YOUR JOURNEY FROM FIRST TOUCH TO CONFIDENT RIDING</h2>
               <div class="timeline-strip">
-                <div class="timeline-node"><div class="timeline-digit">01</div><h4>Get Comfortable</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Controls and balance.</p></div>
-                <div class="timeline-node"><div class="timeline-digit">02</div><h4>Basic Control</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Throttle & braking touch.</p></div>
-                <div class="timeline-node"><div class="timeline-digit">03</div><h4>Balance & Turning</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Turns with feet up.</p></div>
-                <div class="timeline-node"><div class="timeline-digit">04</div><h4>Braking & Control</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Stopping and manoeuvres.</p></div>
-                <div class="timeline-node"><div class="timeline-digit">05</div><h4>Road Awareness</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Mirror & traffic reading.</p></div>
-                <div class="timeline-node"><div class="timeline-digit">06</div><h4>Road Practice</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Escorted Kolkata roads.</p></div>
-                <div class="timeline-node"><div class="timeline-digit">07</div><h4>Independence</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Riding on your own.</p></div>
+                <div class="timeline-node"><div class="timeline-digit">01</div><h4>Get Comfortable</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Vehicle balance & control layout.</p></div>
+                <div class="timeline-node"><div class="timeline-digit">02</div><h4>Basic Control</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Smooth throttle & progressive brakes.</p></div>
+                <div class="timeline-node"><div class="timeline-digit">03</div><h4>Balance & Turning</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Turning circles with feet up.</p></div>
+                <div class="timeline-node"><div class="timeline-digit">04</div><h4>Braking & Control</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Sudden stopping & slope restarts.</p></div>
+                <div class="timeline-node"><div class="timeline-digit">05</div><h4>Road Awareness</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Rear mirrors & traffic judgment.</p></div>
+                <div class="timeline-node"><div class="timeline-digit">06</div><h4>Real Road Practice</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Escorted South Kolkata roads.</p></div>
+                <div class="timeline-node"><div class="timeline-digit">07</div><h4>Independence</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Confident solo mobility.</p></div>
               </div>
               <div style="margin-top: 2rem;">
-                <button onclick="openPage('about')" class="btn-solid-blue">SEE THE FULL TRAINING JOURNEY →</button>
+                <button onclick="openPage('journey')" class="btn-solid-blue">SEE THE FULL TRAINING JOURNEY →</button>
               </div>
             </section>
           `);
         }
 
-        // 12 COURSES OVERVIEW
+        // 10 COURSES OVERVIEW
         else if (sec.id === "courses") {
           const coursesCards = cms.courses.map(c => `
             <div class="card-white" style="display: flex; flex-direction: column; justify-content: space-between;">
@@ -1764,51 +1672,71 @@
           `);
         }
 
-        // 13 TRANSFORMATIONS
-        else if (sec.id === "transformations") {
-          const previews = cms.transformations.slice(0, 2).map(t => `
-            <div class="dual-transform-box">
-              <div class="trans-side-box before">
-                <span style="font-size: 0.75rem; font-weight: 800; color: #dc2626;">BEFORE</span>
-                <p style="font-weight: 600; margin: 6px 0; color: #7f1d1d;">“${t.before}”</p>
-                <small style="color: #991b1b;">Learner: ${t.name} (${t.course})</small>
-              </div>
-              <div class="trans-side-box after">
-                <span style="font-size: 0.75rem; font-weight: 800; color: #059669;">AFTER</span>
-                <p style="font-weight: 600; margin: 6px 0; color: #065f46;">“${t.after}”</p>
-                <small style="color: #047857;">Confident Solo Rider</small>
-              </div>
-            </div>
-          `).join('');
-
-          container.insertAdjacentHTML('beforeend', `
-            <section id="sec-transformations" class="zf-section-pad" style="${bgInline}">
-              <div class="sec-eyebrow">VERIFIED EXPERIENCES</div>
-              <h2 class="sec-h2">REAL TRANSFORMATIONS</h2>
-              <div style="margin-top: 2rem;">${previews}</div>
-            </section>
-          `);
-        }
-
-        // 14 TESTIMONIALS
-        else if (sec.id === "testimonials") {
-          const stories = cms.testimonials.slice(0, 3).map(st => `
+        // 11 REAL LEARNER STORIES (+ TRANSFORMATIONS INTEGRATED)
+        else if (sec.id === "stories") {
+          const storiesHtml = cms.learnerStories.map(st => `
             <div class="card-white">
-              <p style="font-size: 0.95rem; color: var(--text-body); margin-bottom: 1rem; line-height: 1.7;">“${st.text}”</p>
-              <strong>${st.name}</strong><br><small style="color: var(--text-muted);">${st.course}</small>
+              <div style="margin-bottom: 0.8rem;">
+                <strong>${st.name}</strong><br>
+                <small style="color: var(--zf-blue); font-weight: 700;">${st.course}</small>
+              </div>
+              <p style="color: var(--text-body); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">“${st.review}”</p>
+              ${st.beforeText ? `
+                <div style="background: var(--zf-blue-light); padding: 10px; border-radius: 6px; font-size: 0.82rem; margin-top: 10px;">
+                  <strong style="color: #dc2626;">Before:</strong> ${st.beforeText}<br>
+                  <strong style="color: #059669;">After:</strong> ${st.afterText}
+                </div>
+              ` : ''}
             </div>
           `).join('');
 
           container.insertAdjacentHTML('beforeend', `
-            <section id="sec-testimonials" class="zf-section-pad" style="${bgInline}">
-              <div class="sec-eyebrow">AUTHENTIC REVIEWS</div>
+            <section id="sec-stories" class="zf-section-pad" style="${bgInline}">
+              <div class="sec-eyebrow">AUTHENTIC FEEDBACK</div>
               <h2 class="sec-h2">REAL LEARNER STORIES</h2>
-              <div class="grid-3" style="margin-top: 2rem;">${stories}</div>
+              <div class="grid-3" style="margin-top: 2rem;">${storiesHtml}</div>
             </section>
           `);
         }
 
-        // 15 GALLERY
+        // 11B GOOGLE BUSINESS REVIEWS (LIVE PROFILE ATTACHED)
+        else if (sec.id === "gmb" && cms.gmb && cms.gmb.enabled) {
+          const gmbCards = (cms.gmb.placeReviews || []).map(r => `
+            <div class="card-white" style="border-top: 3px solid #f59e0b;">
+              <div class="gmb-stars">★★★★★</div>
+              <p style="font-size: 0.92rem; color: var(--text-body); margin: 0.8rem 0; line-height: 1.6;">“${r.text}”</p>
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted);">
+                <strong>${r.author}</strong>
+                <span>${r.time}</span>
+              </div>
+            </div>
+          `).join('');
+
+          container.insertAdjacentHTML('beforeend', `
+            <section id="sec-gmb" class="zf-section-pad" style="${bgInline}">
+              <div style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem;">
+                <div class="gmb-badge-strip">
+                  <span style="font-size: 1.2rem;">📍</span>
+                  <span>Google Verified Reviews</span>
+                  <span class="gmb-stars">★★★★★</span>
+                </div>
+                <h2 class="sec-h2">WHAT LEARNERS SAY ON GOOGLE</h2>
+                <p class="sec-desc-lead" style="margin: 0 auto;">Verified reviews from real candidates on our Google Business Profile.</p>
+              </div>
+              <div class="grid-4">${gmbCards}</div>
+              <div style="text-align: center; margin-top: 2.2rem; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://maps.google.com/?cid=${cms.gmb.cid || '7060569192068913354'}" target="_blank" class="btn-solid-blue">
+                  VIEW ON GOOGLE MAPS →
+                </a>
+                <a href="https://search.google.com/local/writereview?placeid=${cms.gmb.placeId || 'ChIJKw-pMI1xAjoR2InlnVTKHeI'}" target="_blank" class="btn-outline-blue">
+                  ✍️ WRITE A GOOGLE REVIEW
+                </a>
+              </div>
+            </section>
+          `);
+        }
+
+        // 12 GALLERY
         else if (sec.id === "gallery") {
           const thumbs = cms.gallery.slice(0, 3).map(g => `
             <div class="gallery-thumb-item">
@@ -1829,15 +1757,13 @@
           `);
         }
 
-        // 16 VIDEOS
+        // 13 VIDEOS
         else if (sec.id === "videos") {
           const vids = cms.videos.slice(0, 1).map(v => {
             const ytid = extractYouTubeId(v.url);
             return `
               <div class="video-card-item">
-                <div class="video-iframe-slot">
-                  <iframe src="https://www.youtube-nocookie.com/embed/${ytid}" allowfullscreen></iframe>
-                </div>
+                <div class="video-iframe-slot"><iframe src="https://www.youtube-nocookie.com/embed/${ytid}" allowfullscreen></iframe></div>
                 <div style="padding: 1rem 1.2rem;"><strong>${v.title}</strong></div>
               </div>
             `;
@@ -1852,7 +1778,7 @@
           `);
         }
 
-        // 17 DOORSTEP
+        // 14 DOORSTEP
         else if (sec.id === "doorstep") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-doorstep" class="zf-section-pad" style="${bgInline}">
@@ -1874,17 +1800,17 @@
           `);
         }
 
-        // 18 LOCATION
+        // 15 LOCATION
         else if (sec.id === "location") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-location" class="zf-section-pad" style="${bgInline}">
               <div class="grid-2">
                 <div>
-                  <div class="sec-eyebrow">PHYSICAL CENTRE</div>
+                  <div class="sec-eyebrow">ONE CENTRAL CENTRE</div>
                   <h2 class="sec-h2">OUR LOCATION</h2>
                   <h4 style="color: var(--zf-yellow-dark); margin-bottom: 0.8rem;">Tollygunge, Kolkata (Near Netaji Metro)</h4>
                   <p style="color: var(--text-body); font-size: 1rem; margin-bottom: 1.2rem;">
-                    We operate exclusively from one dedicated practice hub in Tollygunge with peaceful wide avenues for beginners.
+                    Zero Fear operates exclusively from one dedicated practice hub in Tollygunge with peaceful wide avenues for beginners.
                   </p>
                   <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <a href="${cms.config.map}" target="_blank" class="btn-solid-blue">Directions</a>
@@ -1894,7 +1820,7 @@
                 </div>
                 <div class="card-white" style="border: 2px dashed #cbd5e1; text-align: center; padding: 2.5rem 1rem;">
                   <span style="font-size: 2.5rem;">📍</span>
-                  <p style="font-weight: 700; margin-top: 8px;">Tollygunge Practice Hub</p>
+                  <p style="font-weight: 700; margin-top: 8px;">Tollygunge Training Hub</p>
                   <small style="color: var(--text-muted);">${cms.config.address}</small>
                 </div>
               </div>
@@ -1902,7 +1828,7 @@
           `);
         }
 
-        // 19 RIDER'S GUIDE
+        // 16 RIDER'S GUIDE
         else if (sec.id === "guide") {
           const articles = cms.articles.slice(0, 2).map(a => `
             <div class="card-white">
@@ -1922,7 +1848,7 @@
           `);
         }
 
-        // 20 FAQ
+        // 17 FAQ
         else if (sec.id === "faq") {
           const faqRows = cms.faqs.slice(0, 3).map(f => `
             <div class="faq-row">
@@ -1938,16 +1864,19 @@
             <section id="sec-faq" class="zf-section-pad" style="${bgInline}">
               <div class="faq-tray-box">
                 <div style="text-align: center; margin-bottom: 2rem;">
-                  <div class="sec-eyebrow">COMMON QUERIES</div>
+                  <div class="sec-eyebrow">COMMON QUESTIONS</div>
                   <h2 class="sec-h2">FREQUENTLY ASKED QUESTIONS</h2>
                 </div>
                 <div>${faqRows}</div>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                  <button onclick="openPage('faq')" class="btn-solid-blue">VIEW ALL FAQs →</button>
+                </div>
               </div>
             </section>
           `);
         }
 
-        // 21 FINAL CTA
+        // 18 FINAL CTA
         else if (sec.id === "cta") {
           container.insertAdjacentHTML('beforeend', `
             <section id="sec-cta" class="zf-section-pad" style="background-color: #ffffff;">
@@ -1969,334 +1898,20 @@
       });
     }
 
-    // ===================================================
-    // INTERACTIVE CHALLENGE LOGIC
-    // ===================================================
-    let quizCurrentIdx = 0;
-    let quizScores = { control: 0, panic: 0, nervous: 0 };
-
-    function startInteractiveChallenge() {
-      const cms = getStoredCMS();
-      quizCurrentIdx = 0;
-      quizScores = { control: 0, panic: 0, nervous: 0 };
-      document.getElementById('quizContainerArea').style.display = 'block';
-      document.getElementById('challengeActionBtn').style.display = 'none';
-      renderQuizQuestion();
-    }
-
-    function renderQuizQuestion() {
-      const cms = getStoredCMS();
-      const isBn = cms.globalLang === 'bn';
-      const q = cms.quizQuestions[quizCurrentIdx];
-      const fillPct = ((quizCurrentIdx) / cms.quizQuestions.length) * 100;
-      document.getElementById('quizBarFill').style.width = fillPct + '%';
-
-      const questionText = isBn ? q.q_bn : q.q_en;
-      const opts = isBn ? q.options_bn : q.options_en;
-
-      let html = `
-        <span style="font-size: 0.75rem; font-weight: 800; color: var(--zf-blue);">SCENARIO ${quizCurrentIdx + 1} OF ${cms.quizQuestions.length}</span>
-        <h3 style="color: var(--zf-blue-dark); margin: 0.6rem 0 1.4rem;">${questionText}</h3>
-        <div>
-      `;
-
-      opts.forEach(opt => {
-        html += `<button class="quiz-option-btn" onclick="submitQuizOption('${opt.points}')">${opt.text}</button>`;
-      });
-
-      html += `</div>`;
-      document.getElementById('quizCardInner').innerHTML = html;
-    }
-
-    function submitQuizOption(pts) {
-      const cms = getStoredCMS();
-      quizScores[pts] = (quizScores[pts] || 0) + 1;
-      quizCurrentIdx++;
-
-      if (quizCurrentIdx < cms.quizQuestions.length) {
-        renderQuizQuestion();
-      } else {
-        renderQuizResult();
-      }
-    }
-
-    function renderQuizResult() {
-      const cms = getStoredCMS();
-      const isBn = cms.globalLang === 'bn';
-      document.getElementById('quizBarFill').style.width = '100%';
-
-      let profile = {
-        title_en: "THE NERVOUS BEGINNER",
-        title_bn: "Confidence এখনও তৈরি হচ্ছে",
-        desc_en: "You understand some basic riding rules, but unexpected road situations and balance feel overwhelming.",
-        desc_bn: "আপনি কিছু প্রাথমিক বিষয় বোঝেন, কিন্তু অন-রোড পরিস্থিতিতে এখনও দ্বিধা কাজ করে।",
-        recCourseId: "scooty-basic"
-      };
-
-      if (quizScores.control >= 3) {
-        profile = {
-          title_en: "THE PRACTICAL LEARNER",
-          title_bn: "Practice-focused learner",
-          desc_en: "You have strong intuitive calmness and are ready to polish practical road awareness.",
-          desc_bn: "আপনার মধ্যে সহজাত শান্তভাব রয়েছে। এবার প্র্যাকটিকাল ট্রাফিক কন্ট্রোল প্র্যাকটিস দরকার।",
-          recCourseId: "scooty-adv"
-        };
-      } else if (quizScores.nervous >= 3) {
-        profile = {
-          title_en: "THE FIRST-TIMER",
-          title_bn: "একদম নতুন",
-          desc_en: "You are starting from zero. No past experience needed; patient step-by-step guidance is your best fit.",
-          desc_bn: "আপনি একদম শুরু থেকে শুরু করছেন। শান্ত ও ধাপে ধাপে শেখার পদ্ধতি আপনার জন্য সেরা।",
-          recCourseId: "scooty-basic"
-        };
-      }
-
-      const rec = cms.courses.find(c => c.id === profile.recCourseId) || cms.courses[0];
-
-      document.getElementById('quizCardInner').innerHTML = `
-        <div style="text-align: center;">
-          <span style="font-size: 0.8rem; font-weight: 800; color: var(--zf-green); text-transform: uppercase;">
-            ${isBn ? 'আপনার Rider Starting Profile' : 'YOUR RIDER STARTING PROFILE'}
-          </span>
-          <h2 style="color: var(--zf-blue-dark); font-family: var(--font-heading); margin: 0.5rem 0 1rem;">
-            ${isBn ? profile.title_bn : profile.title_en}
-          </h2>
-          <p style="color: var(--text-body); font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem;">
-            ${isBn ? profile.desc_bn : profile.desc_en}
-          </p>
-          <div class="card-white" style="text-align: left; background: var(--zf-blue-light); border-color: var(--zf-blue-soft); margin-bottom: 1.5rem;">
-            <span style="font-size: 0.75rem; font-weight: 800; color: var(--zf-blue);">RECOMMENDED STARTING POINT</span>
-            <h4 style="color: var(--zf-blue-dark); font-size: 1.15rem; margin: 4px 0;">${rec.title}</h4>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">${rec.overview}</p>
-            <strong style="color: var(--zf-yellow-dark); font-size: 0.95rem;">${rec.priceLabel}</strong>
-          </div>
-          <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-            <button onclick="openCourseDetailView('${rec.id}')" class="btn-solid-blue">${isBn ? 'কোর্স বিস্তারিত' : 'VIEW COURSE'}</button>
-            <button onclick="openQuickLead()" class="btn-solid-blue" style="background: var(--zf-whatsapp);">${isBn ? 'WHATSAPP করুন' : 'WHATSAPP ZERO FEAR'}</button>
-          </div>
-        </div>
-      `;
-    }
-
-    // ===================================================
-    // "WHAT'S STOPPING YOU?" DIAGNOSTIC
-    // ===================================================
-    function selectStoppingReason(key) {
-      const cms = getStoredCMS();
-      const isBn = cms.globalLang === 'bn';
-      const box = document.getElementById('stoppingFeedbackCard');
-      box.style.display = 'block';
-
-      document.querySelectorAll('.stopping-choice-card').forEach(el => el.classList.remove('active'));
-      event.target.classList.add('active');
-
-      let guidance = "";
-      let courseId = "scooty-basic";
-
-      if (key === 'cycling') {
-        guidance = isBn 
-          ? "স্কুটি ব্যালেন্স সাইকেলের মতো প্যাডেলের ওপর চলে না। এক্সিলারেটর ও গাড়ির সেন্ট্রাল গ্র্যাভিটি দিয়ে এটি খুব সহজেই প্রথম ৩-৪ দিনেই শেখা যায়।" 
-          : "Scooters balance on smooth motorized throttle propulsion and center of gravity, not pedal countersteer. We train non-cyclists from day one.";
-        courseId = "scooty-basic";
-      } else if (key === 'traffic') {
-        guidance = isBn
-          ? "আমরা প্রথম দিনেই কাউকে বড় রাস্তায় নামাই না। টালিগঞ্জের শান্ত লেনে মিরর এবং স্লো-স্পিড কন্ট্রোল শেখার পর ট্রাফিকে এগোনো হয়।"
-          : "We never take beginners onto busy roads immediately. Practice starts in quiet Tollygunge avenues until vehicle control is second nature.";
-        courseId = "scooty-adv";
-      } else if (key === 'falling') {
-        guidance = isBn
-          ? "আমাদের প্রশিক্ষকরা সবসময় পাশে থাকেন এবং দুই পা নামিয়ে ব্যালেন্সের কৌশল শুরু থেকেই শেখানো হয়, যাতে পড়ে যাওয়ার ভয় দূর হয়।"
-          : "Our instructors guide beside you with progressive dual hand-braking and foot-placement habits that eliminate the fear of tipping over.";
-        courseId = "scooty-basic";
-      } else {
-        guidance = isBn
-          ? "গাড়ির কন্ট্রোল এবং ব্রেকিং মেকানিজম খুব সহজ। ধৈর্য ধরে প্রতি ধাপে এটি শেখানো হয়।"
-          : "Two-wheeler controls become muscle memory with patient repetition. Zero rush, zero pressure.";
-        courseId = "scooty-basic";
-      }
-
-      const rec = cms.courses.find(c => c.id === courseId) || cms.courses[0];
-
-      box.innerHTML = `
-        <h4 style="color: var(--zf-blue-dark); margin-bottom: 0.6rem;">${isBn ? 'Zero Fear-এর পরামর্শ:' : 'Zero Fear Guidance:'}</h4>
-        <p style="color: var(--text-body); font-size: 1rem; line-height: 1.8; margin-bottom: 1.2rem;">${guidance}</p>
-        <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-          <div>
-            <span style="font-size: 0.75rem; font-weight: 800; color: var(--zf-blue);">RECOMMENDED START</span>
-            <div style="font-weight: 700; color: var(--zf-blue-dark);">${rec.title}</div>
-          </div>
-          <button onclick="openCourseDetailView('${rec.id}')" class="btn-solid-blue" style="font-size: 0.85rem; padding: 8px 16px;">SEE WHERE TO START →</button>
-        </div>
-      `;
-    }
-
-    // ===================================================
-    // COURSE FINDER 4-STEP WIZARD
-    // ===================================================
-    let cfStep = 0;
-    let cfAnswers = {};
-
-    function renderCourseFinder() {
-      const cms = getStoredCMS();
-      const isBn = cms.globalLang === 'bn';
-      const slot = document.getElementById('cfQuestionSlot');
-      if (!slot) return;
-
-      if (cfStep === 0) {
-        slot.innerHTML = `
-          <h4 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">1. ${isBn ? 'আপনি কী শিখতে চান?' : 'What do you want to learn?'}</h4>
-          <button class="quiz-option-btn" onclick="saveCfAns('vehicle', 'scooty')">${isBn ? 'স্কুটি (Scooty)' : 'Scooty'}</button>
-          <button class="quiz-option-btn" onclick="saveCfAns('vehicle', 'bike')">${isBn ? 'গিয়ার বাইক (Bike)' : 'Bike (Geared)'}</button>
-          <button class="quiz-option-btn" onclick="saveCfAns('vehicle', 'ev')">${isBn ? 'ইলেকট্রিক স্কুটি (Electric Scooty)' : 'Electric Scooty'}</button>
-        `;
-      } else if (cfStep === 1) {
-        slot.innerHTML = `
-          <h4 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">2. ${isBn ? 'আপনি কি সাইকেল চালাতে জানেন?' : 'Do you know cycling?'}</h4>
-          <button class="quiz-option-btn" onclick="saveCfAns('cycling', 'yes')">${isBn ? 'হ্যাঁ, জানি' : 'Yes'}</button>
-          <button class="quiz-option-btn" onclick="saveCfAns('cycling', 'no')">${isBn ? 'না, জানি না' : 'No'}</button>
-          <button class="quiz-option-btn" onclick="saveCfAns('cycling', 'little')">${isBn ? 'সামান্য জানি, কিন্তু দ্বিধা আছে' : 'Not comfortably'}</button>
-        `;
-      } else if (cfStep === 2) {
-        slot.innerHTML = `
-          <h4 style="color: var(--zf-blue-dark); margin-bottom: 1rem;">3. ${isBn ? 'ট্রেনিং কোথায় নিতে সুবিধা হবে?' : 'Where do you prefer training?'}</h4>
-          <button class="quiz-option-btn" onclick="saveCfAns('loc', 'centre')">${isBn ? 'টালিগঞ্জ মেইন সেন্টার' : 'Tollygunge Centre (Near Netaji Metro)'}</button>
-          <button class="quiz-option-btn" onclick="saveCfAns('loc', 'doorstep')">${isBn ? 'ডোরস্টেপ (১০ কিমি পরিধির মধ্যে)' : 'Doorstep (Within 10 KM)'}</button>
-        `;
-      } else {
-        let suggestedId = "scooty-basic";
-        if (cfAnswers.vehicle === 'bike') suggestedId = "bike";
-        else if (cfAnswers.vehicle === 'ev') suggestedId = "ev";
-        else if (cfAnswers.loc === 'doorstep') suggestedId = "doorstep";
-
-        const rec = cms.courses.find(c => c.id === suggestedId) || cms.courses[0];
-
-        slot.innerHTML = `
-          <div style="text-align: center;">
-            <span style="font-size: 0.75rem; font-weight: 800; color: var(--zf-green); text-transform: uppercase;">YOUR STARTING POINT</span>
-            <h3 style="color: var(--zf-blue-dark); font-family: var(--font-heading); margin: 0.4rem 0 1rem;">${rec.title}</h3>
-            <p style="color: var(--text-body); font-size: 0.95rem; margin-bottom: 1.5rem;">
-              ${isBn ? 'আপনার দেওয়া তথ্যের ওপর ভিত্তি করে এই কোর্সটি আপনার জন্য প্রাসঙ্গিক হতে পারে।' : 'Based on the information you provided, this course may be relevant to your needs.'}
-            </p>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-              <button onclick="openCourseDetailView('${rec.id}')" class="btn-solid-blue">EXPLORE COURSE</button>
-              <button onclick="cfStep=0;renderCourseFinder()" class="btn-outline-blue">RESTART</button>
-            </div>
-          </div>
-        `;
-      }
-    }
-
-    function saveCfAns(k, v) {
-      cfAnswers[k] = v;
-      cfStep++;
-      renderCourseFinder();
-    }
-
-    // ===================================================
-    // ZERO FEAR CONVERSATIONAL AI WIDGET LOGIC
-    // ===================================================
-    let aiCurrentLang = 'en';
-
-    function toggleAiChat() {
-      const win = document.getElementById('aiChatWindow');
-      win.classList.toggle('open');
-      if (win.classList.contains('open') && document.getElementById('aiChatBody').children.length === 0) {
-        initAiChatMessages();
-      }
-    }
-
-    function setAiLang(lang, btn) {
-      aiCurrentLang = lang;
-      document.querySelectorAll('.ai-lang-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      initAiChatMessages();
-    }
-
-    function initAiChatMessages() {
-      const cms = getStoredCMS();
-      const body = document.getElementById('aiChatBody');
-      body.innerHTML = "";
-
-      let greeting = cms.aiConfig.welcome_en;
-      if (aiCurrentLang === 'bn') greeting = cms.aiConfig.welcome_bn;
-      else if (aiCurrentLang === 'mix') greeting = "Hi! 👋 আমি Zero Fear AI। Not sure which course is right for you? সাইকেল না জানলে স্কুটি শিখতে পারবেন কিনা ভাবছেন? Ask me anything!";
-
-      appendAiMessage('bot', greeting.replace(/\n/g, '<br>'));
-      renderAiQuickChips();
-    }
-
-    function renderAiQuickChips() {
-      const tray = document.getElementById('aiQuickTags');
-      const chips = aiCurrentLang === 'bn' 
-        ? ["আমি সাইকেল জানি না", "কোন কোর্সটি আমার জন্য?", "স্কুটি ট্রেনিং", "বাইক ট্রেনিং", "EV ট্রেনিং", "ডোরস্টেপ", "খরচ কেমন?"]
-        : ["I don't know cycling", "Which course for me?", "Scooty Training", "Bike Training", "EV Training", "Doorstep", "Pricing"];
-
-      tray.innerHTML = chips.map(c => `<span class="ai-tag" onclick="handleAiTagClick('${c}')">${c}</span>`).join('');
-    }
-
-    function appendAiMessage(sender, text) {
-      const body = document.getElementById('aiChatBody');
-      const msg = document.createElement('div');
-      msg.className = `ai-msg ${sender}`;
-      msg.innerHTML = text;
-      body.appendChild(msg);
-      body.scrollTop = body.scrollHeight;
-    }
-
-    function handleAiTagClick(text) {
-      appendAiMessage('user', text);
-      processAiAnswer(text);
-    }
-
-    function handleAiUserSubmit(e) {
-      e.preventDefault();
-      const input = document.getElementById('aiUserInput');
-      const txt = input.value.trim();
-      if (!txt) return;
-      appendAiMessage('user', txt);
-      input.value = "";
-      processAiAnswer(txt);
-    }
-
-    function processAiAnswer(query) {
-      const cms = getStoredCMS();
-      const qLower = query.toLowerCase();
-      let match = null;
-
-      for (const item of cms.knowledgeBase) {
-        const keys = item.q.toLowerCase().split(' ');
-        if (keys.some(k => qLower.includes(k))) {
-          match = item.a;
-          break;
-        }
-      }
-
-      setTimeout(() => {
-        if (match) {
-          appendAiMessage('bot', match);
-          // Suggest CTA
-          appendAiMessage('bot', `
-            <div style="margin-top: 6px;">
-              <small style="color: var(--text-muted); display: block; margin-bottom: 4px;">Zero Fear-এর সঙ্গে কথা বলতে চান?</small>
-              <a href="tel:${cms.config.phone}" class="btn-solid-blue" style="padding: 4px 8px; font-size: 0.75rem; margin-right: 4px;">CALL</a>
-              <button onclick="openQuickLead()" class="btn-solid-blue" style="padding: 4px 8px; font-size: 0.75rem; background: var(--zf-whatsapp);">WHATSAPP</button>
-            </div>
-          `);
-        } else {
-          const fallback = aiCurrentLang === 'bn' ? cms.aiConfig.fallback_bn : cms.aiConfig.fallback_en;
-          appendAiMessage('bot', fallback);
-        }
-      }, 400);
-    }
-
     // Hero Slider Controls
     let hTimer = null;
     let hIndex = 0;
+
     function runHeroSlider() {
       if (hTimer) clearInterval(hTimer);
+      const cms = getStoredCMS();
+      if (cms.heroSpeed === 'manual') return;
+
       const slides = document.querySelectorAll('.hero-wrapper .slide-item');
       const dots = document.querySelectorAll('.hero-wrapper .h-dot');
       if (!slides.length) return;
+
+      const duration = parseInt(cms.heroSpeed, 10) || 5000;
 
       hTimer = setInterval(() => {
         slides.forEach(s => s.classList.remove('active'));
@@ -2304,7 +1919,7 @@
         hIndex = (hIndex + 1) % slides.length;
         slides[hIndex].classList.add('active');
         if (dots[hIndex]) dots[hIndex].classList.add('active');
-      }, 6000);
+      }, duration);
     }
 
     function setHeroIndex(idx) {
@@ -2320,13 +1935,15 @@
     }
 
     function handleHeroCTA(action) {
-      if (action === "challenge") {
-        const el = document.getElementById('sec-challenge');
+      if (action === "women") openPage('women');
+      else if (action === "about") openPage('about');
+      else if (action === "journey") openPage('journey');
+      else if (action === "stories") {
+        const el = document.getElementById('sec-stories');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
-        startInteractiveChallenge();
-      } else if (action === "women") openPage('women');
-      else if (action === "journey") openPage('about');
-      else openPage('about');
+      } else {
+        openQuickLead();
+      }
     }
 
     function toggleDrawer(el) {
@@ -2371,6 +1988,7 @@
       window.open(`https://wa.me/${cms.config.wa}?text=${text}`, '_blank');
     }
 
+    // Secondary Views Sync
     function populateSecondaryViews(cms) {
       document.getElementById('coursesNavDropdown').innerHTML = cms.courses.map(c => `
         <a class="dropdown-item" onclick="openCourseDetailView('${c.id}')">
@@ -2383,6 +2001,172 @@
       document.getElementById('full_loc_hours').textContent = "Training Hours: " + cms.config.hours;
       document.getElementById('btn_full_map').href = cms.config.map;
       document.getElementById('btn_full_call').href = `tel:${cms.config.phone}`;
+
+      document.getElementById('fullBlogCardsGrid').innerHTML = cms.articles.map(a => `
+        <div class="card-white">
+          <span style="font-size: 0.75rem; font-weight: 800; color: var(--zf-green); text-transform: uppercase;">${a.cat}</span>
+          <h3 style="color: var(--zf-blue-dark); margin: 0.5rem 0;">${a.title}</h3>
+          <p style="color: var(--text-body); font-size: 0.9rem; margin-bottom: 1.2rem;">${a.desc}</p>
+          <button onclick="openQuickLead()" class="btn-outline-blue" style="font-size: 0.8rem; padding: 6px 12px;">Inquire With Coach →</button>
+        </div>
+      `).join('');
+
+      document.getElementById('fullFaqRows').innerHTML = cms.faqs.map(f => `
+        <div class="faq-row">
+          <div class="faq-q-bar" onclick="toggleDrawer(this)">
+            <span>${f.q}</span>
+            <span style="font-size: 1.3rem;">+</span>
+          </div>
+          <div class="faq-drawer"><p>${f.a}</p></div>
+        </div>
+      `).join('');
+
+      document.getElementById('fullGalleryGrid').innerHTML = cms.gallery.map(g => `
+        <div class="gallery-thumb-item">
+          <img src="${g.url}" alt="${g.caption}">
+          <div class="gallery-thumb-cap">${g.caption}</div>
+        </div>
+      `).join('');
+    }
+
+    // ===================================================
+    // AI ENGINE & DIALOGUE
+    // ===================================================
+    let aiCurrentLang = 'en';
+
+    function toggleAiChat() {
+      const win = document.getElementById('aiChatWindow');
+      win.classList.toggle('open');
+      if (win.classList.contains('open') && document.getElementById('aiChatBody').children.length === 0) {
+        initAiFirstImpression();
+      }
+    }
+
+    function setAiLang(lang, btn) {
+      aiCurrentLang = lang;
+      document.querySelectorAll('.ai-lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      initAiFirstImpression();
+    }
+
+    function initAiFirstImpression() {
+      const body = document.getElementById('aiChatBody');
+      body.innerHTML = "";
+
+      let greeting = "";
+      if (aiCurrentLang === 'bn') {
+        greeting = "হাই! 👋<br><br>কোথা থেকে শুরু করবেন বুঝতে পারছেন না?<br><br>আপনার সম্পর্কে কয়েকটা কথা বলুন, আমি Zero Fear-এর কোন Training information আপনার জন্য relevant হতে পারে সেটা বুঝতে সাহায্য করব।";
+      } else if (aiCurrentLang === 'mix') {
+        greeting = "Hi! 👋<br><br>Not sure কোথা থেকে শুরু করবেন?<br><br>আপনার requirement বলুন, আমি Zero Fear-এর উপযুক্ত training option খুঁজে দেব।";
+      } else {
+        greeting = "Hi! 👋<br><br>Not sure where to start?<br><br>Tell me a little about yourself and I'll help you understand which Zero Fear training information may be relevant to you.";
+      }
+
+      appendAiMessage('bot', greeting);
+
+      setTimeout(() => {
+        const overview = `
+          <div style="background: #eef6ff; border: 1px solid #cbd5e1; padding: 10px; border-radius: 6px; font-size: 0.8rem; line-height: 1.6;">
+            <strong>ZERO FEAR QUICK OVERVIEW:</strong><br>
+            • <strong>What We Do:</strong> Scooty, Bike & EV Training (Non-Cyclists Welcome)<br>
+            • <strong>How We Train:</strong> Balance, control, progressive real-road escort<br>
+            • <strong>Where:</strong> One hub in Tollygunge (Near Netaji Metro) + 10 KM Doorstep<br>
+            • <strong>Pricing:</strong> Packages starting from ₹2,500<br>
+            • <strong>Experience:</strong> Almost 8 years, 5000+ candidates trained
+          </div>
+        `;
+        appendAiMessage('bot', overview);
+      }, 300);
+
+      renderAiQuickTags();
+    }
+
+    function renderAiQuickTags() {
+      const tray = document.getElementById('aiQuickTags');
+      const tags = aiCurrentLang === 'bn' ? [
+        "আমি সাইকেল জানি না",
+        "আমি Scooty শিখতে চাই",
+        "আমি Bike শিখতে চাই",
+        "আমি EV শিখতে চাই",
+        "আমার Traffic নিয়ে ভয় লাগে",
+        "Training-এর দাম কত?",
+        "কোথায় Training হয়?"
+      ] : [
+        "I don't know cycling",
+        "I want to learn Scooty",
+        "I want to learn Bike",
+        "I want EV Training",
+        "I'm nervous about traffic",
+        "How much does training cost?",
+        "Where is the centre?"
+      ];
+
+      tray.innerHTML = tags.map(t => `<span class="ai-tag" onclick="handleAiTag('${t}')">${t}</span>`).join('');
+    }
+
+    function appendAiMessage(sender, text) {
+      const body = document.getElementById('aiChatBody');
+      const msg = document.createElement('div');
+      msg.className = `ai-msg ${sender}`;
+      msg.innerHTML = text;
+      body.appendChild(msg);
+      body.scrollTop = body.scrollHeight;
+    }
+
+    function handleAiTag(text) {
+      appendAiMessage('user', text);
+      processAiResponse(text);
+    }
+
+    function handleAiUserSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById('aiUserInput');
+      const val = input.value.trim();
+      if (!val) return;
+      appendAiMessage('user', val);
+      input.value = "";
+      processAiResponse(val);
+    }
+
+    function processAiResponse(query) {
+      const cms = getStoredCMS();
+      const q = query.toLowerCase();
+      let match = null;
+
+      if (q.includes("cycl") || q.includes("সাইকেল")) {
+        match = aiCurrentLang === 'bn' 
+          ? "হ্যাঁ, আপনি সাইকেল না জানলেও স্কুটি শিখতে পারেন। স্কুটি ব্যালেন্স প্যাডেলিংয়ের ওপর চলে না, থ্রটল ও বডি গ্র্যাভিটি কন্ট্রোলের ওপর চলে। তবে প্রতিটি শিক্ষার্থীর পার্সোনাল অগ্রগতির ওপর সময় নির্ভর করে।"
+          : "Yes, you can learn scooty without knowing cycling! Scooty balancing is governed by throttle propulsion and vehicle weight management, not pedal countersteer.";
+      } else if (q.includes("cost") || q.includes("price") || q.includes("দাম") || q.includes("খরচ")) {
+        match = aiCurrentLang === 'bn'
+          ? "Zero Fear-এ প্যাকেজ শুরু হয় ₹২,৫০০ থেকে। আপনার প্রয়োজনীয় সেশন ও ডোরস্টেপ দূরত্বের ওপর ভিত্তি করে নির্দিষ্ট প্যাকেজ অপশন দেওয়া হয়।"
+          : "Training packages start from ₹2,500. Exact package options depend on your skill assessment and doorstep travel requirements.";
+      } else if (q.includes("where") || q.includes("location") || q.includes("কোথায়")) {
+        match = aiCurrentLang === 'bn'
+          ? "Zero Fear-এর একটিমাত্র ফিজিক্যাল সেন্টার রয়েছে টালিগঞ্জে, নেতাজি মেট্রো স্টেশনের কাছে। এছাড়া ১০ কিলোমিটারের মধ্যে ডোরস্টেপ সুবিধাও রয়েছে।"
+          : "Zero Fear operates exclusively from one physical hub in Tollygunge, Kolkata, near Netaji Metro Station. Doorstep training is also available within 10 KM.";
+      } else if (q.includes("doorstep") || q.includes("ডোরস্টেপ")) {
+        match = "Doorstep Scooty & Bike Training is available within 10 KM of Netaji Metro Station, subject to trainer availability and road suitability.";
+      } else if (q.includes("bike") || q.includes("বাইক")) {
+        match = "Yes, we provide geared bike training focusing on clutch friction zone control, synchronized gear shifting, and slope balancing.";
+      } else if (q.includes("ev") || q.includes("electric")) {
+        match = "Yes, we teach modern Electric Scooters (Ather, Ola, Chetak, iQube), focusing on instant torque modulation and regenerative brakes.";
+      } else {
+        match = aiCurrentLang === 'bn'
+          ? "সঠিক তথ্য নিশ্চিত করার জন্য Zero Fear টিমের সাথে সরাসরি যোগাযোগ করুন। আমরা কোনো অনুমাননির্ভর বা ভুল তথ্য দিতে চাই না।"
+          : "I want to make sure you get verified information. Please contact the Zero Fear training team directly via WhatsApp or Call.";
+      }
+
+      setTimeout(() => {
+        appendAiMessage('bot', match);
+        appendAiMessage('bot', `
+          <div style="margin-top: 6px;">
+            <small style="color: var(--text-muted); display: block; margin-bottom: 4px;">Zero Fear-এর সাথে কথা বলতে চান?</small>
+            <a href="tel:${cms.config.phone}" class="btn-solid-blue" style="padding: 4px 8px; font-size: 0.75rem; margin-right: 4px;">CALL</a>
+            <button onclick="openQuickLead()" class="btn-solid-blue" style="padding: 4px 8px; font-size: 0.75rem; background: var(--zf-whatsapp);">WHATSAPP</button>
+          </div>
+        `);
+      }, 350);
     }
 
     // ===================================================
@@ -2408,62 +2192,97 @@
     function renderAdminDashboard() {
       const cms = getStoredCMS();
 
-      // AI Settings form
-      document.getElementById('ai_cfg_enabled').checked = cms.aiConfig.enabled;
-      document.getElementById('ai_cfg_welcome_en').value = cms.aiConfig.welcome_en;
-      document.getElementById('ai_cfg_welcome_bn').value = cms.aiConfig.welcome_bn;
-      document.getElementById('ai_cfg_fallback').value = cms.aiConfig.fallback_en;
+      document.getElementById('hero_speed_select').value = cms.heroSpeed || 5000;
+      document.getElementById('cfg_phone').value = cms.config.phone;
+      document.getElementById('cfg_wa').value = cms.config.wa;
+      document.getElementById('cfg_address').value = cms.config.address;
+      document.getElementById('cfg_hours').value = cms.config.hours;
 
-      // Knowledge Base
-      document.getElementById('adminKbList').innerHTML = cms.knowledgeBase.map((k, idx) => `
-        <div style="background: #f8fafc; border: 1px solid var(--border-subtle); padding: 10px 14px; border-radius: 6px; margin-bottom: 8px;">
-          <strong>Trigger: ${k.q}</strong>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">${k.a}</p>
-          <button onclick="deleteKbItem(${idx})" class="adm-btn-tiny" style="color: red; margin-top: 4px;">Delete</button>
-        </div>
-      `).join('');
+      // GMB
+      if (!cms.gmb) cms.gmb = DEFAULT_CMS.gmb;
+      document.getElementById('gmb_enable').checked = cms.gmb.enabled;
+      document.getElementById('gmb_place_id').value = cms.gmb.placeId || "ChIJKw-pMI1xAjoR2InlnVTKHeI";
+      document.getElementById('gmb_api_endpoint').value = cms.gmb.apiEndpoint || "";
+      document.getElementById('gmb_limit').value = cms.gmb.limit || 4;
+
+      // Bengali
+      document.getElementById('bn_sec_eyebrow').value = cms.bengaliSection.eyebrow;
+      document.getElementById('bn_sec_heading').value = cms.bengaliSection.heading;
+      document.getElementById('bn_sec_text').value = cms.bengaliSection.text;
+      document.getElementById('bn_sec_cta').value = cms.bengaliSection.cta;
 
       // Section Reorder
       document.getElementById('sectionReorderList').innerHTML = cms.sectionsOrder.map((sec, idx) => `
-        <div style="display: flex; justify-content: space-between; align-items: center; background: #f8fafc; padding: 10px 14px; border: 1px solid var(--border-subtle); margin-bottom: 6px; border-radius: 4px;">
-          <div><strong>${sec.name}</strong> <small>(${sec.visible ? 'Visible' : 'Hidden'})</small></div>
+        <div class="ctrl-row-item">
           <div>
+            <strong>${sec.name}</strong>
+            <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">(${sec.visible ? 'Visible' : 'Hidden'})</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <select onchange="updateSecBg(${idx}, this.value)" style="font-size: 0.75rem; padding: 4px;">
+              <option value="white" ${sec.bgStyle === 'white' ? 'selected' : ''}>White</option>
+              <option value="light-blue" ${sec.bgStyle === 'light-blue' ? 'selected' : ''}>Light Blue</option>
+              <option value="light-green" ${sec.bgStyle === 'light-green' ? 'selected' : ''}>Light Green</option>
+              <option value="custom-grad" ${sec.bgStyle === 'custom-grad' ? 'selected' : ''}>Gradient</option>
+            </select>
             <button onclick="moveSec(${idx}, -1)" class="adm-btn-tiny">▲</button>
             <button onclick="moveSec(${idx}, 1)" class="adm-btn-tiny">▼</button>
             <button onclick="toggleSecVis(${idx})" class="adm-btn-tiny">${sec.visible ? 'Hide' : 'Show'}</button>
           </div>
         </div>
       `).join('');
+
+      // Hero Slides
+      document.getElementById('adminHeroSlidesList').innerHTML = cms.heroSlides.map((s, idx) => `
+        <div style="background: #f8fafc; padding: 1.2rem; border-radius: 6px; margin-bottom: 1.2rem; border: 1px solid var(--border-subtle);">
+          <h4>Slide ${idx + 1}: ${s.kicker}</h4>
+          <input type="text" value="${s.heading}" onchange="updateHeroProp(${idx}, 'heading', this.value)" style="width: 100%; margin: 6px 0; padding: 8px;">
+          <textarea onchange="updateHeroProp(${idx}, 'desc', this.value)" style="width: 100%; padding: 8px;">${s.desc}</textarea>
+          <input type="text" value="${s.img}" onchange="updateHeroProp(${idx}, 'img', this.value)" placeholder="Image URL" style="width: 100%; margin: 6px 0; padding: 8px;">
+        </div>
+      `).join('');
     }
 
-    function saveAiSettings(e) {
-      e.preventDefault();
+    function updateHeroSpeed(val) {
       const cms = getStoredCMS();
-      cms.aiConfig.enabled = document.getElementById('ai_cfg_enabled').checked;
-      cms.aiConfig.welcome_en = document.getElementById('ai_cfg_welcome_en').value;
-      cms.aiConfig.welcome_bn = document.getElementById('ai_cfg_welcome_bn').value;
-      cms.aiConfig.fallback_en = document.getElementById('ai_cfg_fallback').value;
+      cms.heroSpeed = val === 'manual' ? 'manual' : parseInt(val, 10);
       saveStoredCMS(cms);
-      alert("AI Assistant settings saved!");
     }
 
-    function addKbItem(e) {
-      e.preventDefault();
+    function saveBengaliCMS(e) {
+      if (e) e.preventDefault();
       const cms = getStoredCMS();
-      cms.knowledgeBase.unshift({
-        q: document.getElementById('kb_q').value.trim(),
-        a: document.getElementById('kb_a').value.trim()
-      });
+      cms.bengaliSection.eyebrow = document.getElementById('bn_sec_eyebrow').value.trim();
+      cms.bengaliSection.heading = document.getElementById('bn_sec_heading').value.trim();
+      cms.bengaliSection.text = document.getElementById('bn_sec_text').value.trim();
+      cms.bengaliSection.cta = document.getElementById('bn_sec_cta').value.trim();
       saveStoredCMS(cms);
-      renderAdminDashboard();
-      e.target.reset();
+      alert("✅ Bengali Connection Section সফলভাবে সেভ হয়েছে!");
     }
 
-    function deleteKbItem(idx) {
+    function saveGmbSettings(e) {
+      if (e) e.preventDefault();
       const cms = getStoredCMS();
-      cms.knowledgeBase.splice(idx, 1);
-      saveStoredCMS(cms);
-      renderAdminDashboard();
+
+      if (!cms.gmb) {
+        cms.gmb = DEFAULT_CMS.gmb;
+      }
+
+      const enableInput = document.getElementById('gmb_enable');
+      const placeIdInput = document.getElementById('gmb_place_id');
+      const apiEndpointInput = document.getElementById('gmb_api_endpoint');
+      const limitInput = document.getElementById('gmb_limit');
+
+      cms.gmb.enabled = enableInput ? enableInput.checked : true;
+      cms.gmb.placeId = placeIdInput ? placeIdInput.value.trim() : "ChIJKw-pMI1xAjoR2InlnVTKHeI";
+      cms.gmb.apiEndpoint = apiEndpointInput ? apiEndpointInput.value.trim() : "";
+      cms.gmb.limit = limitInput ? (parseInt(limitInput.value, 10) || 4) : 4;
+      cms.gmb.cid = "7060569192068913354";
+      cms.config.map = "https://maps.google.com/?cid=7060569192068913354";
+
+      if (saveStoredCMS(cms)) {
+        alert("✅ Google Business Profile Settings সফলভাবে সেভ হয়েছে!");
+      }
     }
 
     function moveSec(idx, delta) {
@@ -2484,11 +2303,43 @@
       renderAdminDashboard();
     }
 
+    function updateSecBg(idx, val) {
+      const cms = getStoredCMS();
+      cms.sectionsOrder[idx].bgStyle = val;
+      saveStoredCMS(cms);
+    }
+
+    function updateHeroProp(idx, prop, val) {
+      const cms = getStoredCMS();
+      cms.heroSlides[idx][prop] = val;
+      saveStoredCMS(cms);
+    }
+
+    function saveAboutCMS(e) {
+      if (e) e.preventDefault();
+      const cms = getStoredCMS();
+      cms.about.headline = document.getElementById('ab_headline').value.trim();
+      cms.about.shortText = document.getElementById('ab_p1').value.trim();
+      saveStoredCMS(cms);
+      alert("About Us saved!");
+    }
+
+    function saveContactCMS(e) {
+      if (e) e.preventDefault();
+      const cms = getStoredCMS();
+      cms.config.phone = document.getElementById('cfg_phone').value.trim();
+      cms.config.wa = document.getElementById('cfg_wa').value.trim();
+      cms.config.address = document.getElementById('cfg_address').value.trim();
+      cms.config.hours = document.getElementById('cfg_hours').value.trim();
+      saveStoredCMS(cms);
+      alert("Business Info updated!");
+    }
+
     function exportData() {
       const str = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(getStoredCMS(), null, 2));
       const a = document.createElement('a');
       a.setAttribute("href", str);
-      a.setAttribute("download", "zerofear_cms_backup_" + new Date().toISOString().slice(0,10) + ".json");
+      a.setAttribute("download", "zerofear_v4_backup_" + new Date().toISOString().slice(0,10) + ".json");
       a.click();
     }
 
@@ -2514,7 +2365,7 @@
 
     function resetDefaultData() {
       if (confirm("Reset all website content back to factory default?")) {
-        localStorage.removeItem("zerofear_master_cms");
+        localStorage.removeItem("zerofear_master_cms_v4");
         applyAllCMS();
         renderAdminDashboard();
         alert("Reset complete.");
@@ -2536,18 +2387,15 @@
     function applyAllCMS() {
       const cms = getStoredCMS();
 
-      // Floating AI visibility
-      const aiBtn = document.getElementById('aiLauncherBtn');
-      if (aiBtn) aiBtn.style.display = cms.aiConfig.enabled ? 'flex' : 'none';
-
-      document.getElementById('topAddressSync').textContent = `${cms.config.address.split(',')[0]} • Doorstep Facility Available`;
-      document.getElementById('ft_address_txt').textContent = cms.config.address;
+      document.getElementById('floatCallAction').href = `tel:${cms.config.phone}`;
+      document.getElementById('floatWaAction').href = `https://wa.me/${cms.config.wa}`;
       document.getElementById('ft_phone_txt').textContent = "Phone: " + cms.config.phone;
+      document.getElementById('ft_address_txt').textContent = cms.config.address;
       document.getElementById('ft_hours_txt').textContent = "Hours: " + cms.config.hours;
+      document.getElementById('topAddressSync').textContent = `${cms.config.address.split(',')[0]} • Doorstep Facility Available`;
 
       renderHomepageOverview(cms);
       populateSecondaryViews(cms);
-      renderCourseFinder();
       runHeroSlider();
     }
 
