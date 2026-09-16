@@ -3,69 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZERO FEAR — Two-Wheeler Training School Kolkata | Fear Out. Freedom In.</title>
+  <title>ZERO FEAR — Two-Wheeler Riding School Kolkata | Fear Out. Freedom In.</title>
   <meta name="description" content="Kolkata's specialized scooty, bike, and electric scooter training school. Beginner-focused, non-cyclist friendly, women-first riding lessons in Tollygunge & Doorstep.">
+  <link rel="canonical" href="https://zerofear.vercel.app/">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zerofear.vercel.app/">
+  <meta property="og:title" content="ZERO FEAR — Two-Wheeler Riding School Kolkata">
+  <meta property="og:description" content="Fear Out. Freedom In. Dedicated two-wheeler training for beginners, non-cyclists, and women in Kolkata.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["EducationalOrganization", "LocalBusiness"],
+        "@id": "https://zerofear.vercel.app/#organization",
+        "name": "ZERO FEAR Two-Wheeler Training School",
+        "url": "https://zerofear.vercel.app/",
+        "logo": "https://zerofear.vercel.app/logo.png",
+        "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80",
+        "description": "Specialized two-wheeler training school in Kolkata for beginners, non-cyclists, and women.",
+        "telephone": "+919876543210",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Near Netaji Metro Station, Tollygunge",
+          "addressLocality": "Kolkata",
+          "addressRegion": "West Bengal",
+          "postalCode": "700040",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "22.4837",
+          "longitude": "88.3448"
+        },
+        "openingHours": "Mo-Su 07:00-18:30"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://zerofear.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I learn scooty without knowing cycling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, absolutely. Scooty balance relies on physical vehicle weight distribution and steady throttle control, not cycling pedaling countersteer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does training cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Packages start from ₹2,500. Comprehensive individual programs and doorstep packages depend on your skill assessment and distance."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
-      --primary-navy: #0d234a;
-      --primary-deep: #07152e;
-      --accent-yellow: #fca311;
-      --yellow-glow: rgba(252, 163, 17, 0.25);
-      --accent-yellow-light: #ffbe3b;
+      --primary-navy: #0a192f;
+      --primary-deep: #071324;
+      --primary-card: #0f2341;
+      --accent-yellow: #f59e0b;
+      --accent-yellow-dark: #d97706;
+      --accent-yellow-light: #fbbf24;
+      --yellow-glow: rgba(245, 158, 11, 0.25);
       --bg-page: #f8fafc;
       --bg-surface: #ffffff;
-      --text-dark: #1e293b;
-      --text-body: #475569;
+      --text-dark: #0f172a;
+      --text-body: #334155;
       --text-muted: #64748b;
-      --border: #e2e8f0;
+      --border-light: #e2e8f0;
+      --border-navy: rgba(255, 255, 255, 0.1);
       --whatsapp: #25d366;
       --font-display: 'Cinzel', serif;
       --font-sans: 'Plus Jakarta Sans', sans-serif;
       --font-bengali: 'Noto Sans Bengali', sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       background-color: var(--bg-page);
       color: var(--text-dark);
       font-family: var(--font-sans);
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
-    .bn-text {
-      font-family: var(--font-bengali);
-    }
+    .bn-text { font-family: var(--font-bengali); }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; font-family: inherit; }
 
     /* Top Announcements Bar */
     .announcement-bar {
       background: var(--primary-deep);
-      color: #cbd5e1;
+      color: #94a3b8;
       font-size: 0.8rem;
       padding: 6px 5%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid var(--border-navy);
     }
-
-    .announcement-bar strong {
-      color: var(--accent-yellow);
-    }
+    .announcement-bar strong { color: var(--accent-yellow); }
 
     /* Navigation Header */
     header {
@@ -73,17 +129,16 @@
       top: 0;
       width: 100%;
       background: var(--primary-navy);
-      box-shadow: 0 4px 20px rgba(7, 21, 46, 0.15);
+      border-bottom: 1px solid var(--border-navy);
+      box-shadow: 0 4px 20px rgba(7, 19, 36, 0.25);
       z-index: 1000;
     }
-
     .nav-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.9rem 5%;
+      padding: 0.85rem 5%;
     }
-
     .brand-logo {
       font-family: var(--font-display);
       font-size: 1.6rem;
@@ -92,82 +147,47 @@
       color: #ffffff;
       cursor: pointer;
     }
+    .brand-logo span { color: var(--accent-yellow); }
 
-    .brand-logo span {
-      color: var(--accent-yellow);
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-    }
-
+    nav { display: flex; align-items: center; gap: 1rem; }
     .nav-link {
       color: #e2e8f0;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 600;
-      text-decoration: none;
       padding: 8px 12px;
       border-radius: 4px;
-      transition: 0.25s;
+      transition: 0.2s;
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
     }
-
-    .nav-link:hover {
-      color: var(--accent-yellow);
-    }
+    .nav-link:hover { color: var(--accent-yellow); }
 
     /* Dropdown Menus */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
+    .dropdown { position: relative; display: inline-block; }
     .dropdown-menu {
       display: none;
       position: absolute;
       top: 100%;
       left: 0;
       background: var(--bg-surface);
-      min-width: 250px;
+      min-width: 260px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-light);
       border-radius: 6px;
       padding: 8px 0;
       z-index: 1100;
     }
-
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-
+    .dropdown:hover .dropdown-menu { display: block; }
     .dropdown-item {
       display: block;
       padding: 10px 18px;
       color: var(--text-dark);
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       font-weight: 600;
-      text-decoration: none;
-      transition: background 0.2s, color 0.2s;
+      transition: background 0.2s;
       cursor: pointer;
     }
-
-    .dropdown-item:hover {
-      background: #f1f5f9;
-      color: var(--primary-navy);
-    }
-
-    .dropdown-item small {
-      display: block;
-      color: var(--text-muted);
-      font-size: 0.75rem;
-      font-weight: 400;
-      margin-top: 2px;
-    }
+    .dropdown-item:hover { background: #f1f5f9; color: var(--primary-navy); }
+    .dropdown-item small { display: block; color: var(--text-muted); font-size: 0.75rem; font-weight: 400; }
 
     .btn-cta-nav {
       background: var(--accent-yellow);
@@ -177,30 +197,31 @@
       border-radius: 5px;
       letter-spacing: 0.5px;
       box-shadow: 0 4px 14px var(--yellow-glow);
+      transition: 0.2s;
     }
+    .btn-cta-nav:hover { background: var(--accent-yellow-light); }
 
-    .btn-cta-nav:hover {
-      background: var(--accent-yellow-light);
-    }
-
-    /* Page View Containers */
-    .view-page {
+    /* Mobile Toggle */
+    .menu-toggle {
       display: none;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
     }
 
-    .view-page.active {
-      display: block;
-    }
+    /* Views */
+    .view-page { display: none; }
+    .view-page.active { display: block; }
 
-    /* 5-Slide Hero Section */
+    /* Hero Slider */
     .hero-slider-wrap {
       position: relative;
-      height: 82vh;
-      min-height: 560px;
+      height: 84vh;
+      min-height: 580px;
       background: var(--primary-deep);
       overflow: hidden;
     }
-
     .slide {
       position: absolute;
       inset: 0;
@@ -211,13 +232,8 @@
       align-items: center;
       padding: 0 8%;
     }
-
-    .slide.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .slide-overlay {
+    .slide.active { opacity: 1; visibility: visible; }
+    .slide-bg {
       position: absolute;
       inset: 0;
       background-size: cover;
@@ -225,13 +241,7 @@
       filter: brightness(0.28);
       z-index: 1;
     }
-
-    .slide-content {
-      position: relative;
-      z-index: 2;
-      max-width: 820px;
-    }
-
+    .slide-content { position: relative; z-index: 2; max-width: 850px; }
     .slide-kicker {
       color: var(--accent-yellow);
       font-size: 0.85rem;
@@ -240,26 +250,23 @@
       text-transform: uppercase;
       margin-bottom: 0.8rem;
     }
-
     .slide-h1 {
       font-family: var(--font-display);
-      font-size: clamp(2.2rem, 4.8vw, 3.6rem);
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
       line-height: 1.15;
       font-weight: 800;
       color: #ffffff;
       margin-bottom: 1.2rem;
     }
-
     .slide-desc {
       font-size: 1.15rem;
       color: #cbd5e1;
       margin-bottom: 1.6rem;
       font-weight: 300;
     }
-
     .slide-bn-box {
       font-family: var(--font-bengali);
-      background: rgba(252, 163, 17, 0.12);
+      background: rgba(245, 158, 11, 0.12);
       border-left: 4px solid var(--accent-yellow);
       color: #fff;
       padding: 12px 18px;
@@ -267,7 +274,6 @@
       font-size: 1.05rem;
       margin-bottom: 1.8rem;
     }
-
     .slider-dots {
       position: absolute;
       bottom: 25px;
@@ -276,7 +282,6 @@
       display: flex;
       gap: 10px;
     }
-
     .dot {
       width: 12px;
       height: 12px;
@@ -285,379 +290,321 @@
       cursor: pointer;
       transition: 0.3s;
     }
-
-    .dot.active {
-      background: var(--accent-yellow);
-      width: 32px;
-      border-radius: 6px;
-    }
+    .dot.active { background: var(--accent-yellow); width: 32px; border-radius: 6px; }
 
     /* SEO Keyword Strip */
     .seo-strip {
-      background: #0f1e36;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: #08162b;
+      border-top: 1px solid var(--border-navy);
+      border-bottom: 1px solid var(--border-navy);
       padding: 12px 5%;
       overflow-x: auto;
       white-space: nowrap;
       text-align: center;
     }
-
     .seo-strip span {
       color: #cbd5e1;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
       margin: 0 8px;
     }
+    .seo-strip b { color: var(--accent-yellow); }
 
-    .seo-strip b {
-      color: var(--accent-yellow);
-    }
-
-    /* General Layout Sections */
-    .section {
-      padding: 5rem 8%;
-    }
-
+    /* Sections */
+    .section { padding: 5rem 8%; }
     .section.alt-bg {
       background: #ffffff;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
     }
-
+    .section.dark-bg {
+      background: var(--primary-deep);
+      color: #fff;
+      border-top: 1px solid var(--border-navy);
+      border-bottom: 1px solid var(--border-navy);
+    }
     .sec-kicker {
-      color: var(--accent-yellow);
+      color: var(--accent-yellow-dark);
       font-size: 0.8rem;
       font-weight: 800;
       letter-spacing: 2.5px;
       text-transform: uppercase;
       margin-bottom: 0.4rem;
     }
-
+    .section.dark-bg .sec-kicker { color: var(--accent-yellow); }
     .sec-title {
       font-family: var(--font-display);
-      font-size: 2.2rem;
+      font-size: clamp(1.8rem, 3.2vw, 2.3rem);
       color: var(--primary-navy);
       font-weight: 800;
       line-height: 1.25;
       margin-bottom: 1rem;
     }
+    .section.dark-bg .sec-title { color: #fff; }
+    .sec-subtitle { color: var(--text-body); font-size: 1.05rem; max-width: 680px; }
+    .section.dark-bg .sec-subtitle { color: #cbd5e1; }
 
-    .sec-subtitle {
-      color: var(--text-body);
-      font-size: 1.05rem;
-      max-width: 650px;
-    }
-
-    /* Split Story Grid */
-    .split-grid {
+    /* Trust Numbers Bar */
+    .trust-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .trust-card {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      padding: 2rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+    .trust-val {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--accent-yellow-dark);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .trust-label { font-size: 0.85rem; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px; }
+
+    /* Grids & Cards */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; }
+
+    .card-clean {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      transition: transform 0.25s, border-color 0.25s;
+    }
+    .card-clean:hover { transform: translateY(-4px); border-color: var(--accent-yellow); }
+
+    /* Women Section Specific */
+    .women-editorial {
+      background: linear-gradient(135deg, #102344 0%, #0a192f 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 4rem 8%;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 3.5rem;
       align-items: center;
+      border: 1px solid var(--border-navy);
     }
-
-    .emotion-card {
-      background: #fff;
-      border: 1px solid #fed7aa;
-      border-left: 5px solid var(--accent-yellow);
-      padding: 2.2rem;
+    .women-img-frame {
+      position: relative;
       border-radius: 8px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
+    .women-img-frame img { width: 100%; height: 380px; object-fit: cover; display: block; }
 
-    /* Philosophy / Mission Grid */
-    .cards-grid-4 {
+    /* Journey Steps */
+    .journey-timeline {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
       margin-top: 2.5rem;
     }
-
-    .pillar-card {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      padding: 2rem;
-      border-radius: 8px;
-      transition: 0.3s;
+    .journey-card {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-top: 4px solid var(--accent-yellow);
+      padding: 1.8rem 1.4rem;
+      border-radius: 6px;
     }
-
-    .pillar-card:hover {
-      border-color: var(--primary-navy);
-      transform: translateY(-4px);
-    }
-
-    .pillar-num {
+    .journey-step-num {
       font-family: var(--font-display);
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 900;
-      color: var(--accent-yellow);
-      margin-bottom: 0.5rem;
-    }
-
-    .pillar-card h3 {
-      font-size: 1.2rem;
       color: var(--primary-navy);
       margin-bottom: 0.5rem;
     }
+    .journey-card h4 { font-size: 1.05rem; color: var(--primary-navy); margin-bottom: 0.4rem; }
+    .journey-card p { font-size: 0.85rem; color: var(--text-body); }
 
-    .pillar-card p {
-      color: var(--text-body);
-      font-size: 0.9rem;
-    }
-
-    /* Course Cards */
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      gap: 2rem;
-      margin-top: 2.5rem;
-    }
-
-    .course-item {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
+    /* Courses Overview */
+    .course-card-pub {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: box-shadow 0.3s, transform 0.3s;
+      transition: 0.3s;
     }
-
-    .course-item:hover {
-      box-shadow: 0 12px 30px rgba(13, 35, 74, 0.08);
-      transform: translateY(-4px);
-    }
-
-    .course-pad {
-      padding: 2rem;
-    }
-
-    .course-badge {
+    .course-card-pub:hover { box-shadow: 0 12px 30px rgba(10, 25, 47, 0.08); transform: translateY(-4px); }
+    .course-card-pad { padding: 2rem; }
+    .course-tag {
       display: inline-block;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
+      background: #f1f5f9;
       color: var(--primary-navy);
-      background: #e2e8f0;
       padding: 4px 10px;
       border-radius: 20px;
       margin-bottom: 0.8rem;
     }
-
-    .course-item h3 {
-      font-size: 1.3rem;
-      color: var(--primary-navy);
-      margin-bottom: 0.4rem;
-    }
-
-    .course-price {
-      font-size: 1.05rem;
-      font-weight: 800;
+    .course-price-disp {
       color: #b45309;
-      margin-bottom: 1rem;
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin: 0.6rem 0 1rem;
     }
 
-    .course-desc {
-      color: var(--text-body);
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .course-action {
-      background: #f8fafc;
-      border-top: 1px solid var(--border);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .btn-detail {
-      color: var(--primary-navy);
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .btn-detail:hover {
-      color: var(--accent-yellow);
-    }
-
-    /* EV Showcase */
-    .ev-box {
-      background: linear-gradient(135deg, var(--primary-deep) 0%, var(--primary-navy) 100%);
-      color: #fff;
-      border-radius: 12px;
-      padding: 3.5rem;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .ev-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 1.5rem;
-    }
-
-    .ev-pill {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      font-size: 0.8rem;
-      padding: 6px 14px;
-      border-radius: 20px;
-      color: #f1f5f9;
-    }
-
-    /* Location Section */
-    .loc-grid {
+    /* Before/After Transformation Card */
+    .transform-dual {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 2.5rem;
-    }
-
-    .loc-card {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 2.5rem;
-    }
-
-    .loc-card h3 {
-      font-size: 1.35rem;
-      color: var(--primary-navy);
-      margin-bottom: 0.4rem;
-    }
-
-    /* Blog & SEO Grid */
-    .blog-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .blog-card {
+      gap: 1.5rem;
       background: #fff;
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-light);
       border-radius: 8px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
     }
+    .trans-side { padding: 1.2rem; border-radius: 6px; }
+    .trans-side.before { background: #fef2f2; border-left: 4px solid #ef4444; }
+    .trans-side.after { background: #ecfdf5; border-left: 4px solid #10b981; }
 
-    .blog-card-img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
+    /* Gallery Grid */
+    .gallery-filter { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .gal-btn {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .gal-btn.active { background: var(--primary-navy); color: #fff; border-color: var(--primary-navy); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 220px;
       background: #e2e8f0;
     }
-
-    .blog-card-pad {
-      padding: 1.5rem;
-      flex-grow: 1;
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 0.78rem;
     }
 
-    .blog-cat-badge {
-      color: #b45309;
-      font-size: 0.75rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 0.4rem;
+    /* Video Embed Container */
+    .video-card {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .video-iframe-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      background: #000;
+    }
+    .video-iframe-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
-    .blog-card h4 {
-      font-size: 1.15rem;
+    /* FAQ Accordion */
+    .faq-box { max-width: 850px; margin: 0 auto; }
+    .faq-node { border-bottom: 1px solid var(--border-light); padding: 1.4rem 0; }
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+      font-weight: 700;
       color: var(--primary-navy);
-      margin-bottom: 0.6rem;
-      line-height: 1.4;
+      cursor: pointer;
     }
-
-    .blog-card p {
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
       color: var(--text-body);
-      font-size: 0.88rem;
-      margin-bottom: 1rem;
+      font-size: 0.95rem;
     }
+    .faq-a p { padding-top: 0.8rem; }
 
-    /* Lead Enquiry Form */
-    .enquiry-wrapper {
+    /* WhatsApp Enquiry Form */
+    .form-enquiry-wrap {
       max-width: 680px;
       margin: 0 auto;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      box-shadow: 0 10px 40px rgba(13, 35, 74, 0.06);
-      border-radius: 12px;
+      background: #fff;
+      border: 1px solid var(--border-light);
       padding: 3rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
-
-    .form-group {
-      margin-bottom: 1.3rem;
-    }
-
-    .form-group label {
+    .form-ctrl { margin-bottom: 1.2rem; }
+    .form-ctrl label {
       display: block;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       font-weight: 700;
       color: var(--text-dark);
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-ctrl input, .form-ctrl select, .form-ctrl textarea {
       width: 100%;
-      border: 1px solid var(--border);
-      background: #f8fafc;
       padding: 12px 14px;
+      border: 1px solid var(--border-light);
       border-radius: 6px;
+      background: #f8fafc;
       font-size: 0.95rem;
       font-family: inherit;
       color: var(--text-dark);
     }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
+    .form-ctrl input:focus, .form-ctrl select:focus, .form-ctrl textarea:focus {
       outline: none;
       border-color: var(--primary-navy);
       background: #fff;
     }
-
     .btn-wa-submit {
       width: 100%;
       background: var(--whatsapp);
-      color: #ffffff;
+      color: #fff;
       border: none;
       padding: 14px;
       border-radius: 6px;
-      font-size: 1rem;
       font-weight: 800;
-      cursor: pointer;
+      font-size: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-      transition: background 0.3s;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
     }
 
-    .btn-wa-submit:hover {
-      background: #1eb954;
-    }
-
-    /* Floating Trays */
-    .floating-box {
+    /* Floating Utilities */
+    .floating-tray {
       position: fixed;
       bottom: 25px;
       right: 25px;
@@ -666,8 +613,7 @@
       gap: 12px;
       z-index: 999;
     }
-
-    .floating-btn {
+    .float-btn {
       width: 54px;
       height: 54px;
       border-radius: 50%;
@@ -676,100 +622,103 @@
       justify-content: center;
       color: #fff;
       font-size: 24px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
       transition: transform 0.2s;
     }
-
-    .floating-btn:hover {
-      transform: scale(1.1);
-    }
-
-    .btn-wa-float {
-      background: var(--whatsapp);
-    }
-
-    .btn-call-float {
-      background: var(--primary-navy);
-    }
-
-    /* Admin View Panels */
-    .admin-container {
-      max-width: 900px;
-      margin: 3rem auto;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 3rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    }
-
-    .preview-box {
-      border: 2px dashed #cbd5e1;
-      padding: 1.5rem;
-      border-radius: 6px;
-      text-align: center;
-      margin-top: 10px;
-      background: #f8fafc;
-    }
-
-    .preview-img {
-      max-width: 100%;
-      max-height: 250px;
-      border-radius: 6px;
-      display: none;
-      margin: 10px auto 0;
-    }
+    .float-btn:hover { transform: scale(1.1); }
+    .float-wa { background: var(--whatsapp); }
+    .float-call { background: var(--primary-navy); }
 
     /* Footer */
     footer {
       background: var(--primary-deep);
       color: #cbd5e1;
       padding: 4rem 5% 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.9rem;
+      border-top: 1px solid var(--border-navy);
+      font-size: 0.88rem;
     }
-
     .footer-grid {
       display: grid;
       grid-template-columns: 1.5fr 1fr 1fr;
       gap: 3rem;
       margin-bottom: 3rem;
     }
-
     .footer-brand {
       font-family: var(--font-display);
       font-size: 1.6rem;
       color: #fff;
-      margin-bottom: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 0.6rem;
     }
+    .footer-brand span { color: var(--accent-yellow); }
 
-    .footer-brand span {
-      color: var(--accent-yellow);
+    /* ================================================= */
+    /* ADMIN CMS STYLING */
+    /* ================================================= */
+    #view-admin {
+      background: #f1f5f9;
+      min-height: 100vh;
+      padding: 2.5rem 5%;
     }
-
-    .footer-links a {
-      display: block;
-      color: #94a3b8;
-      text-decoration: none;
-      margin-bottom: 8px;
-      transition: color 0.2s;
-    }
-
-    .footer-links a:hover {
+    .admin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--primary-navy);
       color: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .admin-subnav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .btn-admin-tab {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      padding: 9px 16px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .btn-admin-tab.active { background: var(--accent-yellow); color: var(--primary-deep); border-color: var(--accent-yellow); }
+
+    .admin-panel-card {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .reorder-list { display: flex; flex-direction: column; gap: 10px; margin-top: 1.5rem; }
+    .reorder-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+      border: 1px solid var(--border-light);
+      padding: 12px 18px;
+      border-radius: 6px;
+    }
+    .reorder-item.hidden-sec { opacity: 0.5; background: #eee; }
+    .admin-btn-sm {
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 4px;
+      border: 1px solid var(--border-light);
+      background: #fff;
+      margin-left: 4px;
     }
 
     @media(max-width: 900px) {
-      .split-grid, .ev-box, .loc-grid, .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      nav a.nav-link:not(.btn-cta-nav) {
-        display: none;
-      }
-      .slide-h1 {
-        font-size: 2.1rem;
-      }
+      .grid-2, .women-editorial, .footer-grid, .transform-dual { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .menu-toggle { display: block; }
     }
   </style>
 </head>
@@ -778,587 +727,293 @@
   <!-- Top Ribbon -->
   <div class="announcement-bar">
     <div><strong>ZERO FEAR</strong> — Kolkata's 1st Non-Cyclist & Beginner Friendly Riding School</div>
-    <div>Tollygunge Hub (Near Netaji Metro) • Doorstep Facility Available</div>
+    <div id="topRibbonContact">Tollygunge Hub (Near Netaji Metro) • Doorstep Facility Available</div>
   </div>
 
-  <!-- Main Navigation with Dropdowns -->
+  <!-- Header -->
   <header>
     <div class="nav-container">
-      <div class="brand-logo" onclick="switchView('home')">
-        ZERO<span>FEAR</span>
-      </div>
+      <div class="brand-logo" onclick="switchView('home')">ZERO<span>FEAR</span></div>
 
-      <nav>
+      <nav id="navMenu">
         <a class="nav-link" onclick="switchView('home')">Home</a>
 
         <!-- Courses Dropdown -->
         <div class="dropdown">
           <a class="nav-link">Courses ▾</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" onclick="openCourseDetail('scooty-basic')">
-              Basic Scooty Training
-              <small>Starting from ₹2,500 • For Non-Cyclists</small>
-            </a>
-            <a class="dropdown-item" onclick="openCourseDetail('scooty-adv')">
-              Advanced Scooty Training
-              <small>Real Road & Traffic Mastery</small>
-            </a>
-            <a class="dropdown-item" onclick="openCourseDetail('bike')">
-              Geared Bike Training
-              <small>Friction Zone & Clutch Mastery</small>
-            </a>
-            <a class="dropdown-item" onclick="openCourseDetail('ev')">
-              Electric Scooty Training
-              <small>Instant Torque & Digital Throttle</small>
-            </a>
-            <a class="dropdown-item" onclick="openCourseDetail('doorstep')">
-              Doorstep Training
-              <small>Within 10 KM of Netaji Metro</small>
-            </a>
-            <a class="dropdown-item" onclick="openCourseDetail('rto')">
-              RTO Exam Assistance
-              <small>Figure-8 Ground Preparation</small>
-            </a>
+          <div class="dropdown-menu" id="coursesNavDropdown">
+            <!-- Dynamic dropdown elements -->
           </div>
         </div>
 
-        <!-- Branches / Location Dropdown -->
         <div class="dropdown">
           <a class="nav-link">Locations ▾</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" onclick="openLocationPage('tollygunge')">
+            <a class="dropdown-item" onclick="openLocationDetail('tollygunge')">
               Tollygunge (Main Center)
               <small>Near Netaji Metro Station</small>
             </a>
-            <a class="dropdown-item" onclick="openLocationPage('doorstep')">
-              Doorstep Coverage Zones
+            <a class="dropdown-item" onclick="openLocationDetail('doorstep')">
+              Doorstep Coverage (10 KM)
               <small>Garia, Jadavpur, Behala, etc.</small>
             </a>
           </div>
         </div>
 
-        <!-- About Dropdown -->
-        <div class="dropdown">
-          <a class="nav-link">About Us ▾</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" onclick="scrollToId('philosophy')">
-              Why Zero Fear Exists
-              <small>Our Philosophy & Belief</small>
-            </a>
-            <a class="dropdown-item" onclick="scrollToId('experience')">
-              Since 2018 (8 Years / 5000+ Learners)
-              <small>The Real Experience Behind Us</small>
-            </a>
-            <a class="dropdown-item" onclick="scrollToId('mission')">
-              Our Core Mission
-              <small>Confidence & Independence</small>
-            </a>
-          </div>
-        </div>
-
+        <a class="nav-link" onclick="scrollToSec('sec-who')">Who Can Learn</a>
+        <a class="nav-link" onclick="scrollToSec('sec-journey')">Training Journey</a>
         <a class="nav-link" onclick="switchView('blog')">Rider's Guide</a>
-        <a class="nav-link btn-cta-nav" onclick="scrollToId('enquiry')">Book Admission</a>
+        <a class="nav-link" onclick="scrollToSec('sec-faq')">FAQ</a>
+        <a class="nav-link btn-cta-nav" onclick="scrollToSec('sec-enquiry')">Book Admission</a>
       </nav>
+
+      <button class="menu-toggle" onclick="toggleMobileNav()">☰</button>
     </div>
   </header>
 
-  <!-- ================= VIEW 1: HOMEPAGE ================= -->
+  <!-- ================================================= -->
+  <!-- VIEW 1: HOME PAGE (RENDERED BASED ON ORDERED SECTIONS) -->
+  <!-- ================================================= -->
   <div id="view-home" class="view-page active">
-
-    <!-- 5-Slide Hero Slider -->
-    <div class="hero-slider-wrap">
-
-      <!-- Slide 01: Non-Cyclist -->
-      <div class="slide active" id="s1">
-        <div class="slide-overlay" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=80');"></div>
-        <div class="slide-content">
-          <div class="slide-kicker">NON-CYCLIST SPECIALIZATION</div>
-          <h1 class="slide-h1">DON’T KNOW CYCLING?<br>YOU CAN STILL LEARN TO RIDE.</h1>
-          <p class="slide-desc">Learn Scooty or Bike from the absolute basics. No Cycling Experience? No Problem. Start Here.</p>
-          <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav">Start Your Training →</a>
-        </div>
-      </div>
-
-      <!-- Slide 02: Women / Freedom -->
-      <div class="slide" id="s2">
-        <div class="slide-overlay" style="background-image: url('https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=1600&q=80');"></div>
-        <div class="slide-content">
-          <div class="slide-kicker">INDEPENDENCE ON TWO WHEELS</div>
-          <h2 class="slide-h1">SHE DECIDES WHERE SHE GOES.</h2>
-          <p class="slide-desc">From everyday errands to work, college, and everything in between—learning to ride can change the way you move through life.</p>
-          <div class="slide-bn-box">নিজের প্রয়োজনে, নিজের মতো করে চলার স্বাধীনতা।</div>
-          <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav">Begin Your Journey →</a>
-        </div>
-      </div>
-
-      <!-- Slide 03: Real Trainee Feedback -->
-      <div class="slide" id="s3">
-        <div class="slide-overlay" style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1600&q=80');"></div>
-        <div class="slide-content">
-          <div class="slide-kicker">VERIFIED TRANSFORMATIONS</div>
-          <h2 class="slide-h1">“I NEVER THOUGHT I COULD DO IT.”</h2>
-          <p class="slide-desc">A real learner. A real first day. A real transformation.</p>
-          <div class="slide-bn-box">“আমি প্রথমে খুব ভয় পাচ্ছিলাম। এখন নিজেই চালাতে পারছি।” — Real Trainee</div>
-          <a onclick="scrollToId('stories')" class="nav-link btn-cta-nav">Read The Journeys →</a>
-        </div>
-      </div>
-
-      <!-- Slide 04: Real Road Training -->
-      <div class="slide" id="s4">
-        <div class="slide-overlay" style="background-image: url('https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=1600&q=80');"></div>
-        <div class="slide-content">
-          <div class="slide-kicker">REAL ROAD PROGRESSION</div>
-          <h2 class="slide-h1">FROM QUIET LANES TO BUSY ROADS.</h2>
-          <p class="slide-desc">We train for the road you’ll actually ride on. Basic control to turning, braking, traffic awareness, and progressively busier Kolkata roads.</p>
-          <a onclick="scrollToId('courses-overview')" class="nav-link btn-cta-nav">Our Curriculum →</a>
-        </div>
-      </div>
-
-      <!-- Slide 05: 8 Years / 5000+ -->
-      <div class="slide" id="s5">
-        <div class="slide-overlay" style="background-image: url('https://images.unsplash.com/photo-1471466054146-e71bcc0d2bb2?auto=format&fit=crop&w=1600&q=80');"></div>
-        <div class="slide-content">
-          <div class="slide-kicker">ESTABLISHED 2018</div>
-          <h2 class="slide-h1">8 YEARS. 5000+ LEARNERS.</h2>
-          <p class="slide-desc">Real training experience, built over time. Helping candidates take their first steps towards confident riding.</p>
-          <div class="slide-bn-box" style="background: rgba(255,255,255,0.1); color: var(--accent-yellow);">ZERO FEAR IS A NEW NAME. THE EXPERIENCE BEHIND IT ISN’T.</div>
-          <a onclick="scrollToId('experience')" class="nav-link btn-cta-nav">About Us →</a>
-        </div>
-      </div>
-
-      <!-- Dots -->
-      <div class="slider-dots">
-        <div class="dot active" onclick="setSlide(0)"></div>
-        <div class="dot" onclick="setSlide(1)"></div>
-        <div class="dot" onclick="setSlide(2)"></div>
-        <div class="dot" onclick="setSlide(3)"></div>
-        <div class="dot" onclick="setSlide(4)"></div>
-      </div>
-    </div>
-
-    <!-- SEO Strip -->
-    <div class="seo-strip">
-      <span>SCOOTY</span> <b>•</b> <span>BIKE</span> <b>•</b> <span>ELECTRIC SCOOTY</span>
-      <b>|</b> <span>BEGINNERS</span> <b>•</b> <span>NON-CYCLISTS</span> <b>•</b> <span>WOMEN</span> <b>•</b> <span>WORKING PROFESSIONALS</span>
-      <b>|</b> <span>REAL-ROAD TRAINING</span> <b>•</b> <span>DOORSTEP TRAINING</span> <b>•</b> <span>RTO PREPARATION</span>
-    </div>
-
-    <!-- Why Zero Fear Exists -->
-    <section id="philosophy" class="section">
-      <div class="split-grid">
-        <div>
-          <div class="sec-kicker">Our Philosophy</div>
-          <h2 class="sec-title">WHY ZERO FEAR EXISTS</h2>
-          <p style="margin-bottom: 1rem; color: var(--text-body);">
-            Learning to ride can feel very different for different people. For one person, it is the fear of balance. For another, it is traffic. For someone else, it is simply the thought: <em>“What if I can’t do it?”</em>
-          </p>
-          <p style="color: var(--text-body);">
-            We believe that fear should not decide what you can or cannot do. With patient guidance, structured practice, and real-world training, confidence can be built. That’s the idea behind Zero Fear.
-          </p>
-        </div>
-        <div class="emotion-card">
-          <div class="bn-text" style="font-size: 1.25rem; font-weight: 600; color: var(--primary-deep); line-height: 1.8;">
-            “প্রথম দিন ভয় লাগতেই পারে।<br>
-            কিন্তু সেই ভয়টাই যেন আপনার চলার পথে বাধা না হয়ে দাঁড়ায়।”
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mission -->
-    <section id="mission" class="section alt-bg">
-      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
-        <div class="sec-kicker">Core Direction</div>
-        <h2 class="sec-title">OUR MISSION</h2>
-        <p class="sec-subtitle" style="margin: 0 auto;">To make two-wheeler training more approachable for people starting from zero.</p>
-      </div>
-
-      <div class="cards-grid-4">
-        <div class="pillar-card">
-          <div class="pillar-num">01</div>
-          <h3>Control</h3>
-          <p>Weight management, steady throttle modulation, and safe stopping posture.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-num">02</div>
-          <h3>Awareness</h3>
-          <p>Mirror checks, blind spots, and judging busy Kolkata traffic progression.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-num">03</div>
-          <h3>Confidence</h3>
-          <p>Overcoming the instinct to panic on sudden halts or narrow bypass lanes.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-num">04</div>
-          <h3>Independence</h3>
-          <p>The freedom to travel on your own schedule without depending on anyone.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience / Heritage -->
-    <section id="experience" class="section">
-      <div class="split-grid">
-        <div>
-          <div class="sec-kicker">Heritage & Trust</div>
-          <h2 class="sec-title">BUILT ON REAL TRAINING EXPERIENCE</h2>
-          <h4 style="color: var(--accent-yellow); font-size: 1.2rem; margin-bottom: 1rem; font-weight: 800;">SINCE 2018</h4>
-          <p style="color: var(--text-body); margin-bottom: 1rem;">
-            For almost eight years, we’ve worked with people at very different stages of their riding journey. Some arrived knowing how to ride. Some had never touched a two-wheeler. Some couldn’t cycle. Some were nervous about traffic.
-          </p>
-          <p style="color: var(--text-body);">
-            That experience is what Zero Fear brings to the road.
-          </p>
-        </div>
-        <div style="background: var(--primary-navy); color: #fff; padding: 3rem; border-radius: 12px; text-align: center;">
-          <div style="font-size: 3.8rem; font-family: var(--font-display); font-weight: 900; color: var(--accent-yellow);">5000+</div>
-          <div style="font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase;">Learners Successfully Trained</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Courses Overview -->
-    <section id="courses-overview" class="section alt-bg">
-      <div>
-        <div class="sec-kicker">Programs</div>
-        <h2 class="sec-title">FIND THE TRAINING THAT FITS YOU</h2>
-        <p class="sec-subtitle">Choose from our specialized riding tracks tailored for beginners, commuters, and license applicants.</p>
-      </div>
-
-      <div class="course-grid">
-        <!-- Basic Scooty -->
-        <div class="course-item">
-          <div class="course-pad">
-            <span class="course-badge">Non-Cyclists Welcome</span>
-            <h3>Basic Scooty Training</h3>
-            <div class="course-price">Starting from ₹2,500</div>
-            <p class="course-desc">Start from ground zero. Learn physical weight management, dual hand-brake control, and smooth acceleration.</p>
-          </div>
-          <div class="course-action">
-            <a onclick="openCourseDetail('scooty-basic')" class="btn-detail">View Full Syllabus →</a>
-            <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav" style="padding: 6px 14px; font-size: 0.8rem;">Enquire</a>
-          </div>
-        </div>
-
-        <!-- Advanced Scooty -->
-        <div class="course-item">
-          <div class="course-pad">
-            <span class="course-badge">Traffic Readiness</span>
-            <h3>Advanced Scooty Training</h3>
-            <div class="course-price">Starting from ₹2,500</div>
-            <p class="course-desc">Designed for riders who know basic balance but need confidence with U-turns, bridge slopes, and Kolkata road traffic.</p>
-          </div>
-          <div class="course-action">
-            <a onclick="openCourseDetail('scooty-adv')" class="btn-detail">View Full Syllabus →</a>
-            <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav" style="padding: 6px 14px; font-size: 0.8rem;">Enquire</a>
-          </div>
-        </div>
-
-        <!-- Geared Bike -->
-        <div class="course-item">
-          <div class="course-pad">
-            <span class="course-badge">Clutch Mastery</span>
-            <h3>Bike Training (Geared)</h3>
-            <div class="course-price">Starting from ₹2,500</div>
-            <p class="course-desc">Master the friction zone: clutch modulation, synchronized toe-heel gear shifts, and hill-start balance.</p>
-          </div>
-          <div class="course-action">
-            <a onclick="openCourseDetail('bike')" class="btn-detail">View Full Syllabus →</a>
-            <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav" style="padding: 6px 14px; font-size: 0.8rem;">Enquire</a>
-          </div>
-        </div>
-
-        <!-- Electric Scooty -->
-        <div class="course-item">
-          <div class="course-pad">
-            <span class="course-badge">EV Tech</span>
-            <h3>Electric Scooty Training</h3>
-            <div class="course-price">Custom Schedule</div>
-            <p class="course-desc">Master instant EV torque delivery and regenerative braking dynamics on modern scooters like Ather, Ola, and Chetak.</p>
-          </div>
-          <div class="course-action">
-            <a onclick="openCourseDetail('ev')" class="btn-detail">View Full Syllabus →</a>
-            <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav" style="padding: 6px 14px; font-size: 0.8rem;">Enquire</a>
-          </div>
-        </div>
-
-        <!-- Doorstep -->
-        <div class="course-item">
-          <div class="course-pad">
-            <span class="course-badge">At Your Door</span>
-            <h3>Doorstep Training</h3>
-            <div class="course-price">Distance-Based Pricing</div>
-            <p class="course-desc">Personalized trainer lessons at your residential complex within 10 km radius of Netaji Metro Station.</p>
-          </div>
-          <div class="course-action">
-            <a onclick="openCourseDetail('doorstep')" class="btn-detail">Check Coverage →</a>
-            <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav" style="padding: 6px 14px; font-size: 0.8rem;">Enquire</a>
-          </div>
-        </div>
-
-        <!-- RTO -->
-        <div class="course-item">
-          <div class="course-pad">
-            <span class="course-badge">Exam Support</span>
-            <h3>RTO License Track</h3>
-            <div class="course-price">Comprehensive Guidance</div>
-            <p class="course-desc">Dedicated track practice for the Figure-8 obstacle test at Kolkata RTO grounds, including document handling.</p>
-          </div>
-          <div class="course-action">
-            <a onclick="openCourseDetail('rto')" class="btn-detail">View Details →</a>
-            <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav" style="padding: 6px 14px; font-size: 0.8rem;">Enquire</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EV Dedicated Section -->
-    <section class="section">
-      <div class="ev-box">
-        <div>
-          <div style="color: var(--accent-yellow); font-size: 0.85rem; font-weight: 800; letter-spacing: 2px;">FUTURE OF MOBILITY</div>
-          <h2 style="font-family: var(--font-display); font-size: 2rem; margin: 0.8rem 0;">LEARN TO RIDE ELECTRIC</h2>
-          <p style="color: #cbd5e1; font-size: 0.95rem;">
-            Electric scooters are becoming part of everyday urban travel. Our training covers Electric Scooty riding alongside petrol scooters and bikes.
-          </p>
-          <div class="ev-pills">
-            <div class="ev-pill">EV Controls</div>
-            <div class="ev-pill">Instant Throttle Modulation</div>
-            <div class="ev-pill">Regenerative Braking</div>
-            <div class="ev-pill">Weight & Steering Balance</div>
-          </div>
-        </div>
-        <div style="background: rgba(255,255,255,0.06); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
-          <h4 style="margin-bottom: 0.5rem; font-size: 1.15rem;">Own an EV or Planning One?</h4>
-          <p style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 1.2rem;">Learn how to prevent sudden jerking and confidently manage electric throttle delivery.</p>
-          <a onclick="scrollToId('enquiry')" class="nav-link btn-cta-nav" style="display: block;">Book EV Session</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trainee Transformations -->
-    <section id="stories" class="section alt-bg">
-      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
-        <div class="sec-kicker">The Moment Fear Changes</div>
-        <h2 class="sec-title">REAL STORIES. REAL TRANSFORMATIONS.</h2>
-      </div>
-
-      <div class="split-grid">
-        <div style="background: #ffffff; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem; text-align: center;">
-          <div class="bn-text" style="font-size: 1.6rem; font-weight: 700; color: #b45309; margin-bottom: 0.5rem;">“আমি পারব তো?”</div>
-          <div style="font-weight: 800; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">DAY ONE CONCERNS</div>
-          <p style="color: var(--text-body); font-size: 0.95rem;">Nervous about balance, afraid of traffic noise, worried about vehicle weight pulling them down.</p>
-        </div>
-
-        <div style="background: #ffffff; border: 2px solid var(--accent-yellow); border-radius: 8px; padding: 2.5rem; text-align: center;">
-          <div class="bn-text" style="font-size: 1.6rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 0.5rem;">“আমি নিজেই চালাতে পারছি।”</div>
-          <div style="font-weight: 800; font-size: 0.85rem; color: var(--accent-yellow); margin-bottom: 1rem;">DAY TEN INDEPENDENCE</div>
-          <p style="color: var(--text-body); font-size: 0.95rem;">Riding with feet firmly placed up, taking clean U-turns, navigating busy Kolkata intersections with complete composure.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Location & Coverage -->
-    <section class="section">
-      <div>
-        <div class="sec-kicker">Presence</div>
-        <h2 class="sec-title">WHERE ZERO FEAR BEGINS</h2>
-      </div>
-
-      <div class="loc-grid">
-        <div class="loc-card">
-          <h3>TOLLYGUNGE (MAIN CENTRE)</h3>
-          <p style="color: var(--accent-yellow); font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem;">Near Netaji Metro Station, Kolkata</p>
-          <p style="color: var(--text-body); font-size: 0.9rem; margin-bottom: 1rem;">
-            Our primary training ground featuring broad practice lanes, U-turn practice areas, and immediate access to simulated traffic conditions.
-          </p>
-          <p style="font-size: 0.85rem; color: var(--text-dark);"><strong>Batches:</strong> 7:00 AM – 11:30 AM & 3:30 PM – 6:30 PM (Daily)</p>
-          <a onclick="openLocationPage('tollygunge')" class="btn-detail" style="margin-top: 1rem; display: inline-block;">View Centre Details & Landmark →</a>
-        </div>
-
-        <div class="loc-card">
-          <h3>DOORSTEP TRAINING</h3>
-          <p style="color: var(--accent-yellow); font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem;">Within 10 KM Radius of Netaji Metro</p>
-          <p style="color: var(--text-body); font-size: 0.9rem; margin-bottom: 1rem;">
-            Can’t make it to Tollygunge? Our instructors come directly to your neighborhood. Available for both Scooty and Bike lessons.
-          </p>
-          <p style="font-size: 0.85rem; color: var(--text-dark);"><strong>Areas Covered:</strong> Garia, Jadavpur, Behala, Ranikuthi, Naktala, Bansdroni, etc.</p>
-          <a onclick="openLocationPage('doorstep')" class="btn-detail" style="margin-top: 1rem; display: inline-block;">Check Locality Eligibility →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WhatsApp Enquiry Form -->
-    <section id="enquiry" class="section alt-bg">
-      <div class="enquiry-wrapper">
-        <div style="text-align: center; margin-bottom: 2rem;">
-          <div class="sec-kicker">Direct Contact</div>
-          <h2 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--primary-navy);">SEND DIRECT ADMISSION ENQUIRY</h2>
-          <p style="color: var(--text-body); font-size: 0.9rem; margin-top: 0.4rem;">Submit your preferences below to route your query directly to our official WhatsApp.</p>
-        </div>
-
-        <form id="leadForm" onsubmit="handleLeadSubmit(event)">
-          <div class="form-group">
-            <label>YOUR NAME *</label>
-            <input type="text" id="lead_name" placeholder="e.g. Sreya Mukherjee" required>
-          </div>
-
-          <div class="form-group">
-            <label>PHONE NUMBER *</label>
-            <input type="tel" id="lead_phone" placeholder="e.g. 98300XXXXX" required>
-          </div>
-
-          <div class="form-group">
-            <label>PROGRAM INTERESTED IN *</label>
-            <select id="lead_course" required>
-              <option value="Basic Scooty (Non-Cyclist)">Basic Scooty (Non-Cyclist / Beginner)</option>
-              <option value="Advanced Scooty (Traffic Mastery)">Advanced Scooty (Traffic Mastery)</option>
-              <option value="Bike Training (Geared)">Bike Training (Geared)</option>
-              <option value="Electric Scooty Training">Electric Scooty Training</option>
-              <option value="Doorstep Training (Within 10 KM)">Doorstep Training (Within 10 KM)</option>
-              <option value="RTO License Assistance">RTO License Preparation</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>DO YOU CURRENTLY KNOW CYCLING?</label>
-            <select id="lead_cycling">
-              <option value="No, I do not know cycling">No, I do not know cycling</option>
-              <option value="Yes, I know cycling">Yes, I know cycling</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>YOUR AREA & PREFERRED TIMING</label>
-            <textarea id="lead_notes" rows="2" placeholder="e.g. Live near Jadavpur, prefer morning 7:30 AM batch"></textarea>
-          </div>
-
-          <button type="submit" class="btn-wa-submit">
-            <span>💬</span> Connect Instantly on WhatsApp
-          </button>
-        </form>
-      </div>
-    </section>
-
+    <!-- Reorderable Sections Container -->
+    <main id="dynamicHomeSections"></main>
   </div>
 
-  <!-- ================= VIEW 2: COURSE DETAIL PAGE ================= -->
+  <!-- ================================================= -->
+  <!-- VIEW 2: COURSE DETAIL PAGE -->
+  <!-- ================================================= -->
   <div id="view-course-detail" class="view-page">
     <section class="section">
-      <div style="max-width: 850px; margin: 0 auto;">
-        <a onclick="switchView('home')" class="btn-detail" style="margin-bottom: 1.5rem; display: inline-block;">← Back to All Courses</a>
-        <div class="sec-kicker" id="cd-kicker">COURSE TRACK</div>
+      <div style="max-width: 880px; margin: 0 auto;">
+        <button onclick="switchView('home')" class="gal-btn" style="margin-bottom: 1.5rem;">← Back to All Courses</button>
+        <div class="sec-kicker" id="cd-kicker">TRAINING TRACK</div>
         <h1 class="sec-title" id="cd-title">Course Title</h1>
-        <div style="font-size: 1.3rem; font-weight: 800; color: #b45309; margin-bottom: 1.5rem;" id="cd-price">Starting from ₹2,500</div>
-        
-        <div style="background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem; margin-bottom: 2rem;">
-          <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">What You Will Learn</h3>
-          <div id="cd-content" style="color: var(--text-body); line-height: 1.8;"></div>
+        <div class="course-price-disp" id="cd-price" style="font-size: 1.3rem;">Starting from ₹2,500</div>
+
+        <div class="card-clean" style="margin-bottom: 2rem;">
+          <h3 style="color: var(--primary-navy); margin-bottom: 0.8rem;">Course Overview & Who It's For</h3>
+          <p id="cd-desc" style="color: var(--text-body); line-height: 1.8;"></p>
         </div>
 
-        <div style="background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 2rem;">
-          <h4 style="color: var(--primary-navy); margin-bottom: 0.8rem;">Session Duration & Schedule</h4>
-          <p id="cd-duration" style="color: var(--text-body); font-size: 0.95rem;"></p>
+        <div class="card-clean" style="margin-bottom: 2rem;">
+          <h3 style="color: var(--primary-navy); margin-bottom: 0.8rem;">What You Will Learn</h3>
+          <div id="cd-learn" style="color: var(--text-body); line-height: 1.8;"></div>
         </div>
 
-        <button onclick="scrollToEnquiryForCourse()" class="btn-wa-submit">
-          Apply For This Course on WhatsApp
-        </button>
-      </div>
-    </section>
-  </div>
-
-  <!-- ================= VIEW 3: LOCATION / BRANCH PAGE ================= -->
-  <div id="view-location" class="view-page">
-    <section class="section">
-      <div style="max-width: 850px; margin: 0 auto;">
-        <a onclick="switchView('home')" class="btn-detail" style="margin-bottom: 1.5rem; display: inline-block;">← Back to Home</a>
-        <div class="sec-kicker" id="loc-kicker">LOCATION & SERVICE AREA</div>
-        <h1 class="sec-title" id="loc-title">Branch Details</h1>
-        
-        <div style="background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem; margin-bottom: 2rem;">
-          <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Operating Overview</h3>
-          <div id="loc-content" style="color: var(--text-body); line-height: 1.8;"></div>
+        <div class="card-clean" style="margin-bottom: 2rem;">
+          <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem;">Schedule & Duration</h4>
+          <p id="cd-duration" style="color: var(--text-muted); font-size: 0.95rem;"></p>
         </div>
 
-        <button onclick="scrollToId('enquiry')" class="btn-wa-submit">
-          Inquire About This Location
-        </button>
-      </div>
-    </section>
-  </div>
-
-  <!-- ================= VIEW 4: RIDER'S GUIDE (BLOG) ================= -->
-  <div id="view-blog" class="view-page">
-    <section class="section">
-      <div style="max-width: 1000px; margin: 0 auto;">
-        <div class="sec-kicker">Knowledge Engine</div>
-        <h1 class="sec-title">ZERO FEAR RIDER'S GUIDE</h1>
-        <p class="sec-subtitle">Practical advice on balance, road safety, electric vehicles, and licensing in Kolkata.</p>
-
-        <!-- Dynamic Blog Grid -->
-        <div id="publicBlogGrid" class="blog-cards">
-          <!-- Dynamically populated from script -->
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- ================= VIEW 5: ADMIN DASHBOARD ================= -->
-  <div id="view-admin" class="view-page">
-    <div class="admin-container">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-        <div>
-          <h2 style="color: var(--primary-navy); font-family: var(--font-display);">ZERO FEAR ADMIN PANEL</h2>
-          <p style="color: var(--text-muted); font-size: 0.85rem;">Publish new articles and manage photos locally.</p>
-        </div>
-        <button onclick="switchView('home')" class="btn-detail">Exit Dashboard</button>
-      </div>
-
-      <form id="adminPostForm" onsubmit="handleAdminPublish(event)">
-        <div class="form-group">
-          <label>ARTICLE CATEGORY</label>
-          <select id="post_category" required>
-            <option value="Beginner">Beginner & Non-Cyclist</option>
-            <option value="Road Confidence">Road Confidence & Traffic</option>
-            <option value="EV">Electric Scooty</option>
-            <option value="Women">Women & Commuting</option>
-            <option value="RTO">RTO Driving Test</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>ARTICLE TITLE</label>
-          <input type="text" id="post_title" placeholder="e.g. 5 Common Mistakes Non-Cyclists Make on Day 1" required>
-        </div>
-
-        <div class="form-group">
-          <label>ARTICLE SUMMARY / BODY</label>
-          <textarea id="post_body" rows="5" placeholder="Write the complete article description and training tips..." required></textarea>
-        </div>
-
-        <!-- Image Upload Field with Instant Base64 Conversion -->
-        <div class="form-group">
-          <label>ATTACH ARTICLE PHOTO (SELECT FROM COMPUTER / PHONE)</label>
-          <input type="file" id="post_file" accept="image/*" onchange="previewSelectedImage(event)">
-          <div class="preview-box">
-            <span id="preview-text" style="font-size: 0.85rem; color: #94a3b8;">Selected image preview will appear here</span>
-            <img id="preview-img" class="preview-img" alt="Upload Preview">
+        <div id="cd-video-wrap" style="margin-bottom: 2rem; display: none;">
+          <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem;">Course Practical Video</h4>
+          <div class="video-card">
+            <div class="video-iframe-wrap"><iframe id="cd-video-frame" src=""></iframe></div>
           </div>
         </div>
 
-        <button type="submit" class="btn-wa-submit" style="background: var(--primary-navy);">
-          Publish Article to Website
-        </button>
+        <button onclick="inquireForCourse()" class="btn-wa-submit">Enquire For This Course on WhatsApp</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================= -->
+  <!-- VIEW 3: LOCATION DETAILS PAGE -->
+  <!-- ================================================= -->
+  <div id="view-location-detail" class="view-page">
+    <section class="section">
+      <div style="max-width: 850px; margin: 0 auto;">
+        <button onclick="switchView('home')" class="gal-btn" style="margin-bottom: 1.5rem;">← Back to Home</button>
+        <div class="sec-kicker" id="loc-kicker">LOCATION OVERVIEW</div>
+        <h1 class="sec-title" id="loc-title">Tollygunge Centre</h1>
+        <div class="card-clean" style="margin: 2rem 0;">
+          <div id="loc-content" style="color: var(--text-body); line-height: 1.8;"></div>
+        </div>
+        <button onclick="scrollToSec('sec-enquiry')" class="btn-wa-submit">Contact For Training Location</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================= -->
+  <!-- VIEW 4: RIDER'S GUIDE (BLOG) -->
+  <!-- ================================================= -->
+  <div id="view-blog" class="view-page">
+    <section class="section">
+      <div style="max-width: 1050px; margin: 0 auto;">
+        <div class="sec-kicker">Knowledge Base</div>
+        <h1 class="sec-title">ZERO FEAR RIDER'S GUIDE</h1>
+        <p class="sec-subtitle">Comprehensive guides on non-cyclist scooty training, road confidence, EV torque, and Kolkata licensing.</p>
+
+        <div id="blogPublicGrid" class="grid-3" style="margin-top: 2.5rem;"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================================================= -->
+  <!-- VIEW 5: BUILT-IN CMS / ADMIN PANEL -->
+  <!-- ================================================= -->
+  <div id="view-admin" class="view-page">
+    <div class="admin-header">
+      <div>
+        <h2 style="font-family: var(--font-display); letter-spacing: 1px;">ZERO FEAR BUILT-IN CMS</h2>
+        <p style="font-size: 0.85rem; color: #cbd5e1;">Live in-browser management with localStorage persistence.</p>
+      </div>
+      <div>
+        <button onclick="exportData()" class="admin-btn-sm" style="background: #10b981; color: #fff; padding: 8px 14px;">💾 Export JSON</button>
+        <button onclick="triggerImport()" class="admin-btn-sm" style="background: #3b82f6; color: #fff; padding: 8px 14px;">📂 Import JSON</button>
+        <input type="file" id="importFileInput" accept=".json" style="display: none;" onchange="importData(event)">
+        <button onclick="resetDefaultData()" class="admin-btn-sm" style="background: #ef4444; color: #fff; padding: 8px 14px;">⚠️ Reset Default</button>
+        <button onclick="switchView('home')" class="admin-btn-sm" style="padding: 8px 14px;">Exit CMS</button>
+      </div>
+    </div>
+
+    <!-- Admin Sub Tabs -->
+    <div class="admin-subnav">
+      <button class="btn-admin-tab active" onclick="switchAdminTab('reorder')">☰ Section Reorder</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('hero')">Hero Slides</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('trust')">Trust Numbers</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('women')">Women & Independence</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('courses')">Courses</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('transformations')">Transformations</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('gallery')">Gallery</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('videos')">YouTube Videos</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('articles')">Articles</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('faq')">FAQ</button>
+      <button class="btn-admin-tab" onclick="switchAdminTab('contact')">Business & Contact</button>
+    </div>
+
+    <!-- Admin Tab: Reorder Sections -->
+    <div id="admin-tab-reorder" class="admin-panel-card">
+      <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">Homepage Section Ordering & Visibility</h3>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Reorder or toggle visibility of sections. The homepage will re-render immediately.</p>
+      <div id="sectionReorderList" class="reorder-list"></div>
+    </div>
+
+    <!-- Admin Tab: Contact & Business Info -->
+    <div id="admin-tab-contact" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Central Business & Contact Information</h3>
+      <form onsubmit="saveContactCMS(event)">
+        <div class="form-ctrl"><label>Phone Number</label><input type="text" id="cfg_phone"></div>
+        <div class="form-ctrl"><label>WhatsApp Number (Without + or spaces)</label><input type="text" id="cfg_wa"></div>
+        <div class="form-ctrl"><label>Email Address</label><input type="email" id="cfg_email"></div>
+        <div class="form-ctrl"><label>Primary Address</label><input type="text" id="cfg_address"></div>
+        <div class="form-ctrl"><label>Operating Hours</label><input type="text" id="cfg_hours"></div>
+        <div class="form-ctrl"><label>Google Maps Embed or Link</label><input type="text" id="cfg_map"></div>
+        <button type="submit" class="btn-wa-submit" style="background: var(--primary-navy);">Save Contact Info</button>
       </form>
+    </div>
+
+    <!-- Admin Tab: Hero Slides -->
+    <div id="admin-tab-hero" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Manage Hero Slides</h3>
+      <div id="adminHeroSlidesList"></div>
+    </div>
+
+    <!-- Admin Tab: Women & Independence -->
+    <div id="admin-tab-women" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Edit Women & Independence Section</h3>
+      <form onsubmit="saveWomenCMS(event)">
+        <div class="form-ctrl"><label>Headline</label><input type="text" id="wm_heading"></div>
+        <div class="form-ctrl"><label>Supporting Headline</label><input type="text" id="wm_subheading"></div>
+        <div class="form-ctrl"><label>Main Body Text</label><textarea id="wm_copy" rows="4"></textarea></div>
+        <div class="form-ctrl"><label>Bengali Emotional Line</label><input type="text" id="wm_bn"></div>
+        <div class="form-ctrl">
+          <label>Section Image (Upload or Web URL)</label>
+          <input type="file" accept="image/*" onchange="uploadBase64(event, 'wm_img_preview', 'wm_img_val')">
+          <input type="text" id="wm_img_val" placeholder="Image URL">
+          <img id="wm_img_preview" style="max-height: 140px; margin-top: 8px; border-radius: 4px; display: none;">
+        </div>
+        <button type="submit" class="btn-wa-submit" style="background: var(--primary-navy);">Update Women Section</button>
+      </form>
+    </div>
+
+    <!-- Admin Tab: Courses CMS -->
+    <div id="admin-tab-courses" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Courses Management</h3>
+      <div id="adminCoursesList"></div>
+    </div>
+
+    <!-- Admin Tab: Transformations -->
+    <div id="admin-tab-transformations" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Trainee Transformations</h3>
+      <div id="adminTransformList"></div>
+    </div>
+
+    <!-- Admin Tab: Gallery CMS -->
+    <div id="admin-tab-gallery" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Training Gallery Manager</h3>
+      <form onsubmit="addGalleryItem(event)" style="background: #f8fafc; padding: 1.5rem; border-radius: 6px; margin-bottom: 2rem;">
+        <h4>Add New Image to Gallery</h4>
+        <div class="form-ctrl"><label>Caption</label><input type="text" id="gal_caption" required></div>
+        <div class="form-ctrl">
+          <label>Category</label>
+          <select id="gal_cat">
+            <option value="Scooty">Scooty Training</option>
+            <option value="Bike">Bike Training</option>
+            <option value="EV">EV Training</option>
+            <option value="Women">Women Learners</option>
+            <option value="Road">Road Training</option>
+          </select>
+        </div>
+        <div class="form-ctrl">
+          <label>Upload Image</label>
+          <input type="file" accept="image/*" onchange="uploadBase64(event, 'gal_preview', 'gal_val')">
+          <input type="text" id="gal_val" placeholder="Or paste image URL" required>
+          <img id="gal_preview" style="max-height: 120px; margin-top: 8px; display: none;">
+        </div>
+        <button type="submit" class="btn-wa-submit" style="background: var(--primary-navy);">Add To Gallery</button>
+      </form>
+      <div id="adminGalleryList" class="grid-4"></div>
+    </div>
+
+    <!-- Admin Tab: Videos CMS -->
+    <div id="admin-tab-videos" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">YouTube Training Videos</h3>
+      <form onsubmit="addYouTubeCMS(event)" style="background: #f8fafc; padding: 1.5rem; border-radius: 6px; margin-bottom: 2rem;">
+        <h4>Embed YouTube Video</h4>
+        <div class="form-ctrl"><label>Video Title</label><input type="text" id="yt_title" required></div>
+        <div class="form-ctrl"><label>YouTube Link (Watch, youtu.be, or Shorts)</label><input type="text" id="yt_url" placeholder="https://www.youtube.com/watch?v=..." required></div>
+        <button type="submit" class="btn-wa-submit" style="background: var(--primary-navy);">Embed Video</button>
+      </form>
+      <div id="adminVideosList" class="grid-2"></div>
+    </div>
+
+    <!-- Admin Tab: Articles CMS -->
+    <div id="admin-tab-articles" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Rider's Guide Articles</h3>
+      <form onsubmit="saveArticleCMS(event)" style="background: #f8fafc; padding: 1.5rem; border-radius: 6px; margin-bottom: 2rem;">
+        <h4>Create New Guide / Article</h4>
+        <div class="form-ctrl"><label>Category</label><input type="text" id="art_cat" placeholder="e.g. Non-Cyclist, EV, RTO" required></div>
+        <div class="form-ctrl"><label>Title</label><input type="text" id="art_title" required></div>
+        <div class="form-ctrl"><label>Summary</label><textarea id="art_desc" rows="3" required></textarea></div>
+        <button type="submit" class="btn-wa-submit" style="background: var(--primary-navy);">Publish Article</button>
+      </form>
+      <div id="adminArticlesList"></div>
+    </div>
+
+    <!-- Admin Tab: FAQ CMS -->
+    <div id="admin-tab-faq" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">FAQ Questions & Answers</h3>
+      <form onsubmit="addFaqCMS(event)" style="background: #f8fafc; padding: 1.5rem; border-radius: 6px; margin-bottom: 2rem;">
+        <h4>Add FAQ</h4>
+        <div class="form-ctrl"><label>Question</label><input type="text" id="faq_q_in" required></div>
+        <div class="form-ctrl"><label>Answer</label><textarea id="faq_a_in" rows="3" required></textarea></div>
+        <button type="submit" class="btn-wa-submit" style="background: var(--primary-navy);">Add Question</button>
+      </form>
+      <div id="adminFaqList"></div>
+    </div>
+
+    <!-- Admin Tab: Trust Numbers -->
+    <div id="admin-tab-trust" class="admin-panel-card" style="display: none;">
+      <h3 style="color: var(--primary-navy); margin-bottom: 1rem;">Edit Trust Figures</h3>
+      <div id="adminTrustNumbersList"></div>
     </div>
   </div>
 
-  <!-- Floating Contact Buttons -->
-  <div class="floating-box">
-    <a href="tel:+919876543210" class="floating-btn btn-call-float" title="Call Zero Fear">📞</a>
-    <a href="https://wa.me/919876543210?text=Hello%20Zero%20Fear%2C%20I%20want%20to%20know%20about%20training" target="_blank" class="floating-btn btn-wa-float" title="WhatsApp Chat">💬</a>
+  <!-- Floating CTAs -->
+  <div class="floating-tray">
+    <a id="floatCallBtn" href="tel:+919876543210" class="float-btn float-call" title="Call Zero Fear">📞</a>
+    <a id="floatWaBtn" href="https://wa.me/919876543210" target="_blank" class="float-btn float-wa" title="WhatsApp Chat">💬</a>
   </div>
 
   <!-- Footer -->
@@ -1366,358 +1021,1173 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">ZERO<span>FEAR</span></div>
-        <p style="color: #cbd5e1; margin-bottom: 1rem;"><strong>FEAR OUT. FREEDOM IN.</strong></p>
-        <p style="color: #94a3b8; font-size: 0.85rem;">
+        <p style="color: #cbd5e1; margin-bottom: 0.8rem;"><strong>FEAR OUT. FREEDOM IN.</strong></p>
+        <p style="color: #94a3b8; font-size: 0.85rem;" id="ft_copy">
           Specialized two-wheeler training school in Kolkata. Dedicated to helping absolute beginners, non-cyclists, and women gain riding independence on scooters and bikes.
         </p>
       </div>
 
-      <div class="footer-links">
+      <div>
         <strong style="color: #fff; display: block; margin-bottom: 1rem;">QUICK ACCESS</strong>
-        <a onclick="switchView('home')">Home</a>
-        <a onclick="openCourseDetail('scooty-basic')">Basic Scooty Training</a>
-        <a onclick="openCourseDetail('bike')">Bike Training</a>
-        <a onclick="openLocationPage('tollygunge')">Tollygunge Centre</a>
-        <a onclick="switchView('blog')">Rider's Guide</a>
+        <p><a onclick="switchView('home')" style="color: #94a3b8;">Home</a></p>
+        <p><a onclick="openLocationDetail('tollygunge')" style="color: #94a3b8;">Tollygunge Centre</a></p>
+        <p><a onclick="openLocationDetail('doorstep')" style="color: #94a3b8;">Doorstep 10 KM Training</a></p>
+        <p><a onclick="switchView('blog')" style="color: #94a3b8;">Rider's Guide</a></p>
       </div>
 
-      <div class="footer-links">
-        <strong style="color: #fff; display: block; margin-bottom: 1rem;">LOCATION & CONTACT</strong>
-        <p style="color: #94a3b8; margin-bottom: 8px;">Tollygunge (Near Netaji Metro), Kolkata</p>
-        <p style="color: #94a3b8; margin-bottom: 8px;">Direct Call: +91 98765 43210</p>
-        <p style="color: #94a3b8; margin-bottom: 1.5rem;">Doorstep facility within 10 km</p>
-        <a onclick="triggerAdminLogin()" style="color: #64748b; font-size: 0.75rem;">⚙️ Admin Login</a>
+      <div>
+        <strong style="color: #fff; display: block; margin-bottom: 1rem;">CONTACT & LOCATION</strong>
+        <p id="ft_address" style="color: #94a3b8; margin-bottom: 6px;">Tollygunge (Near Netaji Metro), Kolkata</p>
+        <p id="ft_phone" style="color: #94a3b8; margin-bottom: 6px;">Phone: +91 98765 43210</p>
+        <p id="ft_hours" style="color: #94a3b8; margin-bottom: 1.2rem;">Hours: 7:00 AM – 6:30 PM (Daily)</p>
+        <button onclick="triggerAdminLogin()" style="background: none; border: 1px solid #334155; color: #64748b; font-size: 0.75rem; padding: 4px 8px; border-radius: 4px;">⚙️ Admin CMS Login</button>
       </div>
     </div>
-    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; color: #64748b; font-size: 0.8rem;">
-      © 2026 ZERO FEAR Two-Wheeler Training School. All rights reserved.
+    <div style="text-align: center; border-top: 1px solid var(--border-navy); padding-top: 1.5rem; color: #64748b; font-size: 0.8rem;">
+      © 2026 ZERO FEAR Two-Wheeler Training School. All Rights Reserved.
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ================================================= -->
+  <!-- JAVASCRIPT CMS & ENGINE -->
+  <!-- ================================================= -->
   <script>
-    // Configuration: Primary WhatsApp Phone
-    const OFFICIAL_PHONE = "919876543210";
+    // Default Seed Data Store
+    const DEFAULT_CMS_DATA = {
+      config: {
+        phone: "+919876543210",
+        wa: "919876543210",
+        email: "training@zerofear.in",
+        address: "Near Netaji Metro Station, Tollygunge, Kolkata - 700040",
+        hours: "7:00 AM – 11:30 AM & 3:30 PM – 6:30 PM (All 7 Days)",
+        map: "https://maps.google.com/?q=Netaji+Metro+Station+Kolkata"
+      },
+      sectionsOrder: [
+        { id: "hero", name: "Hero Slider", visible: true },
+        { id: "seo_strip", name: "SEO Strip", visible: true },
+        { id: "trust", name: "Trust Numbers", visible: true },
+        { id: "why", name: "Why Zero Fear", visible: true },
+        { id: "women", name: "Women & Independence", visible: true },
+        { id: "who", name: "Who Can Learn", visible: true },
+        { id: "non_cyclist", name: "Non-Cyclist Dedication", visible: true },
+        { id: "journey", name: "Training Journey", visible: true },
+        { id: "courses", name: "Courses Overview", visible: true },
+        { id: "ev", name: "Electric Scooty", visible: true },
+        { id: "transformations", name: "Real Transformations", visible: true },
+        { id: "testimonials", name: "Learner Stories", visible: true },
+        { id: "gallery", name: "Training in Real Life", visible: true },
+        { id: "videos", name: "YouTube Training Videos", visible: true },
+        { id: "doorstep", name: "Doorstep Training", visible: true },
+        { id: "location", name: "Tollygunge Location", visible: true },
+        { id: "faq", name: "FAQ Accordion", visible: true },
+        { id: "enquiry", name: "WhatsApp Admission Form", visible: true }
+      ],
+      heroSlides: [
+        {
+          kicker: "NON-CYCLIST SPECIALIZATION",
+          heading: "DON'T KNOW CYCLING?<br>YOU CAN STILL LEARN TO RIDE.",
+          desc: "Learn Scooty or Bike from the basics. No Cycling Experience? No Problem. Start Here.",
+          bn: "",
+          img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=80",
+          btnText: "Start Your Training →",
+          visible: true
+        },
+        {
+          kicker: "INDEPENDENCE ON TWO WHEELS",
+          heading: "SHE DECIDES WHERE SHE GOES.",
+          desc: "Your ride. Your confidence. Your freedom. From everyday errands to work and college.",
+          bn: "নিজের প্রয়োজনে, নিজের মতো করে চলার স্বাধীনতা।",
+          img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=1600&q=80",
+          btnText: "Begin Your Journey →",
+          visible: true
+        },
+        {
+          kicker: "VERIFIED TRANSFORMATIONS",
+          heading: "REAL PEOPLE. REAL FIRST DAYS. REAL CONFIDENCE.",
+          desc: "“I was scared of vehicle weight. Today I ride solo across South Kolkata.”",
+          bn: "“আমি প্রথমে খুব ভয় পাচ্ছিলাম। এখন নিজেই চালাতে পারছি।”",
+          img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1600&q=80",
+          btnText: "Watch Transformation →",
+          visible: true
+        },
+        {
+          kicker: "REAL-WORLD PROGRESSION",
+          heading: "FROM QUIET LANES TO BUSY ROADS.",
+          desc: "We train for the road you'll actually ride on. Gradual entry to Kolkata traffic.",
+          bn: "",
+          img: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=1600&q=80",
+          btnText: "Our Curriculum →",
+          visible: true
+        },
+        {
+          kicker: "ESTABLISHED EXPERTISE",
+          heading: "8+ YEARS. 5000+ LEARNERS.",
+          desc: "Real training experience, built over time since 2018.",
+          bn: "ZERO FEAR IS A NEW NAME. THE EXPERIENCE BEHIND IT ISN'T.",
+          img: "https://images.unsplash.com/photo-1471466054146-e71bcc0d2bb2?auto=format&fit=crop&w=1600&q=80",
+          btnText: "About Us →",
+          visible: true
+        }
+      ],
+      trustNumbers: [
+        { val: "8+ YEARS", label: "Training Experience (Since 2018)" },
+        { val: "5000+", label: "Confident Riders Trained" },
+        { val: "EV + PETROL", label: "Multi-Vehicle Curriculum" },
+        { val: "10 KM", label: "Doorstep Service Radius" }
+      ],
+      womenSection: {
+        heading: "SHE DECIDES WHERE SHE GOES.",
+        subheading: "LEARNING TO RIDE IS MORE THAN LEARNING A VEHICLE.",
+        copy: "For many women, learning to ride is not only about the scooter. It is about being able to go to work, college, the market, appointments, or simply somewhere they want to go — without always having to depend on someone else.",
+        bn: "নিজের প্রয়োজনে, নিজের মতো করে চলার স্বাধীনতা।",
+        img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80"
+      },
+      courses: [
+        {
+          id: "scooty-basic",
+          title: "Basic Scooty Training",
+          tag: "Non-Cyclists Welcome",
+          priceLabel: "Packages starting from ₹2,500",
+          desc: "Ground-zero balance, feet placement, dual hand-braking, linear throttle modulation.",
+          fullDesc: "Designed for absolute beginners and individuals who have never ridden a bicycle. Our physical balancing techniques bypass pedal dependencies.",
+          learn: "Centre of gravity balance, smooth feet-up posture, progressive hand-braking without skids, low-speed parking.",
+          duration: "7 to 10 practical sessions depending on student pace.",
+          video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        },
+        {
+          id: "scooty-adv",
+          title: "Advanced Scooty Training",
+          tag: "Traffic Readiness",
+          priceLabel: "Packages starting from ₹2,500",
+          desc: "For those with basic balance who need confidence in dense Kolkata traffic and bridge inclines.",
+          fullDesc: "Gain road dominance: mirror awareness, emergency braking drills, overtaking etiquette, and narrow lane navigation.",
+          learn: "Tight U-turns, flyover incline restarts, mirror blind-spot reading, real road escort practice.",
+          duration: "5 to 7 on-road practical sessions.",
+          video: ""
+        },
+        {
+          id: "bike",
+          title: "Bike Training (Geared)",
+          tag: "Clutch Mastery",
+          priceLabel: "Packages starting from ₹2,500",
+          desc: "Master the friction zone: clutch control, synchronized gear shifting, and slope balancing.",
+          fullDesc: "Learn manual motorcycle controls safely without stalling at traffic signals or rolling back on inclines.",
+          learn: "Clutch biting point, heel-and-toe gear progression, rear foot-brake synchronization, uphill starts.",
+          duration: "Dedicated practical modules.",
+          video: ""
+        },
+        {
+          id: "ev",
+          title: "Electric Scooty Training",
+          tag: "EV Specific",
+          priceLabel: "Custom Schedule",
+          desc: "Instant torque management and regenerative braking on Ather, Ola, Chetak, and iQube.",
+          fullDesc: "EVs react with instant zero-RPM torque. We train you to modulate digital throttle inputs without jerks.",
+          learn: "Digital throttle feel, regen brake control, battery display management, smooth rolling stops.",
+          duration: "Flexible sessions.",
+          video: ""
+        },
+        {
+          id: "doorstep",
+          title: "Doorstep Training",
+          tag: "Within 10 KM",
+          priceLabel: "Distance-Based Package",
+          desc: "Trainer comes directly to your residential complex within 10 KM of Netaji Metro Station.",
+          fullDesc: "Convenience-focused training in your immediate neighborhood. Covers South Kolkata residential areas.",
+          learn: "Colony lane practice, navigating your immediate daily commute routes and local intersections.",
+          duration: "Morning and afternoon slots.",
+          video: ""
+        },
+        {
+          id: "rto",
+          title: "RTO License Track Track",
+          tag: "Certification",
+          priceLabel: "Exam Assistance",
+          desc: "Figure-8 simulation and emergency braking markers compliant with Kolkata RTO rules.",
+          fullDesc: "Pass your driving test without foot-touches. Specialized Figure-8 ground markers.",
+          learn: "Figure-8 navigation, strict lane adherence, stop-line discipline, document guidance.",
+          duration: "Pre-test intensive preparation.",
+          video: ""
+        }
+      ],
+      transformations: [
+        {
+          name: "Sreya M.",
+          course: "Basic Scooty (Non-Cyclist)",
+          before: "I couldn't manage the scooter's physical weight and was terrified of tilting over.",
+          after: "Riding independently to my office in Salt Lake with full confidence.",
+          yt: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        },
+        {
+          name: "Pooja D.",
+          course: "Women Independence Track",
+          before: "Never cycled in my life. Thought two-wheelers weren't meant for me.",
+          after: "Now dropping my kids to school and running all household errands on my own.",
+          yt: ""
+        }
+      ],
+      gallery: [
+        { cat: "Scooty", caption: "Balance practice in Tollygunge quiet lanes", url: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80" },
+        { cat: "Women", caption: "First day independent feet-up ride", url: "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=600&q=80" },
+        { cat: "Road", caption: "Escorted road progression on Prince Anwar Shah Rd", url: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80" },
+        { cat: "Bike", caption: "Clutch friction zone coaching", url: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" }
+      ],
+      videos: [
+        { title: "Non-Cyclist Scooter Balance Session", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
+        { title: "Kolkata Traffic Entry Practice", url: "https://youtu.be/dQw4w9WgXcQ" }
+      ],
+      articles: [
+        {
+          cat: "Non-Cyclist Guides",
+          title: "Never Learnt Cycling? Why You Can Still Ride A Scooty",
+          desc: "Scooters balance on throttle propulsion and center of gravity, not pedal countersteer. A realistic breakdown for absolute beginners."
+        },
+        {
+          cat: "Road Confidence",
+          title: "How To Handle Tight U-Turns on Busy Kolkata Streets",
+          desc: "Learn why holding slight rear-brake drag stabilizes slow-speed turns without dropping your feet."
+        },
+        {
+          cat: "Electric Scooters",
+          title: "Mastering Instant Torque: What EV Scooty Beginners Must Know",
+          desc: "Avoid sudden jerks when starting Ather or Ola scooters on wet roads or at red signals."
+        }
+      ],
+      faqs: [
+        { q: "Can I learn scooty without knowing cycling?", a: "Yes, absolutely. Scooty balance relies on vehicle weight distribution and steady throttle control, not cycling momentum. We teach non-cyclists every single day." },
+        { q: "Do you provide Electric Scooty Training?", a: "Yes. We specifically coach on instant EV electric torque delivery and regenerative braking so your vehicle doesn't jerk forward." },
+        { q: "Do you provide Bike Training?", a: "Yes. We have dedicated geared bike training focusing on clutch biting points, gear matching, and hill starts." },
+        { q: "How much does training cost?", a: "Packages start from ₹2,500. Exact packages depend on whether you choose centre-based, doorstep, or extended practice." },
+        { q: "Where is Zero Fear located?", a: "We operate exclusively in Tollygunge, Kolkata, right near Netaji Metro Station. We do not have multiple branches, but we provide doorstep training within 10 KM." }
+      ]
+    };
 
-    // 1. Navigation & View Switcher
-    function switchView(viewId) {
-      document.querySelectorAll('.view-page').forEach(page => page.classList.remove('active'));
-      const target = document.getElementById('view-' + viewId);
+    // Load CMS Data
+    function getCMS() {
+      const stored = localStorage.getItem("zerofear_cms_v1");
+      return stored ? JSON.parse(stored) : DEFAULT_CMS_DATA;
+    }
+
+    function saveCMS(data) {
+      localStorage.setItem("zerofear_cms_v1", JSON.stringify(data));
+      applyCMS();
+    }
+
+    // Parse YouTube URL to Embed ID
+    function extractYouTubeId(url) {
+      if (!url) return null;
+      let match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/);
+      return match ? match[1] : null;
+    }
+
+    // View Routing
+    function switchView(viewName) {
+      document.querySelectorAll('.view-page').forEach(el => el.classList.remove('active'));
+      const target = document.getElementById('view-' + viewName);
       if (target) {
         target.classList.add('active');
         window.scrollTo(0, 0);
       }
     }
 
-    function scrollToId(elementId) {
+    function scrollToSec(secId) {
       switchView('home');
       setTimeout(() => {
-        const el = document.getElementById(elementId);
+        const el = document.getElementById(secId);
         if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 50);
+      }, 60);
     }
 
-    // 2. Hero Slider Logic
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-    let sliderTimer = setInterval(nextSlide, 6000);
-
-    function showSlide(index) {
-      slides.forEach(s => s.classList.remove('active'));
-      dots.forEach(d => d.classList.remove('active'));
-      slides[index].classList.add('active');
-      dots[index].classList.add('active');
-      currentSlide = index;
+    // Admin Tabs
+    function switchAdminTab(tabName) {
+      document.querySelectorAll('.btn-admin-tab').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('.admin-panel-card').forEach(c => c.style.display = 'none');
+      document.getElementById('admin-tab-' + tabName).style.display = 'block';
     }
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    function setSlide(index) {
-      clearInterval(sliderTimer);
-      showSlide(index);
-      sliderTimer = setInterval(nextSlide, 6000);
-    }
-
-    // 3. Course Details Mapping
-    const courseData = {
-      'scooty-basic': {
-        kicker: "FOUNDATIONAL PROGRAM",
-        title: "Basic Scooty Training (Non-Cyclists Welcome)",
-        price: "Starting from ₹2,500",
-        duration: "Comprehensive 7 to 10-Class formats depending on baseline balance.",
-        content: `
-          <p><strong>Who this is for:</strong> Absolute beginners who have never touched a two-wheeler, and those who do not know how to ride a bicycle.</p><br>
-          <p><strong>Curriculum Highlights:</strong></p>
-          <ul style="padding-left: 20px; margin: 10px 0;">
-            <li>Zero-speed vehicle balance and understanding the centre of gravity.</li>
-            <li>Feet-on-ground gradual forward crawl without rev-jerks.</li>
-            <li>Gradual feet-up posture and straight-line linear acceleration.</li>
-            <li>Dual progressive hand-braking without tipping or skidding.</li>
-            <li>Controlled low-speed stopping and parking posture.</li>
-          </ul>
-        `
-      },
-      'scooty-adv': {
-        kicker: "TRAFFIC & ROAD CONFIDENCE",
-        title: "Advanced Scooty Training (Traffic Progression)",
-        price: "Starting from ₹2,500",
-        duration: "Flexible 5 to 7-Class practical sessions.",
-        content: `
-          <p><strong>Who this is for:</strong> Learners who know how to keep balance in an empty field, but panic when an auto or bus approaches from behind.</p><br>
-          <p><strong>Curriculum Highlights:</strong></p>
-          <ul style="padding-left: 20px; margin: 10px 0;">
-            <li>360-degree mirror awareness and shoulder check timing.</li>
-            <li>Tight U-turns and 8-loops without putting your feet down.</li>
-            <li>Bridge, flyover incline starts without sliding backward.</li>
-            <li>Step-by-step entry into real South Kolkata roads with an instructor guiding alongside.</li>
-          </ul>
-        `
-      },
-      'bike': {
-        kicker: "GEARED MOTORCYCLE PROGRAM",
-        title: "Geared Bike Training (Clutch & Control)",
-        price: "Starting from ₹2,500",
-        duration: "Hands-on synchronized training.",
-        content: `
-          <p><strong>Who this is for:</strong> Anyone wishing to master manual geared motorcycles without fear of stalling at red lights.</p><br>
-          <p><strong>Curriculum Highlights:</strong></p>
-          <ul style="padding-left: 20px; margin: 10px 0;">
-            <li>Finding the exact friction point (biting point) of the clutch.</li>
-            <li>Coordinated foot rear-brake and hand front-brake balance.</li>
-            <li>Seamless gear upshifting and rev-matched downshifting.</li>
-            <li>Restarting smoothly on slopes without stalling the engine.</li>
-          </ul>
-        `
-      },
-      'ev': {
-        kicker: "ELECTRIC MOBILITY TRACK",
-        title: "Electric Scooty Training",
-        price: "Custom Sessions",
-        duration: "Specific EV adjustment sessions.",
-        content: `
-          <p><strong>Who this is for:</strong> Owners of Ather, Ola, Bajaj Chetak, or TVS iQube needing to master electric torque.</p><br>
-          <p><strong>Curriculum Highlights:</strong></p>
-          <ul style="padding-left: 20px; margin: 10px 0;">
-            <li>Managing instant torque response from zero RPM.</li>
-            <li>Regenerative braking modulation and wet road grip habits.</li>
-            <li>Digital dashboard navigation and riding mode switching.</li>
-          </ul>
-        `
-      },
-      'doorstep': {
-        kicker: "CONVENIENCE AT HOME",
-        title: "Doorstep Scooty & Bike Training",
-        price: "Custom Distance-Based Pricing",
-        duration: "Flexible morning & afternoon slots at your residence.",
-        content: `
-          <p><strong>Who this is for:</strong> Working professionals, home-makers, and students who cannot travel daily to our Tollygunge hub.</p><br>
-          <p><strong>Terms & Coverage:</strong></p>
-          <ul style="padding-left: 20px; margin: 10px 0;">
-            <li>Available within a 10 km radius of Netaji Metro Station.</li>
-            <li>Covers Garia, Jadavpur, Behala, Naktala, Ranikuthi, etc.</li>
-            <li>Training starts directly inside your colony or accessible adjacent roads.</li>
-          </ul>
-        `
-      },
-      'rto': {
-        kicker: "OFFICIAL CERTIFICATION",
-        title: "RTO Driving License Track Preparation",
-        price: "Dedicated Assistance Package",
-        duration: "Track simulation classes.",
-        content: `
-          <p><strong>Who this is for:</strong> Candidates preparing for their permanent two-wheeler driving license test.</p><br>
-          <p><strong>Curriculum Highlights:</strong></p>
-          <ul style="padding-left: 20px; margin: 10px 0;">
-            <li>Exact dimension Figure-8 track practice without touching feet to ground.</li>
-            <li>Sudden braking stop markers as per RTO testing guidelines.</li>
-            <li>End-to-end guidance on documentation and slot booking.</li>
-          </ul>
-        `
-      }
-    };
-
-    function openCourseDetail(courseKey) {
-      const data = courseData[courseKey];
-      if (!data) return;
-
-      document.getElementById('cd-kicker').textContent = data.kicker;
-      document.getElementById('cd-title').textContent = data.title;
-      document.getElementById('cd-price').textContent = data.price;
-      document.getElementById('cd-duration').textContent = data.duration;
-      document.getElementById('cd-content').innerHTML = data.content;
-
-      switchView('course-detail');
-    }
-
-    function scrollToEnquiryForCourse() {
-      const courseTitle = document.getElementById('cd-title').textContent;
-      scrollToId('enquiry');
-      const select = document.getElementById('lead_course');
-      for (let i = 0; i < select.options.length; i++) {
-        if (select.options[i].text.toLowerCase().includes(courseTitle.toLowerCase().slice(0, 10))) {
-          select.selectedIndex = i;
-          break;
-        }
-      }
-    }
-
-    // 4. Location Details Mapping
-    function openLocationPage(locType) {
-      if (locType === 'tollygunge') {
-        document.getElementById('loc-kicker').textContent = "PRIMARY CENTRE";
-        document.getElementById('loc-title').textContent = "Tollygunge Training Hub (Near Netaji Metro)";
-        document.getElementById('loc-content').innerHTML = `
-          <p><strong>Address:</strong> Near Netaji Metro Station, Tollygunge, Kolkata, West Bengal.</p><br>
-          <p><strong>Why this centre:</strong> Specially chosen for wide side-streets and minimal vehicle density during morning practice hours. Perfect for non-cyclists taking their first balance lessons without panic.</p><br>
-          <p><strong>Operating Hours:</strong> Open all 7 days a week. Morning: 7:00 AM - 11:30 AM | Afternoon: 3:30 PM - 6:30 PM.</p>
-        `;
-      } else {
-        document.getElementById('loc-kicker').textContent = "DOORSTEP SERVICE";
-        document.getElementById('loc-title').textContent = "Doorstep Training Coverage Zones";
-        document.getElementById('loc-content').innerHTML = `
-          <p>We deliver personal instructors within 10 KM radius of Netaji Metro Station. Key areas include:</p>
-          <ul style="padding-left: 20px; margin: 10px 0;">
-            <li>Garia & New Garia</li>
-            <li>Jadavpur, Dhakuria & Ranikuthi</li>
-            <li>Behala, Haridevpur & Thakurpukur</li>
-            <li>Bansdroni, Naktala & Kudghat</li>
-            <li>Alipore, New Alipore & Chetla</li>
-          </ul>
-          <p><em>*Note: Doorstep slots depend on instructor availability and travel distance.</em></p>
-        `;
-      }
-      switchView('location');
-    }
-
-    // 5. WhatsApp Lead Routing
-    function handleLeadSubmit(e) {
-      e.preventDefault();
-      const name = document.getElementById('lead_name').value.trim();
-      const phone = document.getElementById('lead_phone').value.trim();
-      const course = document.getElementById('lead_course').value;
-      const cycling = document.getElementById('lead_cycling').value;
-      const notes = document.getElementById('lead_notes').value.trim();
-
-      const message = `*NEW ADMISSION ENQUIRY — ZERO FEAR*%0A` +
-                      `----------------------------------%0A` +
-                      `*Name:* ${encodeURIComponent(name)}%0A` +
-                      `*Phone:* ${encodeURIComponent(phone)}%0A` +
-                      `*Selected Course:* ${encodeURIComponent(course)}%0A` +
-                      `*Knows Cycling:* ${encodeURIComponent(cycling)}%0A` +
-                      `*Area / Timing Note:* ${encodeURIComponent(notes || 'Not mentioned')}%0A` +
-                      `----------------------------------%0A` +
-                      `_Source: Zero Fear Web Portal_`;
-
-      window.open(`https://wa.me/${OFFICIAL_PHONE}?text=${message}`, '_blank');
-    }
-
-    // 6. Blog Engine with Image Attachment & LocalStorage Persistence
-    const defaultArticles = [
-      {
-        cat: "Beginner",
-        title: "Can I Learn Scooty Without Knowing Cycling?",
-        desc: "Yes, completely. Scooter balance relies on throttle modulation and body weight distribution rather than pedal countersteer.",
-        img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        cat: "Road Confidence",
-        title: "How To Handle Tight U-Turns on Busy Kolkata Roads",
-        desc: "Tactics for using the rear brake as a stabilizer rather than putting your feet down during slow-speed turns.",
-        img: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80"
-      },
-      {
-        cat: "EV",
-        title: "What Beginners Should Know About Electric Scooters",
-        desc: "Why instant electric motor torque feels different from petrol engines, and how to practice smooth initial throttle delivery.",
-        img: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80"
-      }
-    ];
-
-    let currentBase64Image = "";
-
-    function previewSelectedImage(event) {
+    // File Upload Base64
+    function uploadBase64(event, previewId, valId) {
       const file = event.target.files[0];
       if (file) {
         const reader = new FileReader();
         reader.onload = function(e) {
-          currentBase64Image = e.target.result;
-          const previewImg = document.getElementById('preview-img');
-          previewImg.src = currentBase64Image;
-          previewImg.style.display = 'block';
-          document.getElementById('preview-text').style.display = 'none';
-        }
+          const res = e.target.result;
+          document.getElementById(valId).value = res;
+          const img = document.getElementById(previewId);
+          if (img) { img.src = res; img.style.display = 'block'; }
+        };
         reader.readAsDataURL(file);
       }
     }
 
-    function renderPublicBlogs() {
-      const stored = localStorage.getItem('zf_posts');
-      const posts = stored ? JSON.parse(stored) : defaultArticles;
-      const container = document.getElementById('publicBlogGrid');
-      container.innerHTML = "";
+    // ===================================================
+    // HOMEPAGE SECTIONS RENDERER (CMS CONTROLLED ORDER)
+    // ===================================================
+    function renderHomePageSections(cms) {
+      const main = document.getElementById('dynamicHomeSections');
+      main.innerHTML = "";
 
-      posts.forEach(post => {
-        const card = document.createElement('div');
-        card.className = 'blog-card';
-        card.innerHTML = `
-          <img class="blog-card-img" src="${post.img || 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80'}" alt="${post.title}">
-          <div class="blog-card-pad">
-            <div class="blog-cat-badge">${post.cat}</div>
-            <h4>${post.title}</h4>
-            <p>${post.desc}</p>
-          </div>
-          <div style="padding: 1rem 1.5rem; background: #f8fafc; border-top: 1px solid var(--border);">
-            <a onclick="scrollToId('enquiry')" class="btn-detail" style="font-size: 0.8rem;">Ask Trainer About This →</a>
-          </div>
-        `;
-        container.appendChild(card);
+      cms.sectionsOrder.forEach(sec => {
+        if (!sec.visible) return;
+
+        if (sec.id === "hero") {
+          const slidesHtml = cms.heroSlides.map((s, idx) => `
+            <div class="slide ${idx === 0 ? 'active' : ''}" id="sl-${idx}">
+              <div class="slide-bg" style="background-image: url('${s.img}');"></div>
+              <div class="slide-content">
+                <div class="slide-kicker">${s.kicker}</div>
+                <h1 class="slide-h1">${s.heading}</h1>
+                <p class="slide-desc">${s.desc}</p>
+                ${s.bn ? `<div class="slide-bn-box">${s.bn}</div>` : ''}
+                <button onclick="scrollToSec('sec-enquiry')" class="nav-link btn-cta-nav" style="border: none;">${s.btnText}</button>
+              </div>
+            </div>
+          `).join('');
+
+          const dotsHtml = cms.heroSlides.map((_, idx) => `
+            <div class="dot ${idx === 0 ? 'active' : ''}" onclick="setHeroSlide(${idx})"></div>
+          `).join('');
+
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-hero" class="hero-slider-wrap">
+              ${slidesHtml}
+              <div class="slider-dots">${dotsHtml}</div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "seo_strip") {
+          main.insertAdjacentHTML('beforeend', `
+            <div id="sec-seo-strip" class="seo-strip">
+              <span>SCOOTY</span> <b>•</b> <span>BIKE</span> <b>•</b> <span>ELECTRIC SCOOTY</span>
+              <b>|</b> <span>BEGINNERS</span> <b>•</b> <span>NON-CYCLISTS</span> <b>•</b> <span>WOMEN</span> <b>•</b> <span>WORKING PROFESSIONALS</span>
+              <b>|</b> <span>REAL-ROAD TRAINING</span> <b>•</b> <span>DOORSTEP TRAINING</span> <b>•</b> <span>RTO PREPARATION</span>
+            </div>
+          `);
+        }
+
+        else if (sec.id === "trust") {
+          const trustCards = cms.trustNumbers.map(t => `
+            <div class="trust-card">
+              <div class="trust-val">${t.val}</div>
+              <div class="trust-label">${t.label}</div>
+            </div>
+          `).join('');
+
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-trust" class="section" style="padding: 3rem 8%;">
+              <div class="trust-grid">${trustCards}</div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "why") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-why" class="section alt-bg">
+              <div class="sec-kicker">Structured Advantage</div>
+              <h2 class="sec-title">WHY ZERO FEAR EXISTS</h2>
+              <div class="grid-3" style="margin-top: 2rem;">
+                <div class="card-clean">
+                  <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">Start From Ground Zero</h3>
+                  <p style="color: var(--text-body); font-size: 0.9rem;">We don't expect prior riding knowledge. We step in with zero judgement and clear fundamentals.</p>
+                </div>
+                <div class="card-clean">
+                  <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">Patient Guidance</h3>
+                  <p style="color: var(--text-body); font-size: 0.9rem;">Learning is not a race. Our trainers pace lessons strictly according to your personal comfort level.</p>
+                </div>
+                <div class="card-clean">
+                  <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">Real Road Practice</h3>
+                  <p style="color: var(--text-body); font-size: 0.9rem;">From quiet alleys to Tollygunge and Prince Anwar Shah traffic, we build practical confidence.</p>
+                </div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "women") {
+          const w = cms.womenSection;
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-women" class="section">
+              <div class="women-editorial">
+                <div>
+                  <div class="sec-kicker" style="color: var(--accent-yellow);">FREEDOM OF MOVEMENT</div>
+                  <h2 style="font-family: var(--font-display); font-size: 2.2rem; color: #fff; margin: 0.8rem 0;">${w.heading}</h2>
+                  <h4 style="color: var(--accent-yellow); margin-bottom: 1rem; font-weight: 600;">${w.subheading}</h4>
+                  <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${w.copy}</p>
+                  <div class="slide-bn-box">${w.bn}</div>
+                  <button onclick="scrollToSec('sec-enquiry')" class="nav-link btn-cta-nav" style="border: none;">Begin Your Journey →</button>
+                </div>
+                <div class="women-img-frame">
+                  <img src="${w.img}" alt="Women Two-Wheeler Training Kolkata">
+                </div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "who") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-who" class="section alt-bg">
+              <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+                <div class="sec-kicker">Targeted Learning</div>
+                <h2 class="sec-title">WHO CAN START WITH ZERO FEAR?</h2>
+                <p class="sec-subtitle" style="margin: 0 auto;">No matter your background, our training is engineered around your specific starting point.</p>
+              </div>
+              <div class="grid-4">
+                <div class="card-clean"><h4>Complete Beginners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Individuals who have never touched an accelerator or clutch before.</p></div>
+                <div class="card-clean"><h4>Non-Cyclists</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Those who never rode a bicycle. We start with center-of-gravity balance.</p></div>
+                <div class="card-clean"><h4>Women Learners</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Overcoming hesitations in traffic and building daily commuting freedom.</p></div>
+                <div class="card-clean"><h4>Working Professionals</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Early morning & weekend batches tailored to busy work schedules.</p></div>
+                <div class="card-clean"><h4>College Students</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Affordable campus mobility packages for colleges across Kolkata.</p></div>
+                <div class="card-clean"><h4>Returning Riders</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Riders returning after years or recovering confidence after minor incidents.</p></div>
+                <div class="card-clean"><h4>EV Riders</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Smooth management of instant zero-RPM electric scooter torque.</p></div>
+                <div class="card-clean"><h4>RTO Applicants</h4><p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Precision Figure-8 track training without foot-touches for licensing.</p></div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "non_cyclist") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-non-cyclist" class="section">
+              <div class="grid-2">
+                <div>
+                  <div class="sec-kicker">Core USP</div>
+                  <h2 class="sec-title">NEVER LEARNT CYCLING?</h2>
+                  <p style="color: var(--text-body); margin-bottom: 1.2rem; font-size: 1.05rem;">
+                    That doesn't automatically mean you can't learn to ride a scooty. Bicycle balance relies heavily on steering countersteer while pedaling. A scooty provides steady motorized balance and dual hand brakes.
+                  </p>
+                  <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                    <em>Important Distinction:</em> Scooty beginners can comfortably start from basic balance depending on individual comfort. Geared bike training may subsequently require appropriate established stability.
+                  </p>
+                  <button onclick="scrollToSec('sec-enquiry')" class="nav-link btn-cta-nav" style="border: none;">Talk To Trainer About Non-Cycling →</button>
+                </div>
+                <div class="card-clean" style="border-left: 5px solid var(--accent-yellow);">
+                  <h3 style="color: var(--primary-navy); margin-bottom: 0.8rem;">How We Train Non-Cyclists:</h3>
+                  <ul style="padding-left: 20px; color: var(--text-body); line-height: 1.8;">
+                    <li>Stationary vehicle weight feel and balance points.</li>
+                    <li>Dual-feet paddle walk with linear throttle control.</li>
+                    <li>Controlled single-foot lift progressing to full footboard rest.</li>
+                    <li>Progressive dual-hand braking without sudden tipping.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "journey") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-journey" class="section alt-bg">
+              <div class="sec-kicker">Step-By-Step Progression</div>
+              <h2 class="sec-title">YOUR JOURNEY FROM FIRST TOUCH TO CONFIDENT RIDING</h2>
+              <div class="journey-timeline">
+                <div class="journey-card"><div class="journey-step-num">01</div><h4>Get Comfortable</h4><p>Understand controls, switches, and bike center of gravity.</p></div>
+                <div class="journey-card"><div class="journey-step-num">02</div><h4>Build Basic Control</h4><p>Linear throttle roll and progressive hand-braking touch.</p></div>
+                <div class="journey-card"><div class="journey-step-num">03</div><h4>Balance & Turning</h4><p>Wide turning arc habits without placing feet to ground.</p></div>
+                <div class="journey-card"><div class="journey-step-num">04</div><h4>Vehicle Manoeuvre</h4><p>Slalom drills, tight circles, and emergency halt response.</p></div>
+                <div class="journey-card"><div class="journey-step-num">05</div><h4>Road Awareness</h4><p>Judging rear mirrors, blind spots, and auto overtakes.</p></div>
+                <div class="journey-card"><div class="journey-step-num">06</div><h4>Real Road Practice</h4><p>Escorted riding on busy South Kolkata thoroughfares.</p></div>
+                <div class="journey-card"><div class="journey-step-num">07</div><h4>Independence</h4><p>Solo riding confidence across any route, anytime.</p></div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "courses") {
+          const coursesHtml = cms.courses.map(c => `
+            <div class="course-card-pub">
+              <div class="course-card-pad">
+                <span class="course-tag">${c.tag}</span>
+                <h3 style="color: var(--primary-navy);">${c.title}</h3>
+                <div class="course-price-disp">${c.priceLabel}</div>
+                <p style="color: var(--text-body); font-size: 0.88rem;">${c.desc}</p>
+              </div>
+              <div style="padding: 1rem 2rem; background: #f8fafc; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center;">
+                <button onclick="openCourseView('${c.id}')" style="background: none; border: none; font-weight: 700; color: var(--primary-navy); font-size: 0.85rem;">View Syllabus →</button>
+                <button onclick="scrollToSec('sec-enquiry')" class="admin-btn-sm" style="background: var(--accent-yellow); border: none;">Enquire</button>
+              </div>
+            </div>
+          `).join('');
+
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-courses" class="section">
+              <div class="sec-kicker">Curriculum</div>
+              <h2 class="sec-title">OUR TRAINING PROGRAMS</h2>
+              <div class="grid-3" style="margin-top: 2rem;">${coursesHtml}</div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "ev") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-ev" class="section dark-bg">
+              <div class="grid-2">
+                <div>
+                  <div class="sec-kicker">FUTURE COMMUTE</div>
+                  <h2 class="sec-title">THE WAY WE MOVE IS CHANGING. LEARN TO RIDE ELECTRIC.</h2>
+                  <p class="sec-subtitle">Electric scooters react with immediate torque. We train you on regenerative deceleration and smooth electric throttle modulation.</p>
+                </div>
+                <div class="card-clean" style="background: var(--primary-card); border-color: var(--border-navy); color: #fff;">
+                  <h4 style="color: var(--accent-yellow); margin-bottom: 0.6rem;">Ather • Ola • Chetak • iQube</h4>
+                  <p style="font-size: 0.9rem; color: #cbd5e1;">Master quick torque maneuvers safely without unexpected jerks at signals.</p>
+                  <button onclick="scrollToSec('sec-enquiry')" class="nav-link btn-cta-nav" style="border: none; margin-top: 1.2rem;">Book EV Module</button>
+                </div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "transformations") {
+          const transHtml = cms.transformations.map(tr => `
+            <div class="transform-dual">
+              <div class="trans-side before">
+                <span style="font-size: 0.75rem; font-weight: 800; color: #dc2626;">BEFORE (DAY 1)</span>
+                <p style="font-weight: 600; margin: 8px 0; color: #7f1d1d;">“${tr.before}”</p>
+                <small style="color: #991b1b;">Learner: ${tr.name} (${tr.course})</small>
+              </div>
+              <div class="trans-side after">
+                <span style="font-size: 0.75rem; font-weight: 800; color: #059669;">AFTER (DAY 10)</span>
+                <p style="font-weight: 600; margin: 8px 0; color: #065f46;">“${tr.after}”</p>
+                <small style="color: #047857;">Confident Solo Rider</small>
+              </div>
+            </div>
+          `).join('');
+
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-transformations" class="section alt-bg">
+              <div class="sec-kicker">Real Evidence</div>
+              <h2 class="sec-title">THE FIRST DAY CAN FEEL DIFFERENT FROM THE DAY YOU RIDE ALONE</h2>
+              <div style="margin-top: 2rem;">${transHtml}</div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "testimonials") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-testimonials" class="section">
+              <div class="sec-kicker">Learner Stories</div>
+              <h2 class="sec-title">WHAT REAL CANDIDATES SAY</h2>
+              <div class="grid-3" style="margin-top: 2rem;">
+                <div class="card-clean">
+                  <p style="font-size: 0.95rem; color: var(--text-body); margin-bottom: 1rem;">“Patient trainers who never shout. Being a non-cyclist, I was nervous, but their weight-balance drills made everything logical.”</p>
+                  <strong>— Ananya Sen</strong><br><small style="color: var(--text-muted);">Jadavpur, Kolkata</small>
+                </div>
+                <div class="card-clean">
+                  <p style="font-size: 0.95rem; color: var(--text-body); margin-bottom: 1rem;">“Took doorstep training in Behala. Learned to manage my heavy Access 125 within 7 days. Freedom is priceless.”</p>
+                  <strong>— Ritu Banerjee</strong><br><small style="color: var(--text-muted);">Behala, Kolkata</small>
+                </div>
+                <div class="card-clean">
+                  <p style="font-size: 0.95rem; color: var(--text-body); margin-bottom: 1rem;">“Geared bike clutch control was explained with clear mechanical precision. Passed my RTO Figure-8 test on first try.”</p>
+                  <strong>— Rohit Karmakar</strong><br><small style="color: var(--text-muted);">Garia, Kolkata</small>
+                </div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "gallery") {
+          const galleryHtml = cms.gallery.map(g => `
+            <div class="gallery-item">
+              <img src="${g.url}" alt="${g.caption}">
+              <div class="gallery-caption">${g.caption}</div>
+            </div>
+          `).join('');
+
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-gallery" class="section alt-bg">
+              <div class="sec-kicker">Visual Record</div>
+              <h2 class="sec-title">TRAINING IN REAL LIFE</h2>
+              <div class="gallery-grid" style="margin-top: 2rem;">${galleryHtml}</div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "videos") {
+          const vidsHtml = cms.videos.map(v => {
+            const ytid = extractYouTubeId(v.url);
+            return `
+              <div class="video-card">
+                <div class="video-iframe-wrap">
+                  <iframe src="https://www.youtube-nocookie.com/embed/${ytid}" allowfullscreen></iframe>
+                </div>
+                <div style="padding: 1rem;"><strong>${v.title}</strong></div>
+              </div>
+            `;
+          }).join('');
+
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-videos" class="section">
+              <div class="sec-kicker">Watch The Training</div>
+              <h2 class="sec-title">REAL ON-ROAD LESSONS</h2>
+              <div class="grid-2" style="margin-top: 2rem;">${vidsHtml}</div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "doorstep") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-doorstep" class="section alt-bg">
+              <div class="grid-2">
+                <div>
+                  <div class="sec-kicker">Home Convenience</div>
+                  <h2 class="sec-title">LEARN CLOSER TO HOME</h2>
+                  <p style="color: var(--text-body); margin-bottom: 1.2rem;">
+                    Can't come to the centre? Doorstep Scooty & Bike Training is available within 10 KM of Netaji Metro Station, subject to trainer availability and location suitability.
+                  </p>
+                  <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                    Covers Garia, Jadavpur, Ranikuthi, Behala, Haridevpur, Naktala, Bansdroni, Kudghat, New Alipore, and surrounding localities.
+                  </p>
+                  <button onclick="scrollToSec('sec-enquiry')" class="nav-link btn-cta-nav" style="border: none;">Check Doorstep Eligibility →</button>
+                </div>
+                <div class="card-clean" style="text-align: center;">
+                  <div style="font-size: 3.5rem; font-family: var(--font-display); font-weight: 900; color: var(--accent-yellow-dark);">10 KM</div>
+                  <div style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase;">Doorstep Service Radius from Netaji Metro</div>
+                </div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "location") {
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-location" class="section">
+              <div class="grid-2">
+                <div>
+                  <div class="sec-kicker">Dedicated Training Ground</div>
+                  <h2 class="sec-title">TOLLYGUNGE, KOLKATA</h2>
+                  <h4 style="color: var(--accent-yellow-dark); margin-bottom: 1rem;">Near Netaji Metro Station</h4>
+                  <p style="color: var(--text-body); margin-bottom: 1rem;">
+                    ZERO FEAR operates from one central physical training zone in Tollygunge. Selected for minimal traffic interference during initial balance stages.
+                  </p>
+                  <p style="color: var(--text-dark); font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Hours:</strong> ${cms.config.hours}</p>
+                  <div style="display: flex; gap: 10px; margin-top: 1.5rem;">
+                    <a href="${cms.config.map}" target="_blank" class="admin-btn-sm" style="background: var(--primary-navy); color: #fff; padding: 10px 18px;">Get Directions</a>
+                    <a href="tel:${cms.config.phone}" class="admin-btn-sm" style="background: #fff; padding: 10px 18px;">Call Centre</a>
+                  </div>
+                </div>
+                <div class="card-clean" style="border: 2px dashed #cbd5e1; display: flex; align-items: center; justify-content: center; min-height: 250px;">
+                  <div style="text-align: center;">
+                    <span style="font-size: 2.5rem;">📍</span>
+                    <p style="font-weight: 700; margin-top: 8px;">Tollygunge Practice Zone</p>
+                    <small style="color: var(--text-muted);">${cms.config.address}</small>
+                  </div>
+                </div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "faq") {
+          const faqNodes = cms.faqs.map(f => `
+            <div class="faq-node">
+              <div class="faq-q" onclick="toggleFaqAccordion(this)">
+                <span>${f.q}</span>
+                <span style="font-size: 1.4rem;">+</span>
+              </div>
+              <div class="faq-a"><p>${f.a}</p></div>
+            </div>
+          `).join('');
+
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-faq" class="section alt-bg">
+              <div class="faq-box">
+                <div style="text-align: center; margin-bottom: 2.5rem;">
+                  <div class="sec-kicker">Clarification</div>
+                  <h2 class="sec-title">FREQUENTLY ASKED QUESTIONS</h2>
+                </div>
+                <div>${faqNodes}</div>
+              </div>
+            </section>
+          `);
+        }
+
+        else if (sec.id === "enquiry") {
+          const courseOpts = cms.courses.map(c => `<option value="${c.title}">${c.title}</option>`).join('');
+          main.insertAdjacentHTML('beforeend', `
+            <section id="sec-enquiry" class="section">
+              <div class="form-enquiry-wrap">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                  <div class="sec-kicker">Direct Contact</div>
+                  <h2 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--primary-navy);">CONNECT WITH ZERO FEAR</h2>
+                  <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">Routes instantly to official WhatsApp without intermediation.</p>
+                </div>
+                <form onsubmit="handleWhatsAppLead(event)">
+                  <div class="form-ctrl"><label>Your Name *</label><input type="text" id="lead_name" required placeholder="e.g. Priyadarshini Roy"></div>
+                  <div class="form-ctrl"><label>Phone Number *</label><input type="tel" id="lead_phone" required placeholder="e.g. 98300XXXXX"></div>
+                  <div class="form-ctrl"><label>Select Course *</label><select id="lead_course" required>${courseOpts}</select></div>
+                  <div class="form-ctrl"><label>Do You Know Cycling?</label><select id="lead_cycling"><option value="No, I cannot cycle">No, I do not know cycling</option><option value="Yes, I know cycling">Yes, I know cycling</option></select></div>
+                  <div class="form-ctrl"><label>Location / Area in Kolkata</label><input type="text" id="lead_loc" placeholder="e.g. Jadavpur, Ranikuthi"></div>
+                  <button type="submit" class="btn-wa-submit"><span>💬</span> Send Enquiry On WhatsApp</button>
+                </form>
+              </div>
+            </section>
+          `);
+        }
       });
     }
 
-    function triggerAdminLogin() {
-      const pass = prompt("Enter Security Passcode for ZERO FEAR Admin:");
-      if (pass === "zerofear2026" || pass === "0000") {
-        switchView('admin');
-      } else if (pass !== null) {
-        alert("Invalid Passcode.");
+    // Hero Slider Cycle
+    let heroTimer = null;
+    let heroIdx = 0;
+    function runHeroCycle() {
+      if (heroTimer) clearInterval(heroTimer);
+      const slides = document.querySelectorAll('.hero-slider-wrap .slide');
+      const dots = document.querySelectorAll('.hero-slider-wrap .dot');
+      if (!slides.length) return;
+
+      heroTimer = setInterval(() => {
+        slides.forEach(s => s.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+        heroIdx = (heroIdx + 1) % slides.length;
+        slides[heroIdx].classList.add('active');
+        if (dots[heroIdx]) dots[heroIdx].classList.add('active');
+      }, 6000);
+    }
+
+    function setHeroSlide(idx) {
+      if (heroTimer) clearInterval(heroTimer);
+      const slides = document.querySelectorAll('.hero-slider-wrap .slide');
+      const dots = document.querySelectorAll('.hero-slider-wrap .dot');
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      heroIdx = idx;
+      slides[idx].classList.add('active');
+      if (dots[idx]) dots[idx].classList.add('active');
+      runHeroCycle();
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaqAccordion(el) {
+      const a = el.nextElementSibling;
+      const isOpen = a.style.maxHeight && a.style.maxHeight !== '0px';
+      document.querySelectorAll('.faq-a').forEach(x => x.style.maxHeight = null);
+      document.querySelectorAll('.faq-q span:last-child').forEach(s => s.textContent = '+');
+      if (!isOpen) {
+        a.style.maxHeight = a.scrollHeight + "px";
+        el.querySelector('span:last-child').textContent = '—';
       }
     }
 
-    function handleAdminPublish(e) {
+    // Lead Submission via WhatsApp
+    function handleWhatsAppLead(e) {
       e.preventDefault();
-      const cat = document.getElementById('post_category').value;
-      const title = document.getElementById('post_title').value.trim();
-      const desc = document.getElementById('post_body').value.trim();
-      
-      const newPost = {
-        cat: cat,
-        title: title,
-        desc: desc,
-        img: currentBase64Image || "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80"
-      };
+      const cms = getCMS();
+      const name = document.getElementById('lead_name').value.trim();
+      const phone = document.getElementById('lead_phone').value.trim();
+      const course = document.getElementById('lead_course').value;
+      const cycling = document.getElementById('lead_cycling').value;
+      const loc = document.getElementById('lead_loc').value.trim();
 
-      const stored = localStorage.getItem('zf_posts');
-      const posts = stored ? JSON.parse(stored) : [...defaultArticles];
-      posts.unshift(newPost);
-      localStorage.setItem('zf_posts', JSON.stringify(posts));
+      const text = `*NEW ZERO FEAR TRAINING INQUIRY*%0A` +
+                   `--------------------------------%0A` +
+                   `*Name:* ${encodeURIComponent(name)}%0A` +
+                   `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                   `*Course:* ${encodeURIComponent(course)}%0A` +
+                   `*Knows Cycling:* ${encodeURIComponent(cycling)}%0A` +
+                   `*Locality:* ${encodeURIComponent(loc || 'Kolkata')}%0A` +
+                   `--------------------------------%0A` +
+                   `_Source: zerofear.vercel.app_`;
 
-      alert("Post successfully published to Rider's Guide!");
-      document.getElementById('adminPostForm').reset();
-      currentBase64Image = "";
-      document.getElementById('preview-img').style.display = 'none';
-      document.getElementById('preview-text').style.display = 'block';
-
-      renderPublicBlogs();
-      switchView('blog');
+      window.open(`https://wa.me/${cms.config.wa}?text=${text}`, '_blank');
     }
 
-    // Initialization
+    // Course Detail View
+    function openCourseView(courseId) {
+      const cms = getCMS();
+      const course = cms.courses.find(c => c.id === courseId);
+      if (!course) return;
+
+      document.getElementById('cd-kicker').textContent = course.tag;
+      document.getElementById('cd-title').textContent = course.title;
+      document.getElementById('cd-price').textContent = course.priceLabel;
+      document.getElementById('cd-desc').textContent = course.fullDesc;
+      document.getElementById('cd-learn').textContent = course.learn;
+      document.getElementById('cd-duration').textContent = course.duration;
+
+      const ytid = extractYouTubeId(course.video);
+      const vWrap = document.getElementById('cd-video-wrap');
+      if (ytid) {
+        document.getElementById('cd-video-frame').src = `https://www.youtube-nocookie.com/embed/${ytid}`;
+        vWrap.style.display = 'block';
+      } else {
+        vWrap.style.display = 'none';
+      }
+
+      switchView('course-detail');
+    }
+
+    function inquireForCourse() {
+      const title = document.getElementById('cd-title').textContent;
+      scrollToSec('sec-enquiry');
+      setTimeout(() => {
+        const sel = document.getElementById('lead_course');
+        if (sel) {
+          for (let i = 0; i < sel.options.length; i++) {
+            if (sel.options[i].text.includes(title.slice(0, 8))) {
+              sel.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }, 100);
+    }
+
+    // Location Detail View
+    function openLocationDetail(type) {
+      const cms = getCMS();
+      if (type === 'tollygunge') {
+        document.getElementById('loc-kicker').textContent = "MAIN HUB";
+        document.getElementById('loc-title').textContent = "Tollygunge Centre (Near Netaji Metro)";
+        document.getElementById('loc-content').innerHTML = `
+          <p><strong>Physical Hub:</strong> ${cms.config.address}</p><br>
+          <p>This is ZERO FEAR's primary practice territory. Selected deliberately because the adjacent wide lanes are free from disruptive tram rails and speeding lorries during morning slots, providing calm conditions for nervous beginners.</p><br>
+          <p><strong>Available Shifts:</strong> ${cms.config.hours}</p>
+        `;
+      } else {
+        document.getElementById('loc-kicker').textContent = "DOORSTEP SERVICE";
+        document.getElementById('loc-title').textContent = "10 KM Doorstep Training Radius";
+        document.getElementById('loc-content').innerHTML = `
+          <p>Personalized instructors bring training directly to your residential complex within 10 KM of Netaji Metro Station.</p><br>
+          <p><strong>Covered Localities:</strong> Garia, Jadavpur, Behala, Haridevpur, Ranikuthi, Bansdroni, Naktala, Kudghat, Alipore.</p>
+        `;
+      }
+      switchView('location-detail');
+    }
+
+    // Dynamic Navigation Dropdown
+    function renderNavDropdown(cms) {
+      const drop = document.getElementById('coursesNavDropdown');
+      drop.innerHTML = cms.courses.map(c => `
+        <a class="dropdown-item" onclick="openCourseView('${c.id}')">
+          ${c.title}
+          <small>${c.priceLabel}</small>
+        </a>
+      `).join('');
+    }
+
+    // Public Blog
+    function renderPublicBlog(cms) {
+      const container = document.getElementById('blogPublicGrid');
+      container.innerHTML = cms.articles.map(a => `
+        <div class="card-clean">
+          <span style="font-size: 0.75rem; font-weight: 800; color: var(--accent-yellow-dark); text-transform: uppercase;">${a.cat}</span>
+          <h3 style="color: var(--primary-navy); margin: 0.5rem 0;">${a.title}</h3>
+          <p style="color: var(--text-body); font-size: 0.9rem; margin-bottom: 1.2rem;">${a.desc}</p>
+          <button onclick="scrollToSec('sec-enquiry')" class="admin-btn-sm" style="background: none; border: none; font-weight: 700; color: var(--primary-navy); padding: 0;">Consult Trainer About This →</button>
+        </div>
+      `).join('');
+    }
+
+    // ===================================================
+    // ADMIN CMS RENDERING & ACTIONS
+    // ===================================================
+    function triggerAdminLogin() {
+      const pass = prompt("Enter ZERO FEAR Master Security Passcode:");
+      if (pass === "zerofear" || pass === "0000" || pass === "zerofear2026") {
+        switchView('admin');
+        renderAdminCMS();
+      } else if (pass !== null) {
+        alert("Incorrect security passcode.");
+      }
+    }
+
+    function renderAdminCMS() {
+      const cms = getCMS();
+
+      // Config Form
+      document.getElementById('cfg_phone').value = cms.config.phone;
+      document.getElementById('cfg_wa').value = cms.config.wa;
+      document.getElementById('cfg_email').value = cms.config.email;
+      document.getElementById('cfg_address').value = cms.config.address;
+      document.getElementById('cfg_hours').value = cms.config.hours;
+      document.getElementById('cfg_map').value = cms.config.map;
+
+      // Section Reorder
+      const reorderList = document.getElementById('sectionReorderList');
+      reorderList.innerHTML = cms.sectionsOrder.map((sec, idx) => `
+        <div class="reorder-item ${sec.visible ? '' : 'hidden-sec'}">
+          <div>
+            <strong>${sec.name}</strong>
+            <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">(${sec.visible ? 'Visible' : 'Hidden'})</span>
+          </div>
+          <div>
+            <button onclick="moveSec(${idx}, -1)" class="admin-btn-sm">▲ Up</button>
+            <button onclick="moveSec(${idx}, 1)" class="admin-btn-sm">▼ Down</button>
+            <button onclick="toggleSecVis(${idx})" class="admin-btn-sm">${sec.visible ? 'Hide' : 'Show'}</button>
+          </div>
+        </div>
+      `).join('');
+
+      // Hero Slides
+      document.getElementById('adminHeroSlidesList').innerHTML = cms.heroSlides.map((s, idx) => `
+        <div style="background: #f8fafc; padding: 1.5rem; border-radius: 6px; margin-bottom: 1.5rem; border: 1px solid var(--border-light);">
+          <h4>Slide ${idx + 1}: ${s.kicker}</h4>
+          <input type="text" value="${s.heading}" onchange="updateHero(${idx}, 'heading', this.value)" style="width: 100%; margin: 6px 0; padding: 8px;">
+          <textarea onchange="updateHero(${idx}, 'desc', this.value)" style="width: 100%; padding: 8px;">${s.desc}</textarea>
+          <input type="text" value="${s.img}" onchange="updateHero(${idx}, 'img', this.value)" placeholder="Image URL" style="width: 100%; margin: 6px 0; padding: 8px;">
+        </div>
+      `).join('');
+
+      // Women
+      const w = cms.womenSection;
+      document.getElementById('wm_heading').value = w.heading;
+      document.getElementById('wm_subheading').value = w.subheading;
+      document.getElementById('wm_copy').value = w.copy;
+      document.getElementById('wm_bn').value = w.bn;
+      document.getElementById('wm_img_val').value = w.img;
+      if (w.img) {
+        const p = document.getElementById('wm_img_preview');
+        p.src = w.img;
+        p.style.display = 'block';
+      }
+
+      // Gallery List
+      document.getElementById('adminGalleryList').innerHTML = cms.gallery.map((g, idx) => `
+        <div style="background: #fff; border: 1px solid var(--border-light); padding: 8px; border-radius: 4px;">
+          <img src="${g.url}" style="width: 100%; height: 120px; object-fit: cover;">
+          <p style="font-size: 0.75rem; margin: 6px 0;">${g.caption}</p>
+          <button onclick="deleteGalleryItem(${idx})" class="admin-btn-sm" style="color: red;">Delete</button>
+        </div>
+      `).join('');
+
+      // Videos List
+      document.getElementById('adminVideosList').innerHTML = cms.videos.map((v, idx) => `
+        <div style="background: #fff; border: 1px solid var(--border-light); padding: 10px; border-radius: 4px;">
+          <strong>${v.title}</strong>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">${v.url}</p>
+          <button onclick="deleteVideoItem(${idx})" class="admin-btn-sm" style="color: red; margin-top: 6px;">Delete</button>
+        </div>
+      `).join('');
+
+      // FAQ List
+      document.getElementById('adminFaqList').innerHTML = cms.faqs.map((f, idx) => `
+        <div style="background: #f8fafc; padding: 12px; border-radius: 6px; margin-bottom: 8px; border: 1px solid var(--border-light);">
+          <strong>${f.q}</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">${f.a}</p>
+          <button onclick="deleteFaqItem(${idx})" class="admin-btn-sm" style="color: red; margin-top: 6px;">Delete</button>
+        </div>
+      `).join('');
+
+      // Articles
+      document.getElementById('adminArticlesList').innerHTML = cms.articles.map((a, idx) => `
+        <div style="background: #f8fafc; padding: 12px; border-radius: 6px; margin-bottom: 8px; border: 1px solid var(--border-light);">
+          <small style="color: var(--accent-yellow-dark); font-weight: 700;">${a.cat}</small>
+          <h4>${a.title}</h4>
+          <button onclick="deleteArticleItem(${idx})" class="admin-btn-sm" style="color: red; margin-top: 6px;">Delete</button>
+        </div>
+      `).join('');
+    }
+
+    // CMS Actions
+    function moveSec(idx, delta) {
+      const cms = getCMS();
+      const target = idx + delta;
+      if (target < 0 || target >= cms.sectionsOrder.length) return;
+      const temp = cms.sectionsOrder[idx];
+      cms.sectionsOrder[idx] = cms.sectionsOrder[target];
+      cms.sectionsOrder[target] = temp;
+      saveCMS(cms);
+      renderAdminCMS();
+    }
+
+    function toggleSecVis(idx) {
+      const cms = getCMS();
+      cms.sectionsOrder[idx].visible = !cms.sectionsOrder[idx].visible;
+      saveCMS(cms);
+      renderAdminCMS();
+    }
+
+    function saveContactCMS(e) {
+      e.preventDefault();
+      const cms = getCMS();
+      cms.config.phone = document.getElementById('cfg_phone').value.trim();
+      cms.config.wa = document.getElementById('cfg_wa').value.trim();
+      cms.config.email = document.getElementById('cfg_email').value.trim();
+      cms.config.address = document.getElementById('cfg_address').value.trim();
+      cms.config.hours = document.getElementById('cfg_hours').value.trim();
+      cms.config.map = document.getElementById('cfg_map').value.trim();
+      saveCMS(cms);
+      alert("Contact details saved successfully!");
+    }
+
+    function updateHero(idx, prop, val) {
+      const cms = getCMS();
+      cms.heroSlides[idx][prop] = val;
+      saveCMS(cms);
+    }
+
+    function saveWomenCMS(e) {
+      e.preventDefault();
+      const cms = getCMS();
+      cms.womenSection.heading = document.getElementById('wm_heading').value.trim();
+      cms.womenSection.subheading = document.getElementById('wm_subheading').value.trim();
+      cms.womenSection.copy = document.getElementById('wm_copy').value.trim();
+      cms.womenSection.bn = document.getElementById('wm_bn').value.trim();
+      cms.womenSection.img = document.getElementById('wm_img_val').value.trim();
+      saveCMS(cms);
+      alert("Women & Independence section updated!");
+    }
+
+    function addGalleryItem(e) {
+      e.preventDefault();
+      const cms = getCMS();
+      cms.gallery.unshift({
+        cat: document.getElementById('gal_cat').value,
+        caption: document.getElementById('gal_caption').value.trim(),
+        url: document.getElementById('gal_val').value.trim()
+      });
+      saveCMS(cms);
+      renderAdminCMS();
+      e.target.reset();
+    }
+
+    function deleteGalleryItem(idx) {
+      const cms = getCMS();
+      cms.gallery.splice(idx, 1);
+      saveCMS(cms);
+      renderAdminCMS();
+    }
+
+    function addYouTubeCMS(e) {
+      e.preventDefault();
+      const cms = getCMS();
+      cms.videos.unshift({
+        title: document.getElementById('yt_title').value.trim(),
+        url: document.getElementById('yt_url').value.trim()
+      });
+      saveCMS(cms);
+      renderAdminCMS();
+      e.target.reset();
+    }
+
+    function deleteVideoItem(idx) {
+      const cms = getCMS();
+      cms.videos.splice(idx, 1);
+      saveCMS(cms);
+      renderAdminCMS();
+    }
+
+    function saveArticleCMS(e) {
+      e.preventDefault();
+      const cms = getCMS();
+      cms.articles.unshift({
+        cat: document.getElementById('art_cat').value.trim(),
+        title: document.getElementById('art_title').value.trim(),
+        desc: document.getElementById('art_desc').value.trim()
+      });
+      saveCMS(cms);
+      renderAdminCMS();
+      e.target.reset();
+    }
+
+    function deleteArticleItem(idx) {
+      const cms = getCMS();
+      cms.articles.splice(idx, 1);
+      saveCMS(cms);
+      renderAdminCMS();
+    }
+
+    function addFaqCMS(e) {
+      e.preventDefault();
+      const cms = getCMS();
+      cms.faqs.push({
+        q: document.getElementById('faq_q_in').value.trim(),
+        a: document.getElementById('faq_a_in').value.trim()
+      });
+      saveCMS(cms);
+      renderAdminCMS();
+      e.target.reset();
+    }
+
+    function deleteFaqItem(idx) {
+      const cms = getCMS();
+      cms.faqs.splice(idx, 1);
+      saveCMS(cms);
+      renderAdminCMS();
+    }
+
+    // Export / Import
+    function exportData() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(getCMS(), null, 2));
+      const dl = document.createElement('a');
+      dl.setAttribute("href", dataStr);
+      dl.setAttribute("download", "zerofear_backup_" + new Date().toISOString().slice(0,10) + ".json");
+      dl.click();
+    }
+
+    function triggerImport() {
+      document.getElementById('importFileInput').click();
+    }
+
+    function importData(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          try {
+            const parsed = JSON.parse(evt.target.result);
+            if (parsed && parsed.config) {
+              saveCMS(parsed);
+              renderAdminCMS();
+              alert("Data restored successfully from file!");
+            } else {
+              alert("Invalid JSON data format.");
+            }
+          } catch(err) {
+            alert("Error reading file: " + err.message);
+          }
+        };
+        reader.readAsText(file);
+      }
+    }
+
+    function resetDefaultData() {
+      if (confirm("Are you sure you want to reset all content back to factory default?")) {
+        localStorage.removeItem("zerofear_cms_v1");
+        applyCMS();
+        renderAdminCMS();
+        alert("Content has been reset to default.");
+      }
+    }
+
+    // Mobile Navigation Toggle
+    function toggleMobileNav() {
+      const nav = document.getElementById('navMenu');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.position = 'absolute';
+      nav.style.top = '100%';
+      nav.style.left = '0';
+      nav.style.right = '0';
+      nav.style.background = 'var(--primary-navy)';
+      nav.style.padding = '1.5rem';
+    }
+
+    // Apply CMS to DOM
+    function applyCMS() {
+      const cms = getCMS();
+
+      // Top ribbon & Footer sync
+      document.getElementById('floatCallBtn').href = `tel:${cms.config.phone}`;
+      document.getElementById('floatWaBtn').href = `https://wa.me/${cms.config.wa}`;
+      document.getElementById('ft_phone').textContent = `Phone: ${cms.config.phone}`;
+      document.getElementById('ft_address').textContent = cms.config.address;
+      document.getElementById('ft_hours').textContent = `Hours: ${cms.config.hours}`;
+
+      renderHomePageSections(cms);
+      renderNavDropdown(cms);
+      renderPublicBlog(cms);
+      runHeroCycle();
+    }
+
+    // Boot
     window.addEventListener('DOMContentLoaded', () => {
-      renderPublicBlogs();
+      applyCMS();
+      if (window.location.hash === "#admin") {
+        triggerAdminLogin();
+      }
     });
   </script>
 </body>
